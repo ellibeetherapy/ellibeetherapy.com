@@ -12,7 +12,7 @@ body {
 	--icon-display-duration: 1s; 
 	--icon-in-duration: 0.2s; 
 	--icon-in-start-relative-delay: 0.2s; 
-	--icon-visible-relative-delay: 0.75s; 
+	--icon-visible-relative-delay: -0.25s; 
 	--icon-in-start-delay: calc( var( --hex-rotate-delay ) + var( --hex-rotate-duration ) + var( --icon-in-start-relative-delay ) ); 
 	--icon-visible-duration: calc( var( --icon-display-duration ) + 2 * var( --icon-in-duration ) + var( --icon-visible-relative-delay ) ); 
 	
@@ -29,20 +29,20 @@ body {
 	--icon-4-out-delay: calc( var( --icon-4-in-delay ) + var( --icon-display-duration ) ); 
 	--icon-5-out-delay: calc( var( --icon-5-in-delay ) + var( --icon-display-duration ) ); 
 
-	--logo-display-duration: 0.4s; 
-	--hex-clear-delay: calc( var( --icon-in-start-delay ) + var( --icon-in-start-relative-delay ) + 5 * var( --icon-visible-duration ) + var( --icon-in-duration ) + var( --logo-display-duration ) ); 
-	--hex-scale-down-duration: 0.2s; 
-	--hex-slide-up-relative-delay: 1s; 
-	--hex-slide-up-duration: 0.2s;
+	--logo-icon-display-duration: 0.4s; 
+	--hex-clear-delay: calc( var( --icon-in-start-delay ) + var( --icon-in-start-relative-delay ) + 5 * var( --icon-visible-duration ) + var( --icon-in-duration ) + var( --logo-icon-display-duration ) ); 
+	--hex-scale-down-duration: 0.15s; 
+	--hex-slide-up-relative-delay: 0.4s; 
+	--hex-slide-up-duration: 0.25s;
 	--hex-slide-up-delay: calc( var( --hex-clear-delay ) + var( --hex-scale-down-duration ) + var( --hex-slide-up-relative-delay ) ); 
 	--hex-fade-out-relative-delay: 0.75s;
 	--hex-fade-out-duration: 0.075s; 
 	--hex-fade-out-delay: calc( var( --hex-slide-up-delay ) + var( --hex-slide-up-duration ) + var( --hex-fade-out-relative-delay )  ); 
 	--hex-clear-duration: calc( var( --hex-scale-down-duration ) + var( --hex-slide-up-relative-delay ) + var( --hex-slide-up-duration ) ); 
-	--section-fade-in-relative-delay: 0.175s; 		
-	--section-fade-in-duration: 0.2s; 
+	--section-fade-in-relative-delay: 0.2s; 		
+	--section-fade-in-duration: 0.185s; 
 	--section-in-delay: calc( var( --hex-slide-up-delay ) + var( --section-fade-in-relative-delay ) ); 
-	--section-slide-up-duration: 0.2s; 
+	--section-slide-up-duration: 0.25s; 
 	--section-slide-up-delay: calc( var( --section-fade-in-delay ) + var( --section-fade-in-duration ) + var( --section-slide-up-relative-delay ) ); 
 	--logo-fade-in-relative-delay: 0.4s; 
 	--logo-fade-in-duration: 0.125s; 
@@ -149,11 +149,12 @@ body {
 	background-position: center; 
 	background-size: contain; 
 	content: ""; 
-	transform: scale( 0.585 ); 
+	transform: scale( 0.5 ); 
 	opacity: 0; 
 } 
 
 .point.immune-system:before {  
+	transform: scale( 0.7 );
 	background-image: url( './icons/immune.png' ); 
 } 
 
@@ -220,7 +221,7 @@ body {
 
 .original-logo { 
 	width: 7rem; height: 2.75rem; 
-	margin-top: -5rem; margin-bottom: 2rem; 
+	margin-top: -2.5rem; margin-bottom: 2rem; 
 	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
 //	transform: translateY( 20% ); 
 	opacity: 0; 
@@ -380,7 +381,7 @@ body {
 } 
 
 .intro { 
-	animation-name: color-in; animation-duration: 0.075s; animation-delay: 0.65s;  
+	animation-name: color-in; animation-duration: var( --background-color-change-duration ); animation-delay: var( --background-color-change-delay );  
 	
 } 
 
