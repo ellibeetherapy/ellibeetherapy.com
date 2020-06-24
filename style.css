@@ -56,7 +56,7 @@ body {
 }
 
 .intro { 
-	--size: 180px; 
+	--size: 220px; 
 	--background-color: #56663b; 
 	--foreground-color: #323232;  
 } 
@@ -206,7 +206,7 @@ body {
 } 
 
 .original-logo { 
-	width: 7rem; height: 2.75rem; 
+	width: 12rem; height: 4.75rem; 
 	margin-top: -2.5rem; margin-bottom: 2rem; 
 	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
 	opacity: 0; 
@@ -309,17 +309,17 @@ body {
 	animation-name: color-in; animation-duration: var( --background-color-change-duration ); animation-delay: var( --background-color-change-delay );  
 } 
 
-.body { 
+/* .body { 
 	animation-name: scale-down, slide-up; animation-duration: var( --hex-scale-down-duration ), var( --hex-slide-up-duration ), var( --hex-fade-out-duration ); animation-delay: var( --hex-clear-delay ), var( --hex-slide-up-delay ), var( --hex-fade-out-delay ); 
-} 
+}  */
 
-.points-section { 
+/* .points-section { 
 	animation-name: fade-in, slide-up-to-view; animation-duration: 0.075s, var( --section-fade-in-duration ); animation-delay: var( --section-in-delay ); 
-} 
+}  */
 
-.original-logo { 
+/* .original-logo { 
 	animation-name: fade-in, roll-out; animation-duration: var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
-}
+} */
 
 
 @keyframes fade-in { 
@@ -457,7 +457,7 @@ body {
 @keyframes slide-up { 
 	
 	100% { 
-		transform: scale( 0.475 ) translateY( -320% );  
+		transform: scale( 0.475 ) translateY( -40vh );  
 	}
 	
 } 
