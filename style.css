@@ -56,7 +56,12 @@ body {
 }
 
 .intro { 
-	--size: 220px; 
+	--hex-holder-width: 100px; 
+	--hex-holder-height: 87px; 
+	--hex-icon-size: calc( 0.585 * var( --hex-holder-height ) ); 
+	--system-holder-width: 70px; 
+	--system-holder-height: 61px;
+	--system-icon-size: calc( 0.585 * var( --system-holder-height ) ); 
 	--background-color: #56663b; 
 	--foreground-color: #323232;  
 } 
@@ -74,128 +79,104 @@ body {
 }
 
 .intro { 
-	display: flex; align-items: center; justify-content: center; 
+	display: flex; flex-direction: column; align-items: center; 
 	width: 100%; height: 100%; 
-	position: fixed; 
+	overflow: auto; 
 } 
 
-.body { 
-	width: var( --size ); height: var( --size ); 
-	position: relative; 
+.hex, .icon, .hex:before, .icon:before { 
+	background-position: center; background-size: contain; background-repeat: no-repeat;  
 }
 
-.hex { 
-	width: var( --size ); height: var( --size );  
-	position: relative; 
-	transform: rotateZ( 90deg );
-} 
-
-.pieces, .icons { 
-	width: 100%; height: 100%; 
-	position: absolute; left: 0; top: 0; 
+.hex, .icon { 
+	display: flex; align-items: center; justify-content: center; 
+	margin-bottom: 0.25rem; 
 	
 }
 
-.piece { 
-	width: var( --size ); height: var( --size ); 
-	position: absolute; 
-	background-size: contain; 
-	opacity: 0; 
-}
-
-.left {  
-	background-image: url( './hexagon-left.png' ); 
-	transform: translateX( -50% ); 
+.hex { 
+	width: var( --hex-holder-width ); height: var( --hex-holder-height );  
+	position: relative; 
+	background-image: url( './icons/hex.png' );  
 } 
 
-.right { 
-	background-image: url( './hexagon-right.png' ); 
-	transform: translateX( 50% ); 
-} 
-
-.points-wrapper, .icons-wrapper { 
-	width: var( --size ); height: var( --size ); 
-} 
-
-.points-wrapper { 
-	width: 100%; 
-	position: absolute; left: 100%; top: 50%; transform: translateY( -50% ); 	
-}
-
-.point {  
-	width: 28em; height: var( --size ); 
-	position: absolute; left: 0; top: 0; 
-} 
-
-.point .text {  
-	position: absolute; left: 0; top: 50%; 
-	opacity: 0;  
-} 
-
-.point:before {  
+.hex:before, .icon:before {  
 	display: block; 
-	width: var( --size ); height: var( --size ); 
-	position: absolute; right: 100%; 
-	background-position: center; 
-	background-size: contain; 
 	content: ""; 
-	transform: scale( 0.5 ); 
-	opacity: 0; 
 } 
 
-.point.immune-system:before {  
-	transform: scale( 0.7 );
+.hex:before { 
+	width: var( --hex-icon-size ); height: var( --hex-icon-size );
+	background-image: url( './icons/logo.png' );
+} 
+
+.icon, .icon:before {  
+	width: var( --system-icon-size ); height: var( --system-icon-size ); 
+	margin-left: auto; margin-right: auto; 
+} 
+
+.icon {  
+	width: var( --system-holder-width ); height: var( --system-holder-height ); 
+	background-image: url( './icons/hex.png' );
+} 
+
+.icon.immune-system:before {  
 	background-image: url( './icons/immune.png' ); 
 } 
 
-.point.cardio-system:before {  
+.icon.cardio-system:before {  
 	background-image: url( './icons/cardio.png' ); 
 }
 
-.point.respiratory-system:before {  
+.icon.respiratory-system:before {  
 	background-image: url( './icons/respiratory.png' ); 
 }
 
-.point.neural-system:before {  
+.icon.neural-system:before {  
 	background-image: url( './icons/neural.png' ); 
 }
 
-.point.skeletal-system:before {  
+.icon.skeletal-system:before {  
 	background-image: url( './icons/skeletal.png' ); 
 } 
 
-.point.logo:before {  
-	background-image: url( './icons/logo.png' ); 
+.content { 
+	max-width: 960px; 
+	margin-left: auto; margin-right: auto; 
+	text-align: center; 
+	
 } 
+
+.head { 
+	box-sizing: border-box; 
+	width: 100%;  height: 50%; 
+	padding: 4rem; padding-bottom: 5.75rem; 
+	background-color: var( --foreground-color ); 
+	color: var( --background-color ); 
+	
+} 
+
+.logo { 
+	display: inline-block; 
+	width: 7rem; height: 4rem; 
+//	margin-top: -2.5rem; margin-bottom: 1.25rem; 
+	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
+}
 
 .heading {  
 	font-family: Impact; font-size: 2rem; 
 	text-transform: uppercase; 
 } 
 
-.point.logo { 
-	box-sizing: border-box; 
-	width: 12em; 
-	text-align: center; 
-}
-
-.point.logo .heading {  
-	padding: 0.075em; 
-	background-color: #383838;  
-	font-size: 3.85rem; 		
-	text-transform: initial; 
-	color: #4c573b;  
-} 
-
-.point.logo .text { 
-	padding-top: 2.85rem; 
-	text-transform: uppercase; 
-	font-size: 2.5rem; 
-}
-
 .text { 
 	font-family: Arial; font-size: 1rem; 
 } 
+
+.body { 
+	height: 50%; 
+	margin-top: -50px; 
+	
+}
 
 .points-section-wrapper { 
 	display: flex; flex-direction: column; align-items: center; justify-content: center; 	
@@ -204,13 +185,6 @@ body {
 	position: relative; z-index: 2; 
 	overflow: hidden; 
 } 
-
-.original-logo { 
-	width: 12rem; height: 4.75rem; 
-	margin-top: -2.5rem; margin-bottom: 2rem; 
-	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
-	opacity: 0; 
-}
 
 .points-section { 
 	display: flex; flex-direction: row; flex-wrap: wrap; 
