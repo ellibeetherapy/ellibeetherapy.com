@@ -27,10 +27,16 @@
 	--icon-neural-in-delay: calc( var( --icon-in-start-delay ) + 3 * var( --icon-in-relative-delay ) ); 
 	--icon-skeletal-in-delay: calc( var( --icon-in-start-delay ) + 4 * var( --icon-in-relative-delay ) ); 
 	
+	--block-in-relative-delay: -0.5s;  
+	--block-fade-in-duration: 0.25s; 
+	--block-slide-up-duration: 0.25s; 
+	--block-in-delay: calc( var( --icon-skeletal-in-delay ) + var( --icon-slide-up-duration ) + var( --block-in-relative-delay ) ); 
+	
+	
 	--logo-fade-in-duration: 0.075s; 
 	--logo-slide-down-duration: 0.2s; 
 	--logo-in-relative-delay: 0.125s; 
-	--logo-in-delay: calc( var( --icon-skeletal-in-delay ) + var( --icon-slide-up-duration ) + var( --logo-in-relative-delay ) ); 
+	--logo-in-delay: calc( var( --block-in-delay ) + var( --block-slide-up-duration ) + var( --logo-in-relative-delay ) ); 
 	
 } 
 
@@ -97,6 +103,12 @@ body {
 	background-color: var( --foreground-color );
 	transform: translateY( -100% ); 
 	content: ""; 
+} 
+
+.block { 
+	transform: translateY( 100% ); 
+	opacity: 0; 
+	
 }
 
 .logo { 
@@ -244,7 +256,7 @@ body {
 
 
 .intro, .body, .hex, 
-.head:after, .icon, .logo, .pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
+.head:after, .icon, .logo, .head .content, .block, .pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
 	animation-fill-mode: forwards;	
 } 
 
@@ -287,6 +299,11 @@ body {
 	animation-delay: var( --icon-skeletal-in-delay ); 
 	
 } 
+
+.block { 
+	animation-name: fade-in, slide-up; animation-duration: var( --block-fade-in-duration ), var( --block-slide-up-duration ); animation-delay: var( --block-in-delay ); 
+	
+}
 
 .logo { 
 	animation-name: fade-in, slide-down; animation-duration: var( --logo-fade-in-duration ), var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
