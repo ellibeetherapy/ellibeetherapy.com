@@ -1,69 +1,37 @@
-body { 
-	--hex-rotate-duration: 0.2s; 
-	--hex-rotate-relative-delay: 0.2s; 
-	--hex-rotate-delay: calc( var( --background-color-change-delay ) + var( --background-color-change-duration ) + var( --hex-rotate-relative-delay ) ); 
-	
-	--piece-in-duration: 0.2s;
-	--piece-relative-delay: 0s; 
-	--piece-left-in-delay: 0.2s; 
-	--piece-right-in-delay: calc( var( --piece-left-in-delay ) + var( --piece-relative-delay ) ); 
-	
-	--background-color-change-relative-delay: 0s; 
-	--background-color-change-delay: calc( var( --piece-right-in-delay ) + var( --piece-in-duration ) + var( --background-color-change-relative-delay ) ); 
-	--background-color-change-duration: 0.005s;  
-	
-	--icon-display-duration: 1s; 
-	--icon-in-duration: 0.2s; 
-	--icon-in-start-relative-delay: 0.2s; 
-	--icon-visible-relative-delay: -0.25s; 
-	--icon-in-start-delay: calc( var( --hex-rotate-delay ) + var( --hex-rotate-duration ) + var( --icon-in-start-relative-delay ) ); 
-	--icon-visible-duration: calc( var( --icon-display-duration ) + 2 * var( --icon-in-duration ) + var( --icon-visible-relative-delay ) ); 
-	
-	--icon-1-in-delay: calc( var( --icon-in-start-delay ) + 0 * var( --icon-visible-duration ) ); 
-	--icon-2-in-delay: calc( var( --icon-in-start-delay ) + 1 * var( --icon-visible-duration ) ); 
-	--icon-3-in-delay: calc( var( --icon-in-start-delay ) + 2 * var( --icon-visible-duration ) ); 
-	--icon-4-in-delay: calc( var( --icon-in-start-delay ) + 3 * var( --icon-visible-duration ) ); 
-	--icon-5-in-delay: calc( var( --icon-in-start-delay ) + 4 * var( --icon-visible-duration ) ); 
-	--icon-6-in-delay: calc( var( --icon-in-start-delay ) + 5 * var( --icon-visible-duration ) ); 
-	
-	--icon-1-out-delay: calc( var( --icon-1-in-delay ) + var( --icon-display-duration ) ); 
-	--icon-2-out-delay: calc( var( --icon-2-in-delay ) + var( --icon-display-duration ) ); 
-	--icon-3-out-delay: calc( var( --icon-3-in-delay ) + var( --icon-display-duration ) ); 
-	--icon-4-out-delay: calc( var( --icon-4-in-delay ) + var( --icon-display-duration ) ); 
-	--icon-5-out-delay: calc( var( --icon-5-in-delay ) + var( --icon-display-duration ) ); 
-
-	--hex-icon-display-duration: 0.4s; 
-	--hex-clear-delay: calc( var( --icon-in-start-delay ) + var( --icon-in-start-relative-delay ) + 5 * var( --icon-visible-duration ) + var( --icon-in-duration ) + var( --hex-icon-display-duration ) ); 
-	--hex-scale-down-duration: 0.15s; 
-	--hex-slide-up-relative-delay: 0.4s; 
-	--hex-slide-up-duration: 0.25s;
-	--hex-slide-up-delay: calc( var( --hex-clear-delay ) + var( --hex-scale-down-duration ) + var( --hex-slide-up-relative-delay ) ); 
-	--hex-fade-out-relative-delay: 0.75s;
-	--hex-fade-out-duration: 0.075s; 
-	--hex-fade-out-delay: calc( var( --hex-slide-up-delay ) + var( --hex-slide-up-duration ) + var( --hex-fade-out-relative-delay )  ); 
-	--hex-clear-duration: calc( var( --hex-scale-down-duration ) + var( --hex-slide-up-relative-delay ) + var( --hex-slide-up-duration ) ); 
-	
-	--section-fade-in-relative-delay: 0.2s; 		
-	--section-fade-in-duration: 0.185s; 
-	--section-in-delay: calc( var( --hex-slide-up-delay ) + var( --section-fade-in-relative-delay ) ); 
-	--section-slide-up-duration: 0.25s; 
-	--section-slide-up-delay: calc( var( --section-fade-in-delay ) + var( --section-fade-in-duration ) + var( --section-slide-up-relative-delay ) ); 
-	
-	--logo-fade-in-relative-delay: 0.4s; 
-	--logo-fade-in-duration: 0.125s; 
-	--logo-in-delay: calc( var( --section-in-delay ) + var( --section-slide-up-duration ) + var( --logo-fade-in-relative-delay ) ); 
-	--logo-slide-down-duration: 0.175s; 
-}
-
 .intro { 
 	--hex-holder-width: 100px; 
 	--hex-holder-height: 87px; 
 	--hex-icon-size: calc( 0.585 * var( --hex-holder-height ) ); 
 	--system-holder-width: 70px; 
 	--system-holder-height: 61px;
-	--system-icon-size: calc( 0.585 * var( --system-holder-height ) ); 
+	--system-icon-size: calc( 0.7 * var( --system-holder-height ) ); 
 	--background-color: #56663b; 
 	--foreground-color: #323232;  
+	
+	--head-background-hex-cross-pos: 150px; 
+	--head-background-pull-up-duration: 0.4s; 
+	--head-background-pull-up-delay: 0.2s; 
+	
+	--hex-in-delay: calc( var( --head-background-pull-up-delay ) + 0.8 * var( --head-background-pull-up-duration ) ); 
+	--hex-fade-in-duration: 0.075s; 
+	--hex-slide-up-duration: 0.2s; 
+	--icon-slide-up-duration: 0.2s; 
+	--icon-fade-in-duration: 0.075s; 
+	--icon-in-start-relative-delay: 0.075s; 
+	--icon-in-relative-delay: 0.07s; 
+
+	--icon-in-start-delay: calc( var( --hex-in-delay ) + var( --icon-in-start-relative-delay ) ); 
+	--icon-immune-in-delay: calc( var( --icon-in-start-delay ) + 0 * var( --icon-in-relative-delay ) ); 
+	--icon-cardio-in-delay: calc( var( --icon-in-start-delay ) + 1 * var( --icon-in-relative-delay ) ); 
+	--icon-respiratory-in-delay: calc( var( --icon-in-start-delay ) + 2 * var( --icon-in-relative-delay ) ); 
+	--icon-neural-in-delay: calc( var( --icon-in-start-delay ) + 3 * var( --icon-in-relative-delay ) ); 
+	--icon-skeletal-in-delay: calc( var( --icon-in-start-delay ) + 4 * var( --icon-in-relative-delay ) ); 
+	
+	--logo-fade-in-duration: 0.075s; 
+	--logo-slide-down-duration: 0.2s; 
+	--logo-in-relative-delay: 0.125s; 
+	--logo-in-delay: calc( var( --icon-skeletal-in-delay ) + var( --icon-slide-up-duration ) + var( --logo-in-relative-delay ) ); 
+	
 } 
 
 .points-section { 
@@ -72,6 +40,10 @@ body {
 	--gutter-y-width: 0.75rem; 
 } 
 
+html, body { 
+	width: 100%; height: 100%; 
+}
+
 body { 
 	margin: 0; 
 	padding: 0; 
@@ -79,33 +51,54 @@ body {
 }
 
 .intro { 
-	display: flex; flex-direction: column; align-items: center; 
 	width: 100%; height: 100%; 
+	position: fixed; 
+	background-color: var( --background-color ); 
 	overflow: auto; 
 } 
 
+.head, .body { 
+	min-height: 50%; 
+
+}
+
 .content { 
-	max-width: 960px; 
+	max-width: 960px; min-height: 100%;  
 	margin-left: auto; margin-right: auto; 
 	text-align: center; 
 	
 } 
 
-.head { 
-	box-sizing: border-box; 
-	width: 100%;  min-height: 50%; 
-	padding: 2.5rem; 
-	background-color: var( --foreground-color ); 
+.logo, .hex, .icon { 
+	margin-left: auto; margin-right: auto; 
+}
+
+.head {  
+	position: relative;  
+//	border-bottom: 2rem solid; 
 	color: var( --background-color ); 
-	
+//	overflow: hidden; 
 } 
 
-.logo { 
-	display: inline-block; 
-	width: 7rem; height: 4rem; 
-//	margin-top: -2.5rem; margin-bottom: 1.25rem; 
-	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
+.head .content { 
+	padding: 2.5rem;   
+} 
+
+.head:after { 
+	display: block; 
+	width: 100%; height: 200%; 
+	position: absolute; left: 0; top: 0; z-index: -1; 
+	background-color: var( --foreground-color );
+	transform: translateY( -100% ); 
+	content: ""; 
 }
+
+.logo { 
+	width: 7rem; height: 4rem; 
+	margin-top: -2.5rem; margin-bottom: 1.25rem; 
+	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
+	opacity: 0; 
+} 
 
 .heading {  
 	font-family: Impact; font-size: 2rem; 
@@ -113,11 +106,16 @@ body {
 } 
 
 .text { 
+	margin-bottom: 4rem; 
 	font-family: Arial; font-size: 1rem; 
 } 
 
-.body { 
+/* .body { 
 	height: 50%; 
+	
+}  */
+
+.body .content { 
 	margin-top: -50px; 
 	
 }
@@ -128,14 +126,15 @@ body {
 
 .hex, .icon { 
 	display: flex; align-items: center; justify-content: center; 
-	margin-bottom: 0.25rem; 
+	margin-bottom: 0.475rem; 
 	
 }
 
 .hex { 
 	width: var( --hex-holder-width ); height: var( --hex-holder-height );  
-	position: relative; 
-	background-image: url( './icons/hex.png' );  
+	background-image: url( './icons/hex.png' ); 
+	transform: translateY( 150px ); 
+	opacity: 0; 
 } 
 
 .hex:before, .icon:before {  
@@ -148,34 +147,40 @@ body {
 	background-image: url( './icons/logo.png' );
 } 
 
+/* .icons { 
+	display: flex; justify-content: center; 
+	
+} */
+
 .icon, .icon:before {  
 	width: var( --system-icon-size ); height: var( --system-icon-size ); 
-	margin-left: auto; margin-right: auto; 
 } 
 
 .icon {  
 	width: var( --system-holder-width ); height: var( --system-holder-height ); 
-	background-image: url( './icons/hex.png' );
+	background-image: url( './icons/icon.png' ); 
+	transform: translateY( 150px );
+	opacity: 0; 
 } 
 
 .icon.immune-system:before {  
-	background-image: url( './icons/immune.png' ); 
+	background-image: url( './icons/immune-green.png' ); 
 } 
 
 .icon.cardio-system:before {  
-	background-image: url( './icons/cardio.png' ); 
+	background-image: url( './icons/cardio-green.png' ); 
 }
 
 .icon.respiratory-system:before {  
-	background-image: url( './icons/respiratory.png' ); 
+	background-image: url( './icons/respiratory-green.png' ); 
 }
 
 .icon.neural-system:before {  
-	background-image: url( './icons/neural.png' ); 
+	background-image: url( './icons/neural-green.png' ); 
 }
 
 .icon.skeletal-system:before {  
-	background-image: url( './icons/skeletal.png' ); 
+	background-image: url( './icons/skeletal-green.png' ); 
 } 
 
 .points-section-wrapper { 
@@ -237,220 +242,99 @@ body {
 } 
 
 
-.intro, .body, .hex, .pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
+.intro, .body, .hex, 
+.head:after, .icon, .logo, .pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
 	animation-fill-mode: forwards;	
-}
+} 
 
-.left, .right { 
-	animation-name: fade-in, slide-in;  animation-delay: var( --piece-left-in-delay ), var( --piece-left-in-delay ); animation-duration: 0.1s, var( --piece-in-duration ); 
+.head:after { 
+	animation-name: pull-up; animation-duration: var( --head-background-pull-up-duration ); animation-delay: var( --head-background-pull-up-delay ); animation-timing-function: ease; 
 	
-}  
+} 
 
 .hex { 
-	animation-name: rotate-counterclock; animation-delay: var( --hex-rotate-delay ); animation-duration: var( --hex-rotate-duration ); 
-} 
-
-.point:before { 
-	animation-name: fade-in, fade-out; animation-duration: var( --icon-in-duration ); 
-}
-
-.point.immune-system:before {  
-	animation-delay: var( --icon-1-in-delay ), var( --icon-1-out-delay ); 
-} 
-
-.point.cardio-system:before {  
-	animation-delay: var( --icon-2-in-delay ), var( --icon-2-out-delay ); 
-}
-
-.point.respiratory-system:before {  
-	animation-delay: var( --icon-3-in-delay ), var( --icon-3-out-delay ); 
-}
-
-.point.neural-system:before {  
-	animation-delay: var( --icon-4-in-delay ), var( --icon-4-out-delay ); 
-}
-
-.point.skeletal-system:before {  
-	animation-delay: var( --icon-5-in-delay ), var( --icon-5-out-delay ); 
-} 
-
-.point.logo:before {  
-	animation-name: fade-in; 
-	animation-delay: var( --icon-6-in-delay ); 
-} 
-
-.intro { 
-	animation-name: color-in; animation-duration: var( --background-color-change-duration ); animation-delay: var( --background-color-change-delay );  
-} 
-
-/* .body { 
-	animation-name: scale-down, slide-up; animation-duration: var( --hex-scale-down-duration ), var( --hex-slide-up-duration ), var( --hex-fade-out-duration ); animation-delay: var( --hex-clear-delay ), var( --hex-slide-up-delay ), var( --hex-fade-out-delay ); 
-}  */
-
-/* .points-section { 
-	animation-name: fade-in, slide-up-to-view; animation-duration: 0.075s, var( --section-fade-in-duration ); animation-delay: var( --section-in-delay ); 
-}  */
-
-/* .original-logo { 
-	animation-name: fade-in, roll-out; animation-duration: var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
-} */
-
-
-@keyframes fade-in { 
-
-	100% { 
-		opacity: 1; 
-	} 
+	animation-name: fade-in, slide-up; animation-duration: var( --hex-fade-in-duration ), var( --hex-slide-up-duration ); animation-delay: var( --hex-in-delay ); 
 	
 } 
 
-@keyframes fade-out { 
+.icon { 
+	animation-name: fade-in, slide-up; animation-duration: var( --icon-fade-in-duration ), var( --icon-slide-up-duration ); 
 	
-	100% { 
-		opacity: 0; 
-	}
+} 
+
+.icon.immune-system { 
+	animation-delay: var( --icon-immune-in-delay ); 
+	
+} 
+
+.icon.cardio-system { 
+	animation-delay: var( --icon-cardio-in-delay ); 
+	
+} 
+
+.icon.respiratory-system { 
+	animation-delay: var( --icon-respiratory-in-delay );
+	
+} 
+
+.icon.neural-system { 
+	animation-delay: var( --icon-neural-in-delay );
+	
+} 
+
+.icon.skeletal-system { 
+	animation-delay: var( --icon-skeletal-in-delay ); 
+	
+} 
+
+.logo { 
+	animation-name: fade-in, slide-down; animation-duration: var( --logo-fade-in-duration ), var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
 	
 }
 
-@keyframes slide-in { 
-	
-	100% { 
-		transform: translateX( 0 ); 
-	}
-	
-} 
 
-@keyframes rotate-counterclock { 
-	
-	100% { 
-		transform: rotateZ( 0deg ); 
-	}
-	
-} 
+@keyframes pull-up { 
 
-@keyframes slide-left { 
-	
-	100% { 
-		transform: translateX( -100% ); 
+	80% { 
+		transform: translateY( calc( -50% + 150px ) ); 
 	}
-	
-} 
 
-@keyframes slide-out-left { 
-	
 	100% { 
-		transform: translateX( -200% ); 
-	}
-	
-} 
-
-@keyframes slide-open-left { 
-	
-	100% { 
-		transform: translateX( -20% ); 
-	}
-	
-} 
-
-@keyframes slide-open-right { 
-	
-	100% { 
-		transform: translateX( 20% ); 
-	}
-	
-} 
-
-@keyframes display { 
-	
-	100% { 
-		width: auto; height: auto;  
-	}
-	
-} 
-
-@keyframes hide { 
-	
-	100% { 
-		width: 0; height: 0;  
-	}
-	
-} 
-
-@keyframes slide-up-to-view { 
-	
-	100% { 
-		transform: translateY( 0 ); 
-	}
-	
-} 
-
-@keyframes slide-down-to-view { 
-	
-	100% { 
-		transform: translateY( 0 ); 
-	}
-	
-} 
-
-@keyframes slide-up-out-view { 
-	
-	100% { 
-		transform: translateY( -100% ); 
-	}
-	
-} 
-
-@keyframes slide-left-to-view { 
-	
-	100% { 
-		transform: translateX( 0 ); 
-	}
-	
-} 
-
-@keyframes pop-in { 
-
-	50% { 
-		transform: scale( 0.775 ); 
-	}
-	
-	100% { 
-		transform: scale( 0.575 ); 
-	}
-	
-} 
-
-@keyframes color-in { 
-	
-	100% { 
-		background-color:  var( --background-color ); 
+		transform: translateY( -50% ); 
 	}
 	
 } 
 
 @keyframes slide-up { 
-	
+
 	100% { 
-		transform: scale( 0.475 ) translateY( -40vh );  
+		transform: translateY( 0 ); 
 	}
 	
 } 
 
-@keyframes roll-out { 
+@keyframes fade-in { 
+
+	100% { 
+		opacity: 1; 
+		
+	}
 	
+} 
+
+@keyframes slide-down { 
+
 	100% { 
 		margin-top: 0; 
+		
 	}
 	
 } 
 
-@keyframes scale-down { 
-	
-	100% { 
-		transform: scale( 0.475 ); 
-	}
-	
-} 
+
+
+
+
 
 
 
