@@ -72,7 +72,6 @@ body {
 
 .intro-wrapper { 
 	width: 100%; min-height: 100%;  
-	overflow: auto; 
 }
 
 .head, .body { 
@@ -144,7 +143,12 @@ body {
 /* .body { 
 	height: 50%; 
 	
-}  */
+}  */ 
+
+.body { 
+	padding-bottom: 4.75rem; 
+	
+}
 
 .body .content { 
 	margin-top: calc( -1 * var( --head-border-width ) ); 
