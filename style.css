@@ -29,7 +29,7 @@
 	--icon-neural-in-delay: calc( var( --icon-in-start-delay ) + 3 * var( --icon-in-relative-delay ) ); 
 	--icon-skeletal-in-delay: calc( var( --icon-in-start-delay ) + 4 * var( --icon-in-relative-delay ) ); 
 	
-	--block-in-relative-delay: -0.5s;  
+	--block-in-relative-delay: -0.4s;  
 	--block-fade-in-duration: 0.25s; 
 	--block-slide-up-duration: 0.25s; 
 	--block-in-delay: calc( var( --icon-skeletal-in-delay ) + var( --icon-slide-up-duration ) + var( --block-in-relative-delay ) ); 
@@ -37,7 +37,8 @@
 	
 	--logo-fade-in-duration: 0.075s; 
 	--logo-slide-down-duration: 0.2s; 
-	--logo-in-relative-delay: 0.125s; 
+	--logo-in-relative-delay: 0.0125s; 
+	--logo-in-relative-delay: 0.0125s; 
 	--logo-in-delay: calc( var( --block-in-delay ) + var( --block-slide-up-duration ) + var( --logo-in-relative-delay ) ); 
 	
 } 
@@ -53,10 +54,6 @@
 	font-family: Impact; 
 	
 }
-
-/* html, body { 
-	width: 100%; min-height: 100%; 
-}  */
 
 body { 
 	margin: 0; 
@@ -98,11 +95,9 @@ body {
 	position: relative;   
 	padding-bottom: var( --head-border-width ); 
 	color: var( --background-color ); 
-//	overflow: hidden; 
 } 
 
 .head .content { 
-	/* display: flex; flex-direction: column; align-items: center; justify-content: center; */ 
 	padding: 2.5rem;   
 } 
 
@@ -111,16 +106,13 @@ body {
 	width: 100%; height: 200%; 
 	position: absolute; left: 0; top: 0; z-index: -1; 
 	background-color: var( --foreground-color );
-//	border-bottom: var( --head-border-width ) solid transparent; 
 	transform: translateY( -100% ); 
 	content: ""; 
 } 
 
 .block { 
-//	margin-bottom: 2.75rem; 
 	transform: translateY( 100% ); 
 	opacity: 0; 
-	
 }
 
 .logo { 
@@ -136,23 +128,15 @@ body {
 } 
 
 .text { 
-//	margin-bottom: 4rem; 
 	font-family: Arial; font-size: 1rem; 
 } 
 
-/* .body { 
-	height: 50%; 
-	
-}  */ 
-
 .body { 
 	padding-bottom: 4.75rem; 
-	
 }
 
 .body .content { 
 	margin-top: calc( -1 * var( --head-border-width ) ); 
-	
 }
 
 .hex, .icon, .hex:before, .icon:before { 
@@ -162,7 +146,6 @@ body {
 .hex, .icon { 
 	display: flex; align-items: center; justify-content: center; 
 	margin-bottom: 0.475rem; 
-	
 }
 
 .hex { 
