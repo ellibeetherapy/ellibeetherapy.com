@@ -29,7 +29,7 @@
 	--icon-neural-in-delay: calc( var( --icon-in-start-delay ) + 3 * var( --icon-in-relative-delay ) ); 
 	--icon-skeletal-in-delay: calc( var( --icon-in-start-delay ) + 4 * var( --icon-in-relative-delay ) ); 
 	
-	--block-in-relative-delay: -0.4s;  
+	--block-in-relative-delay: -0.5s;  
 	--block-fade-in-duration: 0.25s; 
 	--block-slide-up-duration: 0.25s; 
 	--block-in-delay: calc( var( --icon-skeletal-in-delay ) + var( --icon-slide-up-duration ) + var( --block-in-relative-delay ) ); 
