@@ -113,23 +113,40 @@ body {
 .block { 
 	transform: translateY( 100% ); 
 	opacity: 0; 
-}
+} 
 
 .logo { 
 	width: 7rem; height: 4rem; 
-	margin-top: -2.5rem; margin-bottom: 1.25rem; 
+	margin-bottom: 0.25rem; 
 	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
-	opacity: 0; 
 } 
 
 .heading {  
+	margin-bottom: 0.2rem;
 	font-family: Impact; font-size: 2rem; 
-	text-transform: uppercase; 
 } 
 
+.heading, .under-construction-message { 
+	text-transform: uppercase; 
+}
+
 .text { 
+//	margin-bottom: 1.4rem;
 	font-family: Arial; font-size: 1rem; 
 } 
+
+.under-construction-message-holder { 
+	margin-top: -5rem; margin-bottom: 2.5rem; 
+	opacity: 0; 
+}
+
+.under-construction-message { 
+	display: inline-block; 
+	padding: 0.85rem; 
+	border: 1px solid; 
+	font-family: Arial; 
+	font-size: 0.85rem; 
+}
 
 .body { 
 	padding-bottom: 4.75rem; 
@@ -161,7 +178,7 @@ body {
 } 
 
 .hex:before { 
-	width: var( --hex-icon-size ); height: var( --hex-icon-size );
+	width: var( --hex-icon-size ); height: var( --hex-icon-size ); 
 	background-image: url( './icons/logo.png' );
 } 
 
@@ -256,7 +273,8 @@ body {
 
 
 .intro, .body, .hex, 
-.head:after, .icon, .logo, .head .content, .block, .pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
+.head:after, .icon, .logo, .head .content, .block, .under-construction-message-holder, .under-construction-message, 
+.pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
 	animation-fill-mode: forwards;	
 } 
 
@@ -305,7 +323,7 @@ body {
 	
 }
 
-.logo { 
+.under-construction-message-holder { 
 	animation-name: fade-in, slide-down; animation-duration: var( --logo-fade-in-duration ), var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
 	
 }
