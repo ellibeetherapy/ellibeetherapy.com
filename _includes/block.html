@@ -1,0 +1,17 @@
+{% if heading %}
+	<h{{ heading.level }} class= "heading">{{ heading.text }}</h{{ heading.level }}>
+{% endif %}
+
+{% for entry in textEntries %}
+	<p class= "text-entry">{{ entry }}</p>
+{% endfor %}
+
+{% if figure %}
+	<figure class= "image-holder">
+		<img class= "image" src= {{ figure.src }} alt= {{ figure.alt }} />
+	</figure>
+{% endif %}
+
+{% if button %}
+	<button class= "button">{{ button.text }}</button>
+{% endif %}
