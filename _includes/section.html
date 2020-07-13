@@ -1,0 +1,13 @@
+<section class= "section"> 
+	{% if head %}
+		<section class= "head">
+			{% include block.html %}
+		</section>
+	{% endif %}
+
+	{% if body %}
+		<section class= "body"> 
+			{% include body.template %} 
+		</section>
+	{% endif %}
+</section>
