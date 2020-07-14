@@ -1,10 +1,12 @@
+@import "./settings.css"; 
+@import "./reset.css";
 @import "./layout.css";
 @import "./typography.css";
 @import "./color.css"; 
 @import "./header.css";
-@import "./presentation-list.css"; 
+@import "./offer-list.css"; 
 @import "./plus-points.css"; 
-@import "./product-presentation-list.css"; 
+@import "./sell-points.css"; 
 @import "./featured-offer.css"; 
 @import "./footer.css"; 
 @import "./media-queries.css"; 

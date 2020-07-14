@@ -5,6 +5,7 @@
 {% assign image = data.image %} 
 {% assign link = data.link %} 
 
+<section class= "text-content"> 
 
 {% if heading %}
 	<h{{ heading.level }} class= "heading">{{ heading.text }}</h{{ heading.level }}> 
@@ -14,12 +15,14 @@
 	<p class= "text-entry">{{ entry }}</p>
 {% endfor %}
 
+{% if link %}
+	<a class= "button" href= {{ link.target }}>{{ link.text }}</a>
+{% endif %}
+
+</section>
+
 {% if image %}
 	<figure class= "image-holder">
 		<img class= "image" src= {{ image.src }} alt= {{ image.alt }} /> 
 	</figure>
-{% endif %}
-
-{% if link %}
-	<a class= "button" href= {{ link.target }}>{{ link.text }}</a>
 {% endif %}

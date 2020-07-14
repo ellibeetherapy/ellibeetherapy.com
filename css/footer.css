@@ -1,0 +1,173 @@
+/* -----------------------------------------------------------------
+	Layout
+----------------------------------------------------------------- */
+
+.footer, 
+.footer-nav {
+	display: flex; align-items: center; 
+}
+
+.footer {
+	flex-direction: column; 
+	margin-top: 4rem; margin-bottom: 4rem; 
+}
+
+.footer-nav {
+	flex-direction: row; 
+	margin-top: 2.75rem; margin-bottom: 2.75rem;
+}
+
+.footer-nav .entry:last-child {
+	margin-right: 0; 
+}
+
+.footer-nav .nav-link {
+	padding: 1.4rem;  
+
+}
+
+.copyright {
+	align-self: stretch; 	
+	margin-bottom: 0; 
+	padding-top: 1.4rem; padding-bottom: 1.4rem; 
+	border-top: 1px solid; 
+}
+
+.scroll-to-top {
+	display: flex; align-items: center; justify-content: center; 
+	width: 3.5rem; height: 3.5rem; 
+	padding: 0; 
+	position: fixed; right: 0.5rem; bottom: 10%; z-index: 3;  
+	border: none; border-radius: calc( 3.5rem / 2 );
+	cursor: pointer;  
+
+}
+
+.scroll-to-top:before {
+	display: block; 
+
+}
+
+
+/* -----------------------------------------------------------------
+	Typography
+----------------------------------------------------------------- */
+
+.copyright { 
+	font-size: 1rem; 
+	text-align: center;
+}
+
+.scroll-to-top {
+	text-indent: -10000px; 	
+
+}
+
+.scroll-to-top:before {
+	font-family: FontAwesome; font-size: 3.2rem;  
+	content: "\f106"; 
+}
+
+
+/* -----------------------------------------------------------------
+	Color
+----------------------------------------------------------------- */
+
+footer { 
+	color: #888;  
+}
+
+.footer-nav .nav-link:before {
+	background-color: #CCC; 
+}
+
+.scroll-to-top {
+	background-color: #FFF; 
+}
+
+.scroll-to-top:before {
+	color: #333; 
+}
+
+.scroll-to-top:hover {
+	background-color:#333;
+
+}
+
+.scroll-to-top:hover:before {
+	color: #FFF;
+}
+
+
+/* -----------------------------------------------------------------
+	Animations
+----------------------------------------------------------------- */
+
+.scroll-to-top {
+	opacity: 0;  
+}
+
+.scroll-to-top:before {
+	transform: scale( 0 ); 
+}
+
+.scroll-to-top.visible, 
+.scroll-to-top.visible:before {
+	animation-fill-mode: forwards; 
+}
+
+.scroll-to-top.visible {
+	animation-name: fade-in; animation-duration: 0.125s;  
+
+}
+
+.scroll-to-top.visible:before {
+	animation-name: scale-up; animation-duration: 0.2s; animation-delay: 0.125s;  
+
+}
+
+@keyframes scale-up {
+	0% {
+		transform: scale( 0 );
+	}
+
+	80% {
+		transform: scale( 1 );
+	}
+
+	100% {
+		transform: scale( 0.8 ); 
+	}
+
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+
+/* -----------------------------------------------------------------
+	Media Queries
+----------------------------------------------------------------- */
+
+@media ( max-width: 720px ) {
+
+	.footer-nav {
+		flex-direction: column; justify-content: center; 
+	}
+
+	.footer-nav .entry {
+		margin-right: 0; 
+		text-transform: uppercase; 
+	}
+
+}
+
+

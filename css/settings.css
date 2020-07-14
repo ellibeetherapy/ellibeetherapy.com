@@ -1,0 +1,69 @@
+:root {
+	/* Font size in pixels to serve as the rem-units base  */
+	--base-font-size: 14px;
+
+	/**
+	 * Layout
+	 */
+
+	/* Constrains the width of the page content on larger screens, applied on sections */
+	--max-page-width: 1420px; 
+	/* Constrains the width of the page text content */
+	--max-content-width: 960px;  
+
+	/* Defines space around not full width sections on smaller screens */
+	--content-padding-left: 1.25rem; 
+	--content-padding-right: 1.25rem;
+
+	/**
+	 * Font
+	 */
+	
+	--text-font-family: Arial; 
+	--heading-font-family: ArialBlack; 
+
+	/* Points to the font, used by icons */
+	--icon-font-family: FontAwesome; 
+
+	/* Assigns icons */
+	--open-nav-button-icon: "\f0c9";
+	--close-nav-button-icon: "\f00d";
+	--prev-button-icon: "\f0d9";
+	--next-button-icon: "\f0da"; 
+
+	/**
+	 * Color
+	 */
+
+	/* Main text color */
+	--text-color: #555; 
+	/* Color behind text */
+	--text-background-color: rgba( 255, 255, 255, 0.7 );
+	/* Color of text section, overlapping another section or an image */
+	--overlay-color: rgba( 255, 255, 255, 0.8 ); 
+
+	/**
+	 * Custom
+	 */
+
+	/* Used to push section content sideways to make its width equal to max content width */
+	--content-push-inward: calc( ( 100% - var( --max-content-width ) ) / 2 ); 
+
+	/* For use when header is placed over slider */
+	--header-height: 5rem; 
+	--header-margin-top: 2rem; 
+
+	/* Offer list text box width, taken out of scope to be available to other sections */
+	--text-box-width: 40rem; 
+	--text-box-border-right: calc( var( --max-content-width ) - var( --text-box-width ) ); 
+	--text-box-color: darkgoldenrod; 
+
+
+	
+}
+
+
+
+
+
+

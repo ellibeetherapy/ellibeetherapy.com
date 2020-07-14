@@ -1,24 +1,50 @@
-/* Keeps all sections up to 1280px wide and centered above that viewport width */
-.header, .section {
-	max-width: 1780px; margin-left: auto; margin-right: auto; 
-	border-style: solid; border-color: transparent; border-left-width: 2.4rem; border-right-width: 2.4rem; 
+/* Separates paragraph or paragraphs visually from headings and buttons */
+.heading, 
+.text:last-of-type {
+	margin-bottom: 1.8rem; 
 }
 
-.nav-link {
-	display: block; 
+/* Paragraphs distance */
+.text {
+	margin-bottom: 1.2em;
 }
 
-/* Sections are positioned to contain all their absolutely positioned elements */
+/* Removes bottom margin from paragraphs, that have no adjacent elements */
+.text:last-child {
+	margin-bottom: 0; 
+}
+
+
+/* Keeps all sections up to max page width wide and centered above that viewport width, 
+leaving some distance from window edges, achieving that by using transparent borders */
+.header, 
 .section {
-	position: relative; 
+	box-sizing: border-box; 
+	max-width: var( --max-page-width ); margin-left: auto; margin-right: auto; 
+	border-style: solid; border-color: transparent; 
+	border-left-width: var( --content-padding-left ); border-right-width: var( --content-padding-right ); 
 }
 
-.offer-list, .plus-points {
-	margin-bottom: 5rem; 
+	/* Not full width sections */
+	.header, 
+	.plus-points {
+		max-width: var( --max-content-width ); 
+	}
+
+	/* Full width sections, without leaving distance from window edges */
+	.offer-list {
+		border-left-width: 0; border-right-width: 0; 
+	}
+
+/* Sections and their body section are positioned to contain all their absolutely positioned elements */
+.section, 
+.section .body {
+	position: relative; 	
 }
 
-.footer {
-	margin-top: 0.75rem; 
+/* Defines distance between sections */
+.section {
+	margin-bottom: 2rem; 
 }
 
 /* Usability headings are not a visual part of the page */
@@ -28,21 +54,6 @@
 
 }
 
-/* Sets distance between headings and text, and text and buttons below */
-.heading, .text:last-of-type {
-	margin-bottom: 1.8rem;  
-}
-
-/* Sets the distance between text and element below, usually a button */
-.text:last-of-type {
-	margin-bottom: 2em;  
-}
-
-/* Removes the bottom margin of a paragraph, that is the last element in a block */
-.text:last-child {
-	margin-bottom: 0; 
-}
-
 /* Taking into account styling, semantics and SEO, an image is represented as a figure element with an image element as its descendant */
 .image {
 	height: 150px; 
@@ -50,34 +61,26 @@
 
 figure.image {
 	background-size: cover; background-position: center center; background-repeat: no-repeat; 
+	background-image: none !important; background-color: #999; 
 }
 
 .image img {
-	display: none; 
+	display: none !important; 
 }
 
 /* Buttons are displayed as inline-block to adapt to their label */
 .button {
 	display: inline-block; 
-	padding: 1rem 2rem; 
-	background-color: #444; 
-	color: #EEE; 
-	font-family: OpenSans-Semibold; 
-	text-transform: uppercase; 
-
+	padding: 1.25rem 1.75rem; 
+	border: 1px solid;
 }
 
-.section .head, .section .text-content {
-	padding-top: 3.75rem; padding-bottom: 3.75rem; padding-right: 4.5rem; padding-left: 0; 
 
-}
+/**
+ * Control buttons 
+ */
 
-.section .body {
-	position: relative; 
-
-}
-
-/* Control buttons are placed next to each other, usin flexbox */
+/* Control buttons are placed next to each other, using flexbox */
 .bx-controls-direction {
 	display: flex; flex-direction: row; 
 	position: absolute; 
@@ -88,46 +91,37 @@ figure.image {
 	display: block;
 	width: 1px; height: 100%;
 	position: absolute; left: 50%; top: 0;  
-	border-right: 1px solid; 
-	content: "";
-	 
+	z-index: 4; 
+	content: ""; 
+
 }
 
+/* Control button is relatively positioned to hold the absolutely positioned :before, holding the icon */
 .bx-controls-direction a {
 	display: block; 
-	width: 6rem; height: 5rem; 	
+	width: 6rem; height: 5rem;	
 	position: relative; 
 	border: none;  
-	text-indent: -10000px; 
-	overflow: hidden; 
 	cursor: pointer; 
 }
 
-.bx-controls-direction a:before {
+/* The :before element is stretched all over the button and its content, the icon, is centered */
+.nav-control-buttons :before, 
+.bx-controls-direction :before {
 	display: flex; align-items: center; justify-content: center; 
 	width: 100%; height: 100%; 
-	position: absolute; left: 0; top: 0; z-index: 2; 
-	text-indent: 0; 
-	font-family: FontAwesome; 
-	font-size: 1.2rem; 
+	position: absolute; left: 0; top: 0; z-index: 2; 	
 }
 
-/* Assigns control icons */
-
-.bx-controls-direction .bx-prev:before {
-	content: "\f0d9"; 
-}
-
-.bx-controls-direction .bx-next:before {
-	content: "\f0da"; 
-}
-
-/* On mouse over the control button set, the separator and the targeted button become fully opaque */
-
-.bx-controls-direction:before, .bx-controls-direction a {
+/* Button separating line and buttons are not fully opaque in their normal state */
+.bx-controls-direction:before, 
+.bx-controls-direction :before {
 	opacity: 0.45; 
 }
 
-.bx-controls-direction:hover:before, .bx-controls-direction a:hover {
+/* On mouse over the control button set, the separator and the targeted button become fully opaque */
+.bx-controls-direction:hover:before, 
+.bx-controls-direction a:hover:before {
 	opacity: 1; 
 }
+

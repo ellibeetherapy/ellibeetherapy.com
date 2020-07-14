@@ -2,81 +2,79 @@
 	Layout
 ----------------------------------------------------------------- */
 
-.site-title {
-	margin-bottom: 0; 
-}
-
 /* Direct descendant elements of header and main navigation are horizontally aligned */
 .header, 
 .main-nav .nav-entry-list {
-	display: flex; flex-direction: row; 
+	display: flex; flex-direction: row; align-items: center; 
 }
 
-.header {
-	align-items: center; 
-}
+/* ID and main navigation horizontal centers are aligned */
+.header {    
+	justify-content: space-between; 
 
-/* ID and navigation links are vertically centered */
-.site-title {
-	height: 5.5rem; line-height: 5.5rem; 
+	/* Gives header content the width of the content, when header has full width */ 
+	/* max-width: none; 
+	padding-left: var( --content-push-inward ); padding-right: var( --content-push-inward );  */
+
+	/* Sizes header to match slider text box */
+	box-sizing: border-box; 
+	max-width: var( --max-content-width ); 
+	/* border-right-width: var( --text-box-border-right ); */
+	/* padding-left: var( --content-padding-left );
+	/* Takes care of header background */
+	background-clip: padding-box; 
+
+	height: var( --header-height );
+
+	/* Pulls slider under header */
+	/* height: var( --header-height ); margin-bottom: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); */
+	/* margin-top: var( --header-margin-top );  */
+
+	/* Pulls header in front of slider */
+	position: relative; z-index: 2;  
 }
 
 /* Gives distance between ID and main navigation */
-.header .id {
-	margin-right: 4rem; 
+.header .id { 
+	margin-right: 5rem; 
 }
 
-.open-nav-button, 
-.close-nav-button {
-	display: block; 
-	width: 3.75rem; height: 3.75rem; line-height: 3.75rem; 
-	position: relative; 
-	background-color: transparent; 
-	border: none; 
-	text-indent: -10000px; overflow: hidden; 
-	cursor: pointer; 
-}
+.site-title {
+	height: 4rem; line-height: 4rem; 
+	margin-bottom: 0; 
+}	
 
-.open-nav-button:before, 
-.close-nav-button:before {
-	display: block; 
+/* Mobile navigation background */
+.main-nav:after {
+	display: none; 
 	width: 100%; height: 100%; 
-	position: absolute; left: 0; top: 0;
+	position: fixed; left: 0; top: 0; z-index: 2; 
+	background-color: rgba( 255, 255, 255, 1 ); 
+	content: "";
 }
+
+
+/**
+ * Navigation visibility control buttons 
+ */
 
 .open-nav-button, 
 .close-nav-button {
 	display: none; 
-}
-
-.main-nav.open .close-nav-button {
-	display: block; 
-	position: absolute; top: 1.75rem; right: 1.75rem; 
-	z-index: 3; 
-}
-
-.main-nav .nav-link {
-	padding: 1.4rem; 
-}
-
-.nav-link {
+	width: var( --header-height ); height: var( --header-height ); 	
 	position: relative; 
+	border: none; 
 }
 
-.nav-link:before {
-	display: block;
-	width: 0.5rem; height: 0.5rem;
-	position: absolute; left: 0.25rem; top: 50%; transform: rotateZ( 45deg ) translateY( -50% ); 
-	content: "";
-	opacity: 0;
+.close-nav-button {
+	position: fixed; 
 }
 
-.selected .nav-link:before, .nav-entry-list:hover .nav-link:hover:before {
-	opacity: 1; 
-}
-
-.nav-entry-list:hover .nav-link:before {
-	opacity: 0; 
+/* Navigation link clickable sizing */
+.main-nav .nav-link {
+	display: block; 
+	height: var( --header-height ); line-height: var( --header-height );
+	padding-left: 0.85rem; padding-right: 0.85rem;
 }
 
 
@@ -84,37 +82,16 @@
 	Typography
 ----------------------------------------------------------------- */
 
-.site-title {
-	font-family: PTSans-Bold; 
-	font-size: 1.2rem; 
-	letter-spacing: 0; 
+.site-title, .main-nav .nav-link {
 	text-transform: uppercase; 
+}
 
+.site-title {
+	font-size: 1.2rem; 
 }
 
 .main-nav .nav-link {
-	font-family: Lora-Regular; 
-}
-
-.main-nav.open .nav-link {
-	font-size: 1.2rem;  
-	text-transform: uppercase; 
-
-}
-
-.open-nav-button:before, 
-.close-nav-button:before {
-	text-indent: 0; 
-	text-align: center; 
-	font-family: FontAwesome; font-size: 1.4rem; 
-}
-
-.open-nav-button:before {
-	content: "\f0c9";
-}
-
-.close-nav-button:before {
-	content: "\f00d";
+	font-size: 0.85rem; 
 }
 
 
@@ -122,13 +99,21 @@
 	Color
 ----------------------------------------------------------------- */
 
-.site-title, 
-.open-nav-button:before {
-	color: #79a3d1; 
+.nav-link:hover {
+	color: #EEE; 
+	background-color: #555; 
 }
 
-.main-nav .nav-link:before {
-	background-color:#79a3d1;
+.open-nav-button, 
+.close-nav-button { 
+	/* color: var( --text-box-color );  */
+	background-color: transparent; 
+}
+
+.open-nav-button:hover, 
+.close-nav-button:hover { 
+	color: var( --text-box-color ); 
+	background-color: #EEE;  
 }
 
 .main-nav.open .nav-link, 
@@ -138,40 +123,67 @@
 
 
 /* -----------------------------------------------------------------
-	Meadia Queries
+	Media Queries
 ----------------------------------------------------------------- */
 
-@media ( max-width: 980px ) {
+/* @media ( max-width: 1060px ) and ( min-width: 841px ) {
 	.header { 
 		flex-direction: column; align-items: flex-start; 
-		margin-bottom: 3.75rem; 
+		margin-bottom: 2rem; 
+	}
+
+	.main-nav .nav-link {
+		padding-top: 1.575rem; 
+	}
+
+	.main-nav .nav-entry:first-child .nav-link {
+		padding-left: 0;  
 	}
 	
 }
 
-@media ( max-width: 680px ) {
+@media ( max-width: 840px ) {
 	.header { 
 		flex-direction: row; justify-content: space-between; align-items: center;
+		margin-bottom: 0; 
+	}
+
+	.header .id {
+		margin-right: 0; 
 	}
 
 	.main-nav .nav-entry-list {
 		flex-direction: column; align-items: center; justify-content: center; 
 		height: 0; overflow: hidden; 
-		width: 100%; 
-		position: fixed; left: 0; top: 0; z-index: 2; 
-		background-color: #79a3d1; 
+		position: fixed; left: 50%; top: 50%; z-index: 3; 
+		transform: translate( -50%, -50% );
+	}
+
+	.main-nav.open:after {
+		display: block; 
 	}
 
 	.main-nav.open .nav-entry-list {
-		height: 100%; 
+		width: auto; height: auto; 
 	}
 
 	.open-nav-button {
 		display: block; 
 	}
 
+	.main-nav.open .close-nav-button {
+		display: block; 
+		top: 0; right: 0; 
+		z-index: 3; 
+	}
+
 	.main-nav .nav-link:before {
 		background-color: #EEE;
 	}
 
-}
+	.main-nav .nav-link {
+		padding-top: 1rem; padding-bottom: 1rem; 
+
+	}
+
+} */

@@ -1,29 +1,97 @@
+/**
+ * Font declarations 
+ */
+
+/* Arial Black font declaration */
+@font-face {
+	font-family: ArialBlack;
+	src: url( "../fonts/ariblk.ttf" ); 
+}
+
 /* Font Awesome font declaration */
 @font-face {
 	font-family: FontAwesome;
-	src: url( "/fonts/fa-solid-900.ttf" ); 
- 
+	src: url( "../fonts/fa-solid-900.ttf" ); 
+
 }
 
 /* Sets font size to use as a base for all font sizes */
-html, body {
-	font-size: 14px; 
+html, 
+body {
+	font-family: var( --text-font-family ); 
+	font-size: var( --base-font-size ); 
 }
 
-/* Sets the heading styles */
+/* Heading style */
 .heading {
- 	font-family: Lora-Regular; 
-	font-size: 2.75rem; 
-	line-height: 1.15; 
-	letter-spacing: 0.07em; 
+	font-family: var( --heading-font-family ); 
+	font-size: 2.2rem; 
+	line-height: 1.2; 
+	text-transform: uppercase; 
 }
 
-.site-title {
-	font-size: 1rem; 
-}
-
-/* Sets the body copy styles */
+/* Paragraph style */
 .text {
-	font-family: OpenSans-Regular; 
-	line-height: 2.2; 
+	font-family: Arial;
+	font-size: 1.2rem; 
+	line-height: 1.8;
 }
+
+
+/**
+ * Control buttons typography styles
+ */
+
+/* Pseudo-element, used as a placeholder for the icon */
+:before {
+	text-indent: 0; 
+}
+
+/* Creates the vertical separating line between the two control buttons */
+.nav-control-buttons :before, 
+.bx-controls-direction :before {
+	font-family: var( --icon-font-family ); 
+	content: ""; 
+}
+
+/* Control button text is moved out of the screen to be replaced with an icon */
+.nav-control-buttons button, 
+.bx-controls-direction a {
+	text-indent: -10000px; overflow: hidden; 
+	cursor: pointer; 
+}
+
+/**
+ * Sets control button icons 
+ */
+
+/* Assigns prev control button icon */
+.bx-controls-direction .bx-prev:before {
+	content: var( --prev-button-icon ); 
+}
+
+/* Assigns next control button icon */
+.bx-controls-direction .bx-next:before {
+	content: var( --next-button-icon ); 
+}
+
+/**
+ * Sets navigation control button icons 
+ */
+
+/* Assigns open button icon */
+.open-nav-button:before {
+	content: var( --open-nav-button-icon );
+}
+
+/* Assigns close button icon */
+.close-nav-button:before {
+	content: var( --close-nav-button-icon ); 
+}
+
+.button {
+	font-size: 1.2rem;
+	text-transform: uppercase; 
+}
+
+
