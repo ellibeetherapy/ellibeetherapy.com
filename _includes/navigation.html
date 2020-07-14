@@ -1,7 +1,7 @@
 {% assign entries = include.data %} 
 
-<ul class= "entry-list">
+<ul class= "entry-list nav-entry-list">
 {% for entry in entries %}
-	<li class= "entry"><a class= "nav-link" href= "">{{ entry.text }}</a></li>
+	<li class= "entry nav-entry"><a class= "nav-link" href= "">{{ entry.text }}</a></li> 
 {% endfor %}
 </ul>

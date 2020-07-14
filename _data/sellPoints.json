@@ -1,17 +1,6 @@
 { 
 	"className": "sell-points", 
  
-	"head": {
-	    "heading": { 
-		    "level": 2, 
-		    "text": "Slider" 
-		}, 
-	    "subheading": "Slider Subheading", 
-	    "textEntries": [ 
-		   "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis." 
-	    ]
-	}, 
- 
 	"body": { 
 	    "template": "sell-points.html", 
 	    "context": [
@@ -28,7 +17,12 @@
 			  "image": { 
 				 "source": "", 
 				 "alt": "" 
+			  }, 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Разбери още"
 			  }
+			  
 		   }, 
 	    
 		   { 
@@ -44,6 +38,10 @@
 			  "image": { 
 				 "source": "", 
 				 "alt": "" 
+			  }, 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Разбери още"
 			  }
 		   }
 	    ]   
