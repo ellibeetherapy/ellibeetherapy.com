@@ -1,0 +1,29 @@
+{% assign entries = include.data %}
+
+<ul class= "usage-plans-entry-list entry-list">
+
+    {% for entry in entries %}
+    <li class= "usage-plans-entry entry">
+        <section class= "offer-details">
+            {% if entry.price %}
+                {% include price.html data = entry.price %} 
+            {% endif %}
+
+            {% if entry.note %}
+                <p class= "note">{{ entry.note }}</p>
+            {% endif %}
+        </section>
+
+        <h4 class= "heading">{{ entry.heading }}</h4>
+
+        <ul class= "plan-details">
+        {% for detail in entry.details %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+        </ul>
+
+        <button class= "accept-plan">{{ entry.heading }}</button>
+    </li>
+    {% endfor %}
+
+</ul>
