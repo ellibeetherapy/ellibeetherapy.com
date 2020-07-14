@@ -3,7 +3,7 @@
 {% assign heading = data.heading %}
 {% assign textEntries = data.textEntries %} 
 {% assign image = data.image %} 
-{% assign button = data.button %} 
+{% assign link = data.link %} 
 
 
 {% if heading %}
@@ -20,6 +20,6 @@
 	</figure>
 {% endif %}
 
-{% if button %}
-	<button class= "button">{{ button.text }}</button>
+{% if link %}
+	<a class= "button" href= {{ link.target }}>{{ link.text }}</a>
 {% endif %}
