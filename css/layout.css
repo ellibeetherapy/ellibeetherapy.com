@@ -1,16 +1,16 @@
 /* Separates paragraph or paragraphs visually from headings and buttons */
 .heading, 
-.text:last-of-type {
+.text-entry:last-of-type {
 	margin-bottom: 1.8rem; 
 }
 
 /* Paragraphs distance */
-.text {
+.text-entry {
 	margin-bottom: 1.2em;
 }
 
 /* Removes bottom margin from paragraphs, that have no adjacent elements */
-.text:last-child {
+.text-entry:last-child {
 	margin-bottom: 0; 
 }
 
@@ -32,7 +32,7 @@ leaving some distance from window edges, achieving that by using transparent bor
 	}
 
 	/* Full width sections, without leaving distance from window edges */
-	.offer-list {
+	.sell-points {
 		border-left-width: 0; border-right-width: 0; 
 	}
 

@@ -1,5 +1,5 @@
+@import "./reset.css"; 
 @import "./settings.css"; 
-@import "./reset.css";
 @import "./layout.css";
 @import "./typography.css";
 @import "./color.css"; 
@@ -7,6 +7,7 @@
 @import "./offer-list.css"; 
 @import "./plus-points.css"; 
 @import "./sell-points.css"; 
-@import "./featured-offer.css"; 
+@import "./main-features.css"; 
+@import "./pointer.css"; 
 @import "./footer.css"; 
 @import "./media-queries.css"; 

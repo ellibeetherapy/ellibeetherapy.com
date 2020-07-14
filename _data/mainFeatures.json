@@ -45,6 +45,38 @@
 				 "source": "", 
 				 "alt": "" 
 			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Feature 03" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "textEntries": [
+				 "Text Entry", 
+				 "Text Entry"
+			  ], 
+			  "image": { 
+				 "source": "", 
+				 "alt": "" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Feature 04" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "textEntries": [
+				 "Text Entry", 
+				 "Text Entry"
+			  ], 
+			  "image": { 
+				 "source": "", 
+				 "alt": "" 
+			  }
 		   }
 	    ]   
 	}
