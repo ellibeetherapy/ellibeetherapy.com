@@ -1,0 +1,51 @@
+{ 
+	"className": "sell-points", 
+ 
+	"head": {
+	    "heading": { 
+		    "level": 2, 
+		    "text": "Slider" 
+		}, 
+	    "subheading": "Slider Subheading", 
+	    "textEntries": [ 
+		   "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis." 
+	    ]
+	}, 
+ 
+	"body": { 
+	    "template": "sell-points.html", 
+	    "context": [
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Slide 01" 
+			 }, 
+			  "subheading": "Slide Subheading", 
+			  "textEntries": [
+				 "Text Entry", 
+				 "Text Entry"
+			  ], 
+			  "image": { 
+				 "source": "", 
+				 "alt": "" 
+			  }
+		   }, 
+	    
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Slide 02" 
+			 }, 
+			  "subheading": "Slide Subheading", 
+			  "textEntries": [
+				 "Text Entry", 
+				 "Text Entry"
+			  ], 
+			  "image": { 
+				 "source": "", 
+				 "alt": "" 
+			  }
+		   }
+	    ]   
+	}
+ }

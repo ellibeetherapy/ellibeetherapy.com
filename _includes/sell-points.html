@@ -1,0 +1,8 @@
+<ul class= "entry-list">
+{% for entry in include.data %} 
+	<li class= "entry">
+		{% include block.html data = entry %} 
+	</li> 
+{% endfor %}
+</ul>
+	
