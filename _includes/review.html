@@ -1,0 +1,12 @@
+<blockquote class= "body">
+	<h4 class= "heading">{{ title }}</h4> 
+	
+	{% for entry in textEntries %}
+		<p class= "text-entry">{{ entry }}</p>
+	{% endfor %}
+		
+</blockquote>
+<footer class= "author">
+	<h4>{{ name }}</h4> 
+	<p>{{ details }}</p> 
+</footer>
