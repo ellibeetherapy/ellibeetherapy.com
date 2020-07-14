@@ -1,0 +1,177 @@
+/* -----------------------------------------------------------------
+	Layout
+----------------------------------------------------------------- */
+
+.site-title {
+	margin-bottom: 0; 
+}
+
+/* Direct descendant elements of header and main navigation are horizontally aligned */
+.header, 
+.main-nav .nav-entry-list {
+	display: flex; flex-direction: row; 
+}
+
+.header {
+	align-items: center; 
+}
+
+/* ID and navigation links are vertically centered */
+.site-title {
+	height: 5.5rem; line-height: 5.5rem; 
+}
+
+/* Gives distance between ID and main navigation */
+.header .id {
+	margin-right: 4rem; 
+}
+
+.open-nav-button, 
+.close-nav-button {
+	display: block; 
+	width: 3.75rem; height: 3.75rem; line-height: 3.75rem; 
+	position: relative; 
+	background-color: transparent; 
+	border: none; 
+	text-indent: -10000px; overflow: hidden; 
+	cursor: pointer; 
+}
+
+.open-nav-button:before, 
+.close-nav-button:before {
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0;
+}
+
+.open-nav-button, 
+.close-nav-button {
+	display: none; 
+}
+
+.main-nav.open .close-nav-button {
+	display: block; 
+	position: absolute; top: 1.75rem; right: 1.75rem; 
+	z-index: 3; 
+}
+
+.main-nav .nav-link {
+	padding: 1.4rem; 
+}
+
+.nav-link {
+	position: relative; 
+}
+
+.nav-link:before {
+	display: block;
+	width: 0.5rem; height: 0.5rem;
+	position: absolute; left: 0.25rem; top: 50%; transform: rotateZ( 45deg ) translateY( -50% ); 
+	content: "";
+	opacity: 0;
+}
+
+.selected .nav-link:before, .nav-entry-list:hover .nav-link:hover:before {
+	opacity: 1; 
+}
+
+.nav-entry-list:hover .nav-link:before {
+	opacity: 0; 
+}
+
+
+/* -----------------------------------------------------------------
+	Typography
+----------------------------------------------------------------- */
+
+.site-title {
+	font-family: PTSans-Bold; 
+	font-size: 1.2rem; 
+	letter-spacing: 0; 
+	text-transform: uppercase; 
+
+}
+
+.main-nav .nav-link {
+	font-family: Lora-Regular; 
+}
+
+.main-nav.open .nav-link {
+	font-size: 1.2rem;  
+	text-transform: uppercase; 
+
+}
+
+.open-nav-button:before, 
+.close-nav-button:before {
+	text-indent: 0; 
+	text-align: center; 
+	font-family: FontAwesome; font-size: 1.4rem; 
+}
+
+.open-nav-button:before {
+	content: "\f0c9";
+}
+
+.close-nav-button:before {
+	content: "\f00d";
+}
+
+
+/* -----------------------------------------------------------------
+	Color
+----------------------------------------------------------------- */
+
+.site-title, 
+.open-nav-button:before {
+	color: #79a3d1; 
+}
+
+.main-nav .nav-link:before {
+	background-color:#79a3d1;
+}
+
+.main-nav.open .nav-link, 
+.close-nav-button:before {
+	color: #EEE;
+}
+
+
+/* -----------------------------------------------------------------
+	Meadia Queries
+----------------------------------------------------------------- */
+
+@media ( max-width: 980px ) {
+	.header { 
+		flex-direction: column; align-items: flex-start; 
+		margin-bottom: 3.75rem; 
+	}
+	
+}
+
+@media ( max-width: 680px ) {
+	.header { 
+		flex-direction: row; justify-content: space-between; align-items: center;
+	}
+
+	.main-nav .nav-entry-list {
+		flex-direction: column; align-items: center; justify-content: center; 
+		height: 0; overflow: hidden; 
+		width: 100%; 
+		position: fixed; left: 0; top: 0; z-index: 2; 
+		background-color: #79a3d1; 
+	}
+
+	.main-nav.open .nav-entry-list {
+		height: 100%; 
+	}
+
+	.open-nav-button {
+		display: block; 
+	}
+
+	.main-nav .nav-link:before {
+		background-color: #EEE;
+	}
+
+}
