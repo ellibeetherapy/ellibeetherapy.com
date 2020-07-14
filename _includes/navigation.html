@@ -1,10 +1,7 @@
-<nav class= "main-nav">
-	<h6 class= "usability-heading">Main navigation</h6>
-	<ul class= "nav-entry-list">
-		<li class= "nav-entry"><a class= "nav-link" href=""></a></li>
-		<li class= "nav-entry"><a class= "nav-link" href=""></a></li>
-		<li class= "nav-entry"><a class= "nav-link" href=""></a></li>
-		<li class= "nav-entry"><a class= "nav-link" href=""></a></li>
-		<li class= "nav-entry"><a class= "nav-link" href=""></a></li>
-	</ul>
-</nav>
+{% assign entries = include.data %} 
+
+<ul class= "entry-list">
+{% for entry in entries %}
+	<li class= "entry"><a class= "nav-link" href= "">{{ entry.text }}</a></li>
+{% endfor %}
+</ul>
