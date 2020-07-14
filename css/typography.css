@@ -1,0 +1,29 @@
+/* Font Awesome font declaration */
+@font-face {
+	font-family: FontAwesome;
+	src: url( "/fonts/fa-solid-900.ttf" ); 
+
+}
+
+/* Sets font size to use as a base for all font sizes */
+html, body {
+	font-size: 14px; 
+}
+
+/* Sets the heading styles */
+.heading {
+ 	font-family: Lora-Regular; 
+	font-size: 2.75rem; 
+	line-height: 1.15; 
+	letter-spacing: 0.07em; 
+}
+
+.site-title {
+	font-size: 1rem; 
+}
+
+/* Sets the body copy styles */
+.text {
+	font-family: OpenSans-Regular; 
+	line-height: 2.2; 
+}
