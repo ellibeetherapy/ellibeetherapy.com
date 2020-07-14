@@ -1,0 +1,51 @@
+{ 
+	"className": "main-features", 
+ 
+	"head": {
+	    "heading": { 
+		    "level": 2, 
+		    "text": "Main Features" 
+		}, 
+	    "subheading": "Main Features Subheading", 
+	    "textEntries": [ 
+		   "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis." 
+	    ]
+	}, 
+ 
+	"body": { 
+	    "template": "main-features.html", 
+	    "context": [
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Feature 01" 
+			 }, 
+			  "subheading": "Feature 01 Subheading", 
+			  "textEntries": [
+				 "Text Entry", 
+				 "Text Entry"
+			  ], 
+			  "image": { 
+				 "source": "", 
+				 "alt": "" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Feature 02" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "textEntries": [
+				 "Text Entry", 
+				 "Text Entry"
+			  ], 
+			  "image": { 
+				 "source": "", 
+				 "alt": "" 
+			  }
+		   }
+	    ]   
+	}
+ }
