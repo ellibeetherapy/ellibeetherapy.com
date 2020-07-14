@@ -29,22 +29,6 @@
 			  "heading": "Try", 
 			  "note": "Free", 
 			  "details": [ "-", "-", "-", "-" ]
-		   }, 
- 
-		   { 
-			  "heading": "Tell Friends", 
-			  "note": "+1 month", 
-			  "details": [ "-", "-", "-", "-" ]
-		   }, 
- 
-		   { 
-			  "heading": "Buy", 
-			  "price": { 
-				 "isMin": true, 
-				 "integralPart": "1", 
-				 "decimalPart": "99"
-			  }, 
-			  "details": [ "-", "-", "-", "-" ]
 		   }
 	    ]   
 	}
