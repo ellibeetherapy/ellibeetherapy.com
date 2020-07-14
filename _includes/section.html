@@ -1,13 +1,17 @@
+{% assign head = include.data.head %} 
+{% assign body = include.data.body.context %} 
+{% assign template = include.template %} 
+
 <section class= "section"> 
 	{% if head %}
 		<section class= "head">
-			{% include block.html %}
+			{% include block.html data = head %} 
 		</section>
 	{% endif %}
 
 	{% if body %}
 		<section class= "body"> 
-			{% include body.template %} 
+			{% include {{ template }} data = body %} 
 		</section>
 	{% endif %}
 </section>
