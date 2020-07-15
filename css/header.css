@@ -95,10 +95,10 @@
 
 /* Navigation link clickable sizing */
 .main-nav .nav-link {
-	display: block; 
-	width: var( --main-nav-link-width ); 
+	display: inline-block; 
+	/* width: var( --main-nav-link-width );  */ 
 	height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
-	padding-left: 0.85rem; padding-right: 0.85rem; 
+	padding-left: 2rem; padding-right: 2rem; 
 	position: relative; 
 	text-align: center; 
 } 

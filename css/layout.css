@@ -49,7 +49,7 @@ leaving some distance from window edges, achieving that by using transparent bor
 
 /* Defines distance between sections */
 .section {
-	margin-bottom: 2rem; 
+	margin-top: 4rem; 
 }
 
 /* Usability headings are not a visual part of the page */
