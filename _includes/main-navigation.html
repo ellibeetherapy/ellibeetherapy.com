@@ -10,7 +10,7 @@
 		{% else %}
 			{% assign currentClassName = "" %}
 		{% endif %}
-		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "">{{ entry.text }}</a></li> 
+		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ entry.target }}">{{ entry.text }}</a></li> 
 	{% endfor %}
 	</ul>
 </nav>

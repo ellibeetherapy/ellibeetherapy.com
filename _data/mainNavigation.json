@@ -5,22 +5,22 @@
 	}, 
 
 	{
-		"target": "/about-us.html", 
+		"target": "/therapy-details.html", 
 		"text": "За терапията"
 	}, 
 
 	{
-		"target": "", 
+		"target": "/therapy-benefits.html", 
 		"text": "Ползи"
 	}, 
 
 	{
-		"target": "", 
+		"target": "/about-us.html", 
 		"text": "За нас"
 	},
 
 	{
-		"target": "", 
+		"target": "/contacts.html", 
 		"text": "Контакти" 
 	}
  ]
