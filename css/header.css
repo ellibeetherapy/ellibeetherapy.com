@@ -38,7 +38,7 @@
 }
 
 .header:after, 
-.main-nav .nav-link:after { 
+.main-nav .nav-entry:after { 
 	display: block; 
 	width: 100%; height: 1px; 
 	position: absolute;  
@@ -102,9 +102,18 @@
 	text-align: center; 
 } 
 
-.main-nav .nav-link:after { 
-	opacity: 0; 
+.main-nav .nav-entry { 
+	position: relative; 
+}
 
+.main-nav .nav-entry:after { 
+	height: 0.2rem;  
+	bottom: 0; 
+	opacity: 0; 
+} 
+
+.main-nav .nav-entry.current:after { 
+	opacity: 1; 
 }
 
 
