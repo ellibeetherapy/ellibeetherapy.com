@@ -139,7 +139,18 @@
 .feature-entry:hover {
 	color: #EEE; 
 	background-color: var( --text-color ); 
-}
+} 
+
+.feature-entry:hover .details-link {
+	color: var( --text-color ); 
+	background-color: #EEE; 
+} 
+
+.feature-entry:hover .details-link:hover {
+	border: 1px solid; 
+	color: #EEE; 
+	background-color: transparent; 
+} 
 
 
 /* -----------------------------------------------------------------
