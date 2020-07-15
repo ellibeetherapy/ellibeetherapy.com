@@ -1,10 +1,12 @@
 {% assign contacts = include.data %} 
 
-<article class= "contacts"> 
+<section class= "section contacts"> 
 {% for contact in contacts %}
-    <article class= "{{ contact[ 0 ] }}">
-        <h3>{{ contact[ 0 ] | capitalize }}</h3>
-        {% for entry in contact[ 1 ] %}
+    {% assign key = contact[ 0 ] %} 
+    {% assign value = contact[ 1 ] %}
+    <article class= "entry contact-entry {{ key }}">
+        <h{{ value.heading.level }} class= "heading">{{ value.heading.text }}</h{{ value.heading.level }}> 
+        {% for entry in value.entries %}
             <dl class= "{{ entry.text | downcase }} key-value-pair">
                 <dt class= "key">{{ entry.text }}</dt>
                 <dd class= "value">{{ entry.value }}</dd>
@@ -12,4 +14,4 @@
         {% endfor %}
     </article>
 {% endfor %}
-</article>
+</section>

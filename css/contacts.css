@@ -3,68 +3,51 @@
 ----------------------------------------------------------------- */
 
 /* CSS variables, setting number of columns and gutter sizes between them */
-.feature-list {
+.contacts { 
 	--visible-column-count: 1; 
 	--visisble-column-gutter-count: calc( var( --visible-column-count ) - 1 );
 	--column-gutter-x: 0.5rem; 
 	--column-gutter-y: var( --column-gutter-x ); 
-	--feature-entry-width: calc( ( 100% - var( --visisble-column-gutter-count ) * var( --column-gutter-x ) ) / var( --visible-column-count ) ); 
+	--contact-entry-width: calc( ( 100% - var( --visisble-column-gutter-count ) * var( --column-gutter-x ) ) / var( --visible-column-count ) ); 
 } 
 
-.feature-entry:nth-child( 2n + 2 ) { 
+.contact-entry:nth-child( n + 1 ) { 
 	margin-right: 0; 
-}
-
-/* Aligns vertical centers of section head and body */
-.main-features {
-	max-width: var( --max-content-width ); 
-}
-
-.main-features .head, 
-.main-features .body {
-	box-sizing: border-box; 
-	margin-left: auto; margin-right: auto;
 } 
-
-.main-features .head { 
-	margin-bottom: 2rem; 
-
-}
-
-/* .main-features .head { 
-	max-width: var( --max-content-width ); 
-	margin-right: 4rem; 
-}
-
-.main-features .body {
-	max-width: 60%; 
-} */
 
 /* Product presentations section and presentation icon holder use flexbox */
-.main-features, 
-.feature-entry:before {
+.contacts, 
+.contact-entry, 
+.contact-entry:before {
 	display: flex; flex-direction: column; 
 } 
 
-.feature-list { 
-	display: flex; flex-direction: row; flex-wrap: wrap; 
-	width: 100%; 
+.contacts {
+	box-sizing: border-box; 
+	max-width: var( --max-content-width );
+	margin-left: auto; margin-right: auto;
 } 
 
-.feature-entry {  
+/* .contacts { 
+	display: flex; flex-direction: row; flex-wrap: wrap; 
+	width: 100%; 
+}  */
+
+.contact-entry {  
 	/* Presentations are not given a fixed height, and their content is not centered vertically,
 	to avoid vertical disalignment of content in presentations with different text volume */ 
 	box-sizing: border-box; 
-	width: var( --feature-entry-width ); 
-	min-height: 12rem; padding-top: 2.75rem;  
-	padding-left: 2rem; padding-right: 2rem; padding-bottom: 2.75rem; 
+	justify-content: center; 
+	width: var( --contact-entry-width ); min-height: 18rem; 
+	/* padding-top: 2.75rem;  
+	padding-left: 2rem; padding-right: 2rem; padding-bottom: 2.75rem;  */
 
 	/* Defines vertical distance between entries */ 
-	margin-right: var( --column-gutter-x ); 
+	/* margin-right: var( --column-gutter-x );  */
 	margin-bottom: var( --column-gutter-y ); 
 } 
 
-.feature-entry:before {
+.contact-entry:before {
 	/* Icon is centered within its placeholder */
 	align-items: center; justify-content: center; 
 	/* Icon placeholder is centered within presentation */
@@ -73,35 +56,19 @@
 	width: 2.5rem; height: 2.5rem;
 	/* Border radius of half the size of the icon placeholder makes a circle */
 	border: 1px solid; border-radius: 1.25rem; 
+} 
+
+.contact-entry .key { 
+	display: none; 
 }
 
-.feature-entry .image {
+.contact-entry .image {
 	display: none; 
 	margin-bottom: 1.4rem; 
 }
 
-.feature-entry .text-entry {
+.contact-entry .text-entry {
 	padding-left: 1.2rem; padding-right: 1.2rem; 
-}
-
-/**
- * Plugin pager color overrides 
- */
-
-.main-features .lSPager a {
-	background-color: #999 !important; 
-}
-
-.main-features .lSPager li.active a, 
-.main-features .lSPager li:hover a {
-	background-color: #444 !important; 
-}
-
-.mark {
-	display: none; align-items: center; justify-content: center;  
-	width: var( --width ); height: var( --height ); 
-	position: absolute; top: 0; right: 0; 
-	background-image: url( "../images/selected-products/Vector-Smart-Object2.png" ); background-size: contain; 
 }
 
 
@@ -109,20 +76,16 @@
 	Typography
 ----------------------------------------------------------------- */
 
-.main-features .head {  
+.contact-entry {  
 	text-align: center; 
 }
 
-.feature-entry {  
-	text-align: center; 
-}
-
-.feature-entry:before {
+.contact-entry:before {
 	font-family: var( --icon-font-family );
 	content: "\f188"; 
 }
 
-.feature-entry .text {
+.contact-entry .text {
 	font-size: 14px; 
 	line-height: 1.5; 
 }
@@ -132,21 +95,21 @@
 	Color
 ----------------------------------------------------------------- */
 
-.feature-entry {
+.contact-entry {
 	background-color: #DDD;
 }
 
-.feature-entry:hover {
+.contact-entry:hover {
 	color: #EEE; 
 	background-color: var( --text-color ); 
 } 
 
-.feature-entry:hover .details-link {
+.contact-entry:hover .details-link {
 	color: var( --text-color ); 
 	background-color: #EEE; 
 } 
 
-.feature-entry:hover .details-link:hover {
+.contact-entry:hover .details-link:hover {
 	border: 1px solid; 
 	color: #EEE; 
 	background-color: transparent; 
