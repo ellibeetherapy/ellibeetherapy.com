@@ -65,6 +65,8 @@
 	--text-box-border-right: calc( var( --max-content-width ) - var( --text-box-width ) ); 
 	--text-box-color: darkgoldenrod; 
 
+	--button-height: 2.75rem; 
+
 
 	
 }

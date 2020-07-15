@@ -72,7 +72,8 @@ figure.image {
 /* Buttons are displayed as inline-block to adapt to their label */
 .button {
 	display: inline-block; 
-	padding: 1.25rem 1.75rem; 
+	height: var( --button-height ); line-height: var( --button-height ); 
+	/* padding: 1.25rem 1.75rem;  */ padding-left: 1.75rem; padding-right: 1.75rem; 
 	border: 1px solid;
 }
 

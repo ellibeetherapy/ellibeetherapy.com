@@ -1,0 +1,71 @@
+.send-message { 
+	--column-count: 2; 
+	--column-gutter-x: 0.4rem; 
+	--column-gutter-y: 0.4rem; 
+	--field-width: calc( ( 100% - ( var( --column-count ) - 1 ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
+
+}
+
+.send-message { 
+	display: flex; flex-direction: row; flex-wrap: wrap; 
+	width: 40rem; 
+	position: relative; 
+
+} 
+
+.send-message .label { 
+	display: none; 
+} 
+
+.send-message .field-holder { 
+	margin-right: var( --column-gutter-x ); 
+	margin-top: var( --column-gutter-y );
+}
+
+.send-message .field-holder.name-holder, 
+.send-message .email-holder { 
+	width: var( --field-width ); 
+} 
+
+.send-message .message-holder { 
+	width: 100%; 
+} 
+
+.send-message .field-holder:nth-child( n + 2 ) { 
+	margin-right: 0; 
+} 
+
+.send-message .field { 
+	box-sizing: border-box; 
+	display: block; 
+	width: 100%;  
+	border: none; 
+	
+} 
+
+.send-message .field-holder:nth-child( -n + 2 ) { 
+	margin-top: 0; 
+}
+
+.send-message .field.name, 
+.send-message .field.email { 
+	height: 2.5rem; line-height: 2.5rem; 
+
+} 
+
+.send-message .field.message { 
+	height: 10rem; 
+	padding-bottom: 4rem; 
+
+}
+
+.send-message .submit-button { 
+	margin-left: auto; 
+	/* position: absolute;  */
+	/* left: 50%; transform: translateX( -50% );  */ 
+	right: 0; margin-right: 0.75rem; 
+	bottom: 0; margin-bottom: 0.75rem; 
+	background-color: transparent; 
+	color: var( --foreground-color ); 
+
+}
