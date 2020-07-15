@@ -1,6 +1,11 @@
 body {
 	color: #555; 
 	background-color: #EEE; 
+} 
+
+figure.image, 
+footer {
+	background-color: #999; 
 }
 
 /**

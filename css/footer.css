@@ -32,11 +32,23 @@
 
 }
 
-.copyright {
+.copyright { 
+	display: flex; flex-direction: row; justify-content: center; 
 	align-self: stretch; 	
 	margin-bottom: 0; 
 	padding-top: 1.4rem; padding-bottom: 1.4rem; 
-	border-top: 1px solid; 
+	/* border-top: 1px solid;  */
+} 
+
+.copyright > *, .copy-symbol { 
+	margin-right: 0.4rem; 
+
+} 
+
+.copyright .company-name:after { 
+	content: ","; 
+
+
 }
 
 .scroll-to-top {
@@ -80,7 +92,6 @@
 ----------------------------------------------------------------- */
 
 footer { 
-	background-color: red; 
 	color: #888; color: #DDD; 
 }
 
