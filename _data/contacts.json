@@ -4,6 +4,9 @@
 			"level": 3,
 			"text": "Адрес"
 		}, 
+		"text": [ 
+			"Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus. Etiam eleifend vulputate neque sit amet porta."
+		], 
 		"entries": [ 
 			{
 				"text": "City", 
@@ -27,11 +30,19 @@
 			"level": 3,
 			"text": "Телефони"
 		}, 
+		"text": [ 
+			"Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus. Etiam eleifend vulputate neque sit amet porta."
+		], 
 		"entries": [ 
 			{
 				"text": "Phone", 
 				"value": "+359 888 12 34 56" 
-			} 
+			}, 
+
+			{
+				"text": "Phone", 
+				"value": "+359 888 12 34 56" 
+			}
 		]
 	}, 
 	 
@@ -40,6 +51,9 @@
 			"level": 3,
 			"text": "Имейл" 
 		}, 
+		"text": [ 
+			"Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus. Etiam eleifend vulputate neque sit amet porta."
+		], 
 		"entries": [ 
 			{
 				"text": "Email", 

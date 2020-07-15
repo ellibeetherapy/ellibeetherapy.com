@@ -6,7 +6,7 @@
 .contacts { 
 	--visible-column-count: 1; 
 	--visisble-column-gutter-count: calc( var( --visible-column-count ) - 1 );
-	--column-gutter-x: 0.5rem; 
+	--column-gutter-x: 1.5rem; 
 	--column-gutter-y: var( --column-gutter-x ); 
 	--contact-entry-width: calc( ( 100% - var( --visisble-column-gutter-count ) * var( --column-gutter-x ) ) / var( --visible-column-count ) ); 
 } 
@@ -17,7 +17,7 @@
 
 /* Product presentations section and presentation icon holder use flexbox */
 .contacts, 
-.contact-entry, 
+/* .contact-entry,  */ 
 .contact-entry:before {
 	display: flex; flex-direction: column; 
 } 
@@ -39,12 +39,13 @@
 	box-sizing: border-box; 
 	justify-content: center; 
 	width: var( --contact-entry-width ); min-height: 18rem; 
-	/* padding-top: 2.75rem;  
-	padding-left: 2rem; padding-right: 2rem; padding-bottom: 2.75rem;  */
+	padding-top: 2.75rem;  
+	padding-left: 2rem; padding-right: 2rem; padding-bottom: 2.75rem; 
 
 	/* Defines vertical distance between entries */ 
 	/* margin-right: var( --column-gutter-x );  */
 	margin-bottom: var( --column-gutter-y ); 
+	border: 1px solid #DDD; 
 } 
 
 .contact-entry:before {
@@ -60,6 +61,14 @@
 
 .contact-entry .key { 
 	display: none; 
+} 
+
+.contact-entry .key-value-pair { 
+	display: inline-block; 
+	padding: 1.25rem; 
+	background-color: #DDD; 
+	
+	 
 }
 
 .contact-entry .image {
@@ -95,11 +104,11 @@
 	Color
 ----------------------------------------------------------------- */
 
-.contact-entry {
-	background-color: #DDD;
-}
+/* .contact-entry {
+	background-color: #DDD; 
+} */
 
-.contact-entry:hover {
+/* .contact-entry:hover {
 	color: #EEE; 
 	background-color: var( --text-color ); 
 } 
@@ -113,7 +122,7 @@
 	border: 1px solid; 
 	color: #EEE; 
 	background-color: transparent; 
-} 
+}  */
 
 
 /* -----------------------------------------------------------------
