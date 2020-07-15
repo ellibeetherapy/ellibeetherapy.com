@@ -24,9 +24,9 @@
 			  "textEntries": [
 				 "Text Entry"
 			  ], 
-			  "image": { 
-				 "source": "", 
-				 "alt": "" 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Прочетете повече" 
 			  }
 		   }, 
  
@@ -39,9 +39,9 @@
 			  "textEntries": [
 				 "Text Entry"
 			  ], 
-			  "image": { 
-				 "source": "", 
-				 "alt": "" 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Прочетете повече" 
 			  }
 		   }, 
  
@@ -54,9 +54,9 @@
 			  "textEntries": [
 				 "Text Entry"
 			  ], 
-			  "image": { 
-				 "source": "", 
-				 "alt": "" 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Прочетете повече" 
 			  }
 		   }, 
  
@@ -69,9 +69,9 @@
 			  "textEntries": [
 				 "Text Entry"
 			  ], 
-			  "image": { 
-				 "source": "", 
-				 "alt": "" 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Прочетете повече" 
 			  }
 		   }, 
  
@@ -84,9 +84,9 @@
 			  "textEntries": [
 				 "Text Entry"
 			  ], 
-			  "image": { 
-				 "source": "", 
-				 "alt": "" 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Прочетете повече" 
 			  }
 		   }, 
  
@@ -99,9 +99,9 @@
 			  "textEntries": [
 				 "Text Entry"
 			  ], 
-			  "image": { 
-				 "source": "", 
-				 "alt": "" 
+			  "link": {
+				  "target": "./index.html", 
+				  "text": "Прочетете повече" 
 			  }
 		   }
 	    ]   

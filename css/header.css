@@ -139,10 +139,18 @@
 	Color
 ----------------------------------------------------------------- */
 
-.nav-link:hover {
+/* .nav-link:hover {
 	color: #EEE; 
 	background-color: #555; 
-}
+} */ 
+
+.nav-entry-list:hover .nav-entry:after { 
+	opacity: 0; 
+} 
+
+.nav-entry-list:hover .nav-entry:hover:after { 
+	opacity: 1; 
+} 
 
 .open-nav-button, 
 .close-nav-button { 
