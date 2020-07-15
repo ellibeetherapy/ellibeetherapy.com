@@ -1,11 +1,11 @@
 [
 	{
-		"target": "/home.html", 
+		"target": "/", 
 		"text": "Начало"
 	}, 
 
 	{
-		"target": "", 
+		"target": "/about-us.html", 
 		"text": "За терапията"
 	}, 
 

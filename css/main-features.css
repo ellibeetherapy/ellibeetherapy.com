@@ -8,43 +8,61 @@
 	--visisble-column-gutter-count: calc( var( --visible-column-count ) - 1 );
 	--column-gutter-x: 0.5rem; 
 	--column-gutter-y: var( --column-gutter-x ); 
+	--feature-entry-width: calc( ( 100% - var( --visisble-column-gutter-count ) * var( --column-gutter-x ) ) / var( --visible-column-count ) ); 
+} 
+
+.feature-entry:nth-child( 2n + 2 ) { 
+	margin-right: 0; 
 }
 
 /* Aligns vertical centers of section head and body */
 .main-features {
-	align-items: center; 
+	max-width: var( --max-content-width ); 
 }
 
 .main-features .head, 
 .main-features .body {
 	box-sizing: border-box; 
 	margin-left: auto; margin-right: auto;
-}
+} 
 
 .main-features .head { 
-	max-width: 40%; 
+	margin-bottom: 2rem; 
+
+}
+
+/* .main-features .head { 
+	max-width: var( --max-content-width ); 
 	margin-right: 4rem; 
 }
 
 .main-features .body {
 	max-width: 60%; 
-}
+} */
 
 /* Product presentations section and presentation icon holder use flexbox */
 .main-features, 
 .feature-entry:before {
-	display: flex; flex-direction: row; 
-}
+	display: flex; flex-direction: column; 
+} 
+
+.feature-list { 
+	display: flex; flex-direction: row; flex-wrap: wrap; 
+	width: 100%; 
+} 
 
 .feature-entry {  
 	/* Presentations are not given a fixed height, and their content is not centered vertically,
-	to avoid vertical disalignment of content in presentations with different text volume */
-	min-height: 12rem; padding-top: 5rem;  
-	padding-left: 2rem; padding-right: 2rem; 
+	to avoid vertical disalignment of content in presentations with different text volume */ 
+	box-sizing: border-box; 
+	width: var( --feature-entry-width ); 
+	min-height: 12rem; padding-top: 4rem;  
+	padding-left: 2rem; padding-right: 2rem; padding-bottom: 4rem; 
 
-	/* Defines vertical distance between entries */
-	margin-bottom: var( --column-gutter-y );
-}
+	/* Defines vertical distance between entries */ 
+	margin-right: var( --column-gutter-x ); 
+	margin-bottom: var( --column-gutter-y ); 
+} 
 
 .feature-entry:before {
 	/* Icon is centered within its placeholder */

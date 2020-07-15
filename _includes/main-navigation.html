@@ -5,7 +5,7 @@
 	
 	<ul class= "entry-list nav-entry-list">
 	{% for entry in entries %} 
-		{% if entry.target == "/home.html" %} 
+		{% if entry.target == page.url %} 
 			{% assign currentClassName = " current" %}
 		{% else %}
 			{% assign currentClassName = "" %}
