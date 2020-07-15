@@ -13,9 +13,12 @@
 	/* margin-bottom: 4rem;  */ 
 } 
 
+.footer > * { 
+	margin-bottom: 4rem; 
+}
+
 .send-message { 
 	margin-top: -7rem; 
-	
 }
 
 .footer-nav {
@@ -47,8 +50,14 @@
 
 .copyright .company-name:after { 
 	content: ","; 
+} 
 
+.send-message, .company { 
+	width: 45rem; 
+}
 
+.company .description { 
+	text-align: center; 
 }
 
 .scroll-to-top {

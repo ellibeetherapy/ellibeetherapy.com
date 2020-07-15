@@ -7,17 +7,24 @@
 }
 
 .send-message { 
+	box-sizing: border-box; 
 	display: flex; flex-direction: row; flex-wrap: wrap; 
-	width: 40rem; 
+	padding: 1.25rem; 
 	position: relative; 
+	background-color: #DDD;  
 
 } 
+
+.send-message .field, .send-message .button { 
+	color: #DDD; 
+
+}
 
 .send-message .label { 
 	display: none; 
 } 
 
-.send-message .field-holder { 
+.send-message > * { 
 	margin-right: var( --column-gutter-x ); 
 	margin-top: var( --column-gutter-y );
 }
@@ -39,11 +46,12 @@
 	box-sizing: border-box; 
 	display: block; 
 	width: 100%;  
-	border: none; 
-	
+	padding: 0.8rem; 
+	border: none; outline: none; 
+	font-family: Arial; font-size: 1rem; 
 } 
 
-.send-message .field-holder:nth-child( -n + 2 ) { 
+.send-message :nth-child( -n + 2 ) { 
 	margin-top: 0; 
 }
 
@@ -55,17 +63,20 @@
 
 .send-message .field.message { 
 	height: 10rem; 
-	padding-bottom: 4rem; 
+//	padding-bottom: 4rem; 
 
 }
 
 .send-message .submit-button { 
-	margin-left: auto; 
+	display: block; 
+	/* height: 4rem; line-height: 4rem;  */ 
+	margin-left: auto; margin-right: auto; 
+	margin-top: calc( -2.75rem / 2 ); 
 	/* position: absolute;  */
-	/* left: 50%; transform: translateX( -50% );  */ 
-	right: 0; margin-right: 0.75rem; 
-	bottom: 0; margin-bottom: 0.75rem; 
-	background-color: transparent; 
-	color: var( --foreground-color ); 
+	/* left: 50%; transform: translateX( -50% );   */
+	/* right: 0; margin-right: 0.75rem;  */
+	/* bottom: calc( -4rem / 2 ); // margin-bottom: 0.75rem;  */
+	border: 1px solid #DDD; 
+	background-color: #FFF; 
 
 }
