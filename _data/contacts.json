@@ -1,0 +1,32 @@
+{
+	"address": [ 
+	    {
+		   "text": "City", 
+		   "value": "London"
+	    }, 
+ 
+	    {
+		   "text": "Street", 
+		   "value": "Thames Avenue"
+	    }, 
+ 
+	    {
+		   "text": "Number", 
+		   "value": "42"
+	    } 
+	], 
+ 
+	"phone": [ 
+	    {
+		   "text": "Phone", 
+		   "value": "+359 888 12 34 56"
+	    } 
+	 ], 
+	 
+	"email": [ 
+	    {
+		   "text": "Email", 
+		   "value": "company@gmail.com"
+	    } 
+	 ]
+ }

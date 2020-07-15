@@ -1,0 +1,15 @@
+{% assign contacts = include.data %} 
+
+<article class= "contacts"> 
+{% for contact in contacts %}
+    <article class= "{{ contact[ 0 ] }}">
+        <h3>{{ contact[ 0 ] | capitalize }}</h3>
+        {% for entry in contact[ 1 ] %}
+            <dl class= "{{ entry.text | downcase }} key-value-pair">
+                <dt class= "key">{{ entry.text }}</dt>
+                <dd class= "value">{{ entry.value }}</dd>
+            </dl>
+        {% endfor %}
+    </article>
+{% endfor %}
+</article>
