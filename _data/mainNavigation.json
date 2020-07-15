@@ -1,16 +1,26 @@
 [
 	{
-	    "target": "", 
-	    "text": "Home"
+		"target": "", 
+		"text": "Начало"
 	}, 
- 
+
 	{
-	    "target": "", 
-	    "text": "About"
+		"target": "", 
+		"text": "За терапията"
 	}, 
- 
+
 	{
-	    "target": "", 
-	    "text": "Contact"
+		"target": "", 
+		"text": "Ползи"
+	}, 
+
+	{
+		"target": "", 
+		"text": "За нас"
+	},
+
+	{
+		"target": "", 
+		"text": "Контакти" 
 	}
  ]

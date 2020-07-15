@@ -5,12 +5,14 @@
 /* Direct descendant elements of header and main navigation are horizontally aligned */
 .header, 
 .main-nav .nav-entry-list {
-	display: flex; flex-direction: row; align-items: center; 
+	display: flex; align-items: center; 
 }
 
 /* ID and main navigation horizontal centers are aligned */
-.header {    
-	justify-content: space-between; 
+.header {  
+	
+	flex-direction: column; 
+	/* justify-content: space-between;  */
 
 	/* Gives header content the width of the content, when header has full width */ 
 	/* max-width: none; 
@@ -18,25 +20,41 @@
 
 	/* Sizes header to match slider text box */
 	box-sizing: border-box; 
-	max-width: var( --max-content-width ); 
+	/* max-width: var( --max-content-width );  */
 	/* border-right-width: var( --text-box-border-right ); */
 	/* padding-left: var( --content-padding-left );
 	/* Takes care of header background */
 	background-clip: padding-box; 
 
-	height: var( --header-height );
+	/* height: var( --header-height ); */ 
 
 	/* Pulls slider under header */
-	/* height: var( --header-height ); margin-bottom: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); */
-	/* margin-top: var( --header-margin-top );  */
+	/* height: var( --header-height );  */ 
+	margin-bottom: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); 
+	margin-top: var( --header-margin-top ); 
 
 	/* Pulls header in front of slider */
 	position: relative; z-index: 2;  
 }
 
+.header:after, 
+.main-nav .nav-link:after { 
+	display: block; 
+	width: 100%; height: 1px; 
+	position: absolute;  
+	background-color: #333; 
+	content: ""; 
+} 
+
+.header:after { 
+	bottom: calc( var( --id-height ) + var( --id-margin-top ) );
+}
+
 /* Gives distance between ID and main navigation */
 .header .id { 
-	margin-right: 5rem; 
+	order: 2; 
+	/* margin-right: 5rem;  */
+	margin-top: var( --id-margin-top ); 
 }
 
 .site-title {
@@ -70,11 +88,23 @@
 	position: fixed; 
 }
 
+.main-nav { 
+	order: 1; 
+}
+
 /* Navigation link clickable sizing */
 .main-nav .nav-link {
 	display: block; 
-	height: var( --header-height ); line-height: var( --header-height );
-	padding-left: 0.85rem; padding-right: 0.85rem;
+	width: var( --main-nav-link-width ); 
+	height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
+	padding-left: 0.85rem; padding-right: 0.85rem; 
+	position: relative; 
+	text-align: center; 
+} 
+
+.main-nav .nav-link:after { 
+	opacity: 0; 
+
 }
 
 

@@ -7,12 +7,11 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Slide 01" 
+				"text": "Допуснете природата в себе си" 
 			 }, 
 			  "subheading": "Slide Subheading", 
 			  "textEntries": [
-				 "Text Entry", 
-				 "Text Entry"
+				 "Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
 			  ], 
 			  "image": { 
 				 "source": "", 
@@ -20,28 +19,7 @@
 			  }, 
 			  "link": {
 				  "target": "./index.html", 
-				  "text": "Разбери още"
-			  }
-			  
-		   }, 
-	    
-		   { 
-			  "heading": { 
-				"level": 2, 
-				"text": "Slide 02" 
-			 }, 
-			  "subheading": "Slide Subheading", 
-			  "textEntries": [
-				 "Text Entry", 
-				 "Text Entry"
-			  ], 
-			  "image": { 
-				 "source": "", 
-				 "alt": "" 
-			  }, 
-			  "link": {
-				  "target": "./index.html", 
-				  "text": "Разбери още"
+				  "text": "Прочетете повече" 
 			  }
 		   }
 	    ]   

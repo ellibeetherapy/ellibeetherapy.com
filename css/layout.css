@@ -26,12 +26,13 @@ leaving some distance from window edges, achieving that by using transparent bor
 }
 
 	/* Not full width sections */
-	.header, 
+	/* .header,  */
 	.plus-points {
 		max-width: var( --max-content-width ); 
 	}
 
 	/* Full width sections, without leaving distance from window edges */
+	.header, 
 	.sell-points {
 		border-left-width: 0; border-right-width: 0; 
 	}

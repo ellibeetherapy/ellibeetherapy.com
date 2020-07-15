@@ -20,7 +20,7 @@
 	 */
 	
 	--text-font-family: Arial; 
-	--heading-font-family: ArialBlack; 
+	--heading-font-family: Impact; 
 
 	/* Points to the font, used by icons */
 	--icon-font-family: FontAwesome; 
@@ -50,10 +50,17 @@
 	--content-push-inward: calc( ( 100% - var( --max-content-width ) ) / 2 ); 
 
 	/* For use when header is placed over slider */
-	--header-height: 5rem; 
+	/* --header-height: 5rem;  */ 
 	--header-margin-top: 2rem; 
 
-	/* Offer list text box width, taken out of scope to be available to other sections */
+	--id-height: 4rem; 
+	--main-nav-height: 4rem; 
+	--id-margin-top: 1rem; 
+	--header-height: calc( var( --id-height ) + var( --main-nav-height ) + var( --id-margin-top ) ); 
+
+	--main-nav-link-width: 7rem; 
+
+	/* Sell-points text box width, taken out of scope to be available to other sections */
 	--text-box-width: 40rem; 
 	--text-box-border-right: calc( var( --max-content-width ) - var( --text-box-width ) ); 
 	--text-box-color: darkgoldenrod; 
