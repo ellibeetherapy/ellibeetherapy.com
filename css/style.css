@@ -3,7 +3,8 @@
 @import "./layout.css";
 @import "./typography.css";
 @import "./color.css"; 
-@import "./header.css";
+@import "./header.css"; 
+@import "./head.css"; 
 @import "./offer-list.css"; 
 @import "./plus-points.css"; 
 @import "./sell-points.css"; 
