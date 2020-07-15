@@ -56,8 +56,8 @@
 	to avoid vertical disalignment of content in presentations with different text volume */ 
 	box-sizing: border-box; 
 	width: var( --feature-entry-width ); 
-	min-height: 12rem; padding-top: 4rem;  
-	padding-left: 2rem; padding-right: 2rem; padding-bottom: 4rem; 
+	min-height: 12rem; padding-top: 2.75rem;  
+	padding-left: 2rem; padding-right: 2rem; padding-bottom: 2.75rem; 
 
 	/* Defines vertical distance between entries */ 
 	margin-right: var( --column-gutter-x ); 
