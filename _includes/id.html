@@ -1,4 +1,6 @@
+{% assign data = site.data.id %}
+
 <article class= "id">
-	<h1 class= "site-title"><a class= "logo" href= "/">Ellibeetherapy</a></a></h1>
-	<!-- <p class= "tagline">Допуснете природата в себе си</p>  -->
+	<h1 class= "name"><a class= "logo" href= "/"></a><img src= "{{ data.logo.src }}" /></a>{{ data.name }}</h1>
+	<p class= "tagline">{{ data.tagline }}</p> 
 </article>

@@ -9,7 +9,13 @@
 
 .footer {
 	flex-direction: column; 
-	margin-top: 4rem; margin-bottom: 4rem; 
+	margin-top: 4rem; margin-top: 14rem; 
+	/* margin-bottom: 4rem;  */ 
+} 
+
+.send-message { 
+	margin-top: -7rem; 
+	
 }
 
 .footer-nav {
@@ -74,7 +80,8 @@
 ----------------------------------------------------------------- */
 
 footer { 
-	color: #888;  
+	background-color: red; 
+	color: #888; color: #DDD; 
 }
 
 .footer-nav .nav-link:before {

@@ -57,10 +57,11 @@
 	margin-top: var( --id-margin-top ); 
 }
 
-.site-title {
+.id .name {
 	height: 4rem; line-height: 4rem; 
 	margin-bottom: 0; 
-}	
+	text-align: center; 
+} 
 
 /* Mobile navigation background */
 .main-nav:after {
@@ -121,11 +122,11 @@
 	Typography
 ----------------------------------------------------------------- */
 
-.site-title, .main-nav .nav-link {
+.id .name, .main-nav .nav-link {
 	text-transform: uppercase; 
 }
 
-.site-title {
+.id .name {
 	font-size: 1.2rem; 
 }
 

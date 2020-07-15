@@ -1,3 +1,7 @@
+.tagline { 
+	display: none; 
+}
+
 /* Separates paragraph or paragraphs visually from headings and buttons */
 .heading, 
 .text-entry:last-of-type {
