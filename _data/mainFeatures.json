@@ -4,7 +4,7 @@
 	"head": {
 	    "heading": { 
 		    "level": 2, 
-		    "text": "Main Features" 
+		    "text": "Ползи за здравето" 
 		}, 
 	    "subheading": "Main Features Subheading", 
 	    "textEntries": [ 
@@ -18,12 +18,9 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Feature 01" 
+				"text": "Имунна система" 
 			 }, 
 			  "subheading": "Feature 01 Subheading", 
-			  "textEntries": [
-				 "Text Entry"
-			  ], 
 			  "link": {
 				  "target": "./index.html", 
 				  "text": "Прочетете повече" 
@@ -33,12 +30,9 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Feature 02" 
+				"text": "Дихателна система" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
-			  "textEntries": [
-				 "Text Entry"
-			  ], 
 			  "link": {
 				  "target": "./index.html", 
 				  "text": "Прочетете повече" 
@@ -48,12 +42,9 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Feature 03" 
+				"text": "Сърдечно съдова система" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
-			  "textEntries": [
-				 "Text Entry"
-			  ], 
 			  "link": {
 				  "target": "./index.html", 
 				  "text": "Прочетете повече" 
@@ -63,12 +54,9 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Feature 04" 
+				"text": "Опорно двигателен апарат" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
-			  "textEntries": [
-				 "Text Entry"
-			  ], 
 			  "link": {
 				  "target": "./index.html", 
 				  "text": "Прочетете повече" 
@@ -78,12 +66,9 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Feature 05" 
+				"text": "Нервна система" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
-			  "textEntries": [
-				 "Text Entry"
-			  ], 
 			  "link": {
 				  "target": "./index.html", 
 				  "text": "Прочетете повече" 
@@ -93,12 +78,9 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Feature 06" 
+				"text": "Метаболизъм" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
-			  "textEntries": [
-				 "Text Entry"
-			  ], 
 			  "link": {
 				  "target": "./index.html", 
 				  "text": "Прочетете повече" 

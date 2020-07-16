@@ -21,11 +21,7 @@
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-				"source": "", 
-				"alt": "" 
-			}
+			]
 		}, 
 
 		{ 
@@ -36,11 +32,7 @@
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-				"source": "", 
-				"alt": "" 
-			}
+			]
 		}, 
 
 		{ 
@@ -51,11 +43,7 @@
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-				"source": "", 
-				"alt": "" 
-			}
+			]
 		}, 
 
 		{ 
@@ -66,11 +54,7 @@
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-				"source": "", 
-				"alt": "" 
-			}
+			]
 		}
 	]   
  }

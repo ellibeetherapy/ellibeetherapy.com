@@ -1,15 +1,3 @@
-<section class= "head page-head"> 
-	{% if heading %}
-		<h5 class= "title"></h5> 
-	{% endif %}
-
-	{% for textEntry in textEntries %}
-		<p class= "text-entry">{{ textEntry }}</p> 
-	{% endfor %} 
-
-	{% if image %}
-		<figure class= "image">
-			<img src= {{ image.src }} alt= {{ image.alt }} /> 
-		</figure>
-	{% endif %}
+<section class= "page-head"> 
+	{% include block.html data = include.data %}
 </section>

@@ -26,7 +26,6 @@ leaving some distance from window edges, achieving that by using transparent bor
 .article, 
 .sell-points .entry, 
 .footer {
-//	box-sizing: border-box; 
 	max-width: var( --max-content-width ); 
 	margin-left: auto; margin-right: auto; 
 	padding-left: var( --content-padding-left ); padding-right: var( --content-padding-right ); 
@@ -60,6 +59,11 @@ leaving some distance from window edges, achieving that by using transparent bor
 .section, 
 .article {
 	margin-top: 4rem; 
+} 
+
+.article-section { 
+	margin-top: 2rem; 
+
 }
 
 /* Usability headings are not a visual part of the page */
