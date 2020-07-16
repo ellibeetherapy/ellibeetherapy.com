@@ -174,7 +174,7 @@
 	Media Queries
 ----------------------------------------------------------------- */
 
-/* @media ( max-width: 1060px ) and ( min-width: 841px ) {
+@media ( max-width: 1060px ) and ( min-width: 841px ) {
 	.header { 
 		flex-direction: column; align-items: flex-start; 
 		margin-bottom: 2rem; 
@@ -234,4 +234,4 @@
 
 	}
 
-} */
+}
