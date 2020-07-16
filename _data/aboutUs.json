@@ -1,0 +1,76 @@
+{ 
+	"className": "about-us", 
+
+	"head": {
+		"heading": { 
+			"level": 2, 
+			"text": "За нас" 
+		}, 
+		"subheading": "", 
+		"textEntries": [
+			"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+		] 
+	}, 
+ 
+	"entries": [
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}
+	]   
+ }
