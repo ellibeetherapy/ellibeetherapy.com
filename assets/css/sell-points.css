@@ -3,7 +3,7 @@
 ----------------------------------------------------------------- */ 
 
 .sell-points {  
-	margin-top: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); 
+	margin-top: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); margin-top: 0; 
 
 }
 
@@ -22,7 +22,7 @@
 	box-sizing: border-box; 
 
 	/* Text content is centered */
-	width: var( --max-content-width ); margin-left: auto; margin-right: auto; 
+	max-width: var( --max-content-width ); margin-left: auto; margin-right: auto; 
 	
 	/* When text content has a box around */ 
 	padding-top: 5rem; 
@@ -30,9 +30,9 @@
 	/* padding-left: 4rem;
 	padding-right: 4rem;  */
 	/* When the box is not as wide as the content area and on the left */
-	border-style: solid; border-color: transparent; 
+	/* border-style: solid; border-color: transparent;  */
 	/* border-right-width: var( --text-box-border-right );  */
-	border-left-width: var( --content-padding-left );  
+	/* border-left-width: var( --content-padding-left );   */
 	background-clip: padding-box; 
 
 	position: relative; top: 0rem; 
@@ -64,6 +64,16 @@ but for border around the box, an :after pseudo-element has to be created */
 .sell-points .bx-controls-direction {
 	bottom: 0; right: 0; 
 
+} 
+
+.sell-points .lSSlideOuter .lSPager.lSpg > li a { 
+	z-index: 1; 
+	background-color: var( --text-color ); 
+} 
+
+.sell-points .lSSlideOuter .lSPager.lSpg > li.active a, 
+.sell-points .lSSlideOuter .lSPager.lSpg > li:hover a { 
+	background-color: var( --highlight-color ); 
 }
 
 
@@ -107,7 +117,7 @@ but for border around the box, an :after pseudo-element has to be created */
 @media ( max-width: 1020px ) {
 	.sell-points .text-content {
 		/* padding-left: 15%;  */
-		background-color: rgba( 205, 230, 236, 0.85 ); 
+		/* background-color: rgba( 205, 230, 236, 0.85 );  */
 	}
 
 }
@@ -128,11 +138,16 @@ but for border around the box, an :after pseudo-element has to be created */
 
 }
 
-@media ( max-width: 640px ) {
-	/* .sell-points .text-content {
-		margin-left: 0;  
-		padding-left: var( --content-padding-left ); padding-right: var( --content-padding-left ); 
-	} */
+@media ( max-width: 620px ) {
+	.sell-points .entry { 
+		padding-top: var( --small-screen-header-height ); 
+
+	}
+
+	.sell-points .text-content {
+		padding-top: 2.5rem; padding-bottom: 4rem; 
+		 
+	}
 
 }
 

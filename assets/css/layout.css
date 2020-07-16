@@ -1,3 +1,8 @@
+.body { 
+	position: relative; 
+
+}
+
 .tagline { 
 	display: none; 
 }
@@ -30,6 +35,11 @@ leaving some distance from window edges, achieving that by using transparent bor
 	margin-left: auto; margin-right: auto; 
 	padding-left: var( --content-padding-left ); padding-right: var( --content-padding-right ); 
 } 
+
+.article { 
+	max-width: var( --text-content-width ); 
+
+}
 
 .header, 
 .sell-points .entry, 
@@ -129,29 +139,29 @@ figure.image {
  */
 
 /* Control buttons are placed next to each other, using flexbox */
-.bx-controls-direction {
+/* .bx-controls-direction {
 	display: flex; flex-direction: row; 
 	position: absolute; 
-}
+} */
 
 /* Creates the vertical separating line between the two control buttons */
-.bx-controls-direction:before {
+/* .bx-controls-direction:before {
 	display: block;
 	width: 1px; height: 100%;
 	position: absolute; left: 50%; top: 0;  
 	z-index: 4; 
 	content: ""; 
 
-}
+} */
 
 /* Control button is relatively positioned to hold the absolutely positioned :before, holding the icon */
-.bx-controls-direction a {
+/* .bx-controls-direction a {
 	display: block; 
 	width: 6rem; height: 5rem;	
 	position: relative; 
 	border: none;  
 	cursor: pointer; 
-}
+} */
 
 /* The :before element is stretched all over the button and its content, the icon, is centered */
 .nav-control-buttons :before, 
@@ -162,14 +172,14 @@ figure.image {
 }
 
 /* Button separating line and buttons are not fully opaque in their normal state */
-.bx-controls-direction:before, 
+/* .bx-controls-direction:before, 
 .bx-controls-direction :before {
 	opacity: 0.45; 
-}
+} */
 
 /* On mouse over the control button set, the separator and the targeted button become fully opaque */
-.bx-controls-direction:hover:before, 
+/* .bx-controls-direction:hover:before, 
 .bx-controls-direction a:hover:before {
 	opacity: 1; 
-}
+} */
 

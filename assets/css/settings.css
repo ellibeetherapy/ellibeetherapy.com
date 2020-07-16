@@ -11,6 +11,8 @@
 	/* Constrains the width of the page text content */
 	--max-content-width: 960px;  
 
+	--text-content-width: 680px; 
+
 	/* Defines space around not full width sections on smaller screens */
 	--content-padding-left: 1.25rem; 
 	--content-padding-right: 1.25rem; 
@@ -44,11 +46,12 @@
 	 */
 
 	/* Main text color */
-	--text-color: #555; 
+	--text-color: #323232; 
 	/* Color behind text */
 	--text-background-color: rgba( 255, 255, 255, 0.7 );
 	/* Color of text section, overlapping another section or an image */
 	--overlay-color: rgba( 255, 255, 255, 0.8 ); 
+	--highlight-color: #56663b; 
 
 	/**
 	 * Custom
@@ -65,6 +68,9 @@
 	--main-nav-height: 4rem; 
 	--id-margin-top: 2rem; 
 	--header-height: calc( var( --id-height ) + var( --main-nav-height ) + var( --id-margin-top ) ); 
+
+	--small-screen-header-margin-top: 1rem; 
+	--small-screen-header-height: calc( var( --id-height ) + var( --small-screen-header-margin-top ) ); 
 
 	--main-nav-link-width: 7rem; 
 
