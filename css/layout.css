@@ -22,11 +22,20 @@
 /* Keeps all sections up to max page width wide and centered above that viewport width, 
 leaving some distance from window edges, achieving that by using transparent borders */
 .header, 
-.section {
-	box-sizing: border-box; 
-	max-width: var( --max-page-width ); margin-left: auto; margin-right: auto; 
-	border-style: solid; border-color: transparent; 
-	border-left-width: var( --content-padding-left ); border-right-width: var( --content-padding-right ); 
+.section:not( .sell-points ), 
+.article, 
+.sell-points .entry, 
+.footer {
+//	box-sizing: border-box; 
+	max-width: var( --max-content-width ); 
+	margin-left: auto; margin-right: auto; 
+	padding-left: var( --content-padding-left ); padding-right: var( --content-padding-right ); 
+} 
+
+.header, 
+.sell-points .entry, 
+.footer {
+	max-width: var( --max-page-width );  
 }
 
 	/* Not full width sections */
@@ -48,7 +57,8 @@ leaving some distance from window edges, achieving that by using transparent bor
 }
 
 /* Defines distance between sections */
-.section {
+.section, 
+.article {
 	margin-top: 4rem; 
 }
 
