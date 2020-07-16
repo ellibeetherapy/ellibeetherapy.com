@@ -1,0 +1,20 @@
+{% assign data = include.data %}
+
+{% assign heading = data.heading %}
+{% assign textEntries = data.textEntries %} 
+{% assign image = data.image %} 
+
+
+{% if heading %}
+	<h{{ heading.level }} class= "heading">{{ heading.text }}</h{{ heading.level }}> 
+{% endif %}
+
+{% for entry in textEntries %}
+	<p class= "text-entry">{{ entry }}</p>
+{% endfor %}
+
+{% if image %}
+	<figure class= "image">
+		<img src= {{ image.src }} alt= {{ image.alt }} /> 
+	</figure>
+{% endif %}
