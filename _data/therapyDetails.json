@@ -1,0 +1,80 @@
+{ 
+	"className": "therapy-details", 
+
+	"head": {
+		"heading": { 
+			"level": 2, 
+			"text": "За терапията" 
+		}, 
+		"subheading": "", 
+		"textEntries": [
+			"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+		], 
+		"image": { 
+			"source": "", 
+			"alt": "" 
+		}
+	}, 
+ 
+	"entries": [
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Допуснете природата в себе си" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			], 
+			"image": { 
+				"source": "", 
+				"alt": "" 
+			}
+		}
+	]   
+ }

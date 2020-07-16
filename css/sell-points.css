@@ -21,7 +21,7 @@
 	box-sizing: border-box; 
 
 	/* Text content is centered */
-	/* width: var( --max-content-width ); margin-left: auto; margin-right: auto;  */
+	width: var( --max-content-width ); margin-left: auto; margin-right: auto; 
 	
 	/* When text content has a box around */ 
 	padding-top: 5rem; 

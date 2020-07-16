@@ -55,7 +55,7 @@
 
 	--id-height: 4rem; 
 	--main-nav-height: 4rem; 
-	--id-margin-top: 1rem; 
+	--id-margin-top: 2rem; 
 	--header-height: calc( var( --id-height ) + var( --main-nav-height ) + var( --id-margin-top ) ); 
 
 	--main-nav-link-width: 7rem; 

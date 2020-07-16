@@ -1,0 +1,13 @@
+{% assign data = include.data %} 
+{% assign head = data.head %} 
+{% assign entries = data.entries %} 
+
+<article class= "article {{ include.data.className }}"> 
+	{% include block.html data = head %} 
+
+	{% for entry in entries %} 
+		<section class= "article-section"> 
+			{% include block.html data = entry %} 
+		</section>
+	{% endfor %}
+</article>
