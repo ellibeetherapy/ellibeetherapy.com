@@ -1,71 +1,28 @@
 { 
-	"className": "about-us", 
-
 	"head": {
 		"heading": { 
-			"level": 2, 
+			"level": 1, 
 			"text": "За нас" 
 		}, 
 		"subheading": "", 
 		"textEntries": [
-			"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			""
 		] 
 	}, 
  
 	"entries": [
 		{ 
 			"heading": { 
-				"level": 3, 
-				"text": "Допуснете природата в себе си" 
+				"level": 2, 
+				"text": "" 
 			}, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
-				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-				"source": "", 
-				"alt": "" 
-			}
-		}, 
+				"Казвам се Георги Стойнов и живея със семейството си в село Вакарел, Софийско. От няколко години се занимавам любителски с отглеждане на пчели и добив на пчелни продукти: висококачествен пчелен мед, пчелен прашец, восък и прополис. Почти всичко свързано с дейността на пчелите намира полезно приложение в човешкия бит и поминък.", 
 
-		{ 
-			"heading": { 
-				"level": 3, 
-				"text": "Допуснете природата в себе си" 
-			}, 
-			"subheading": "Slide Subheading", 
-			"textEntries": [
-				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-				"source": "", 
-				"alt": "" 
-			}
-		}, 
+				"За няколко пчеларски сезона в мен се култивира голяма любов и уважение към пчелите, удивен съм от тяхната безупречна организация и устройство на пчелното семейство. Прекланям се пред пословичното пчелно трудолюбие и черпя сили и вдъхновение от него. Как дори бихме могли да изразим с думи огромното и неоценимо значение на пчелното опрашване за развитието на всяка една екосистема и критичната му важност за земеделските култури и селското стопанство. Старая се всячески да подпомагам и улеснявам дейността на тези свещени животинки и да ги предпазвам от болести и вредители като благодарност за благата, с които безкористно ни даряват. Бих желал да вярвам, че нашата връзка е симбиотична тоест основана на взаимна изгода, а не само експлоатация на пчелното трудолюбие и последователност.", 
 
-		{ 
-			"heading": { 
-				"level": 3, 
-				"text": "Допуснете природата в себе си" 
-			}, 
-			"subheading": "Slide Subheading", 
-			"textEntries": [
-				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-				"source": "", 
-				"alt": "" 
-			}
-		}, 
-
-		{ 
-			"heading": { 
-				"level": 3, 
-				"text": "Допуснете природата в себе си" 
-			}, 
-			"subheading": "Slide Subheading", 
-			"textEntries": [
-				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+				"Чрез комуникация с по-опитни пчелари-ветерани, форуми и пчеларски обединения в социалните мрежи откривам по нещо ново, непознато и интересно с всеки изминал ден. Преди известно време се натъкнах на едно недотам популярно и уставено като практика в България пчелно приложение известно като апитерапия (от лат. Apis-пчела). Интуицията ми подсказа, че потенциалът на тази дейност си струва да се провери и аз отделих солидна порция от времето си в проучване, резултатът от което е представен тук в дистилиран и компресиран вариант." 
 			], 
 			"image": { 
 				"source": "", 
