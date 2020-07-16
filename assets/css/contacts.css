@@ -54,9 +54,9 @@
 	/* Icon placeholder is centered within presentation */
 	margin-left: auto; margin-right: auto; 
 	margin-bottom: 0.8rem; 
-	width: 2.5rem; height: 2.5rem;
+	/* width: 2.5rem; height: 2.5rem; */
 	/* Border radius of half the size of the icon placeholder makes a circle */
-	border: 1px solid; border-radius: 1.25rem; 
+	border: 1px solid; border-radius: 50%; 
 } 
 
 .contact-entry .key { 
@@ -87,11 +87,6 @@
 
 .contact-entry {  
 	text-align: center; 
-}
-
-.contact-entry:before {
-	font-family: var( --icon-font-family );
-	content: "\f188"; 
 }
 
 .contact-entry .text {

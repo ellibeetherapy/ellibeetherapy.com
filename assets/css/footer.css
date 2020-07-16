@@ -96,10 +96,11 @@
 
 }
 
-.scroll-to-top:before {
-	font-family: FontAwesome; font-size: 3.2rem;  
-	content: "\f106"; 
-}
+/* .scroll-to-top:before {
+	font-family: var( --icon-font-family ); font-size: 3.2rem;  
+	text-indent: 0; 
+	content: "\f3d7"; 
+} */
 
 
 /* -----------------------------------------------------------------

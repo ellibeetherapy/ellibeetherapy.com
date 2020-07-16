@@ -23,13 +23,21 @@
 	--heading-font-family: Impact; 
 
 	/* Points to the font, used by icons */
-	--icon-font-family: FontAwesome; 
+	--icon-font-family: Ionicons; 
 
 	/* Assigns icons */
-	--open-nav-button-icon: "\f0c9";
-	--close-nav-button-icon: "\f00d";
-	--prev-button-icon: "\f0d9";
-	--next-button-icon: "\f0da"; 
+	--open-nav-button-icon: "\f20e"; 
+	/* \f423 \f46a \f20e */
+	--close-nav-button-icon: "\f404"; 
+	--scroll-to-top-button-icon: "\f3d7"; 
+	--address-icon: "\f448"; 
+	 /* \f447 \f455 \f456 */
+	--phone-icon: "\f4b9"; 
+	/* \f4b8 \f1fa";  */
+	--email-icon: "\f423"; 
+	/* \f422  */
+	--prev-button-icon: "";
+	--next-button-icon: ""; 
 
 	/**
 	 * Color
