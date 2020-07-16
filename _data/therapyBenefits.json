@@ -1,0 +1,82 @@
+{ 
+	"className": "therapy-details", 
+
+	"head": {
+		"heading": { 
+			"level": 2, 
+			"text": "За терапията" 
+		}, 
+		"subheading": "", 
+		"textEntries": [
+			"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+		] 
+	}, 
+ 
+	"entries": [
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Имунна система" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			]
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Дихателна система" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			]
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Сърдечно съдова система" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			]
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Нервна система" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			]
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Опорно двигателен апарат" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			]
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 3, 
+				"text": "Храносмилателна система и метаболизъм" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				"Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+			]
+		}
+	]   
+ }
