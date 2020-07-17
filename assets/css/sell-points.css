@@ -15,7 +15,7 @@
 	box-sizing: border-box; 
 	/* Giving space around the text content */
 	/* padding-top: calc( var( --header-height ) + var( --header-margin-top ) ); padding-bottom: 0rem; 	
-	position: relative;  */
+	position: relative;  */ 
 }
 
 .sell-points .text-content {
@@ -88,7 +88,11 @@ but for border around the box, an :after pseudo-element has to be created */
 
 /* -----------------------------------------------------------------
 	Color
------------------------------------------------------------------ */
+----------------------------------------------------------------- */ 
+
+.sell-points .entry { 
+	color: var( --heading-color ); 
+}
 
 .sell-points .text-content:after {
 	/* background-color: #CCC;  */

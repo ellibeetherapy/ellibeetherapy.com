@@ -1,37 +1,37 @@
 {
 	"address": {
 		"heading": {
-			"level": 3,
+			"level": 2,
 			"text": "Адрес"
 		}, 
 		"text": [ 
-			"Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus. Etiam eleifend vulputate neque sit amet porta."
+			""
 		], 
 		"entries": [ 
 			{
-				"text": "City", 
-				"value": "London"
+				"text": "Ще ни намерите в", 
+				"value": "с.Вакарел" 
 			}, 
-		
+
 			{
-				"text": "Street", 
-				"value": "Thames Avenue"
+				"text": "Ще ни намерите в", 
+				"value": "пътя за вила 'Екатерина'" 
 			}, 
-		
+
 			{
-				"text": "Number", 
-				"value": "42"
+				"text": "Ще ни намерите в", 
+				"value": "20м от табелата" 
 			} 
 		]
 	}, 
  
 	"phone": {
 		"heading": {
-			"level": 3,
+			"level": 2,
 			"text": "Телефони"
 		}, 
 		"text": [ 
-			"Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus. Etiam eleifend vulputate neque sit amet porta."
+			""
 		], 
 		"entries": [ 
 			{
@@ -48,16 +48,16 @@
 	 
 	"email": {
 		"heading": {
-			"level": 3,
+			"level": 2,
 			"text": "Имейл" 
 		}, 
 		"text": [ 
-			"Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus. Etiam eleifend vulputate neque sit amet porta."
+			""
 		], 
 		"entries": [ 
 			{
 				"text": "Email", 
-				"value": "company@gmail.com"
+				"value": "ellibee@ellibeetherapy.com" 
 			} 
 		]
 	}

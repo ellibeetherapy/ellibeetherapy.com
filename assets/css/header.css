@@ -31,7 +31,7 @@
 	/* Pulls slider under header */
 	/* height: var( --header-height );  */ 
 	/* margin-bottom: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) );  */
-	margin-top: var( --header-margin-top ); 
+	padding-top: var( --header-margin-top ); 
 
 	width: 100%;
 
