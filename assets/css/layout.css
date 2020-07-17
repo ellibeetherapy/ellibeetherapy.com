@@ -81,7 +81,7 @@ leaving some distance from window edges, achieving that by using transparent bor
 	max-width: auto; 
 	position: relative; 
 
-}
+} 
 
 .article-section { 
 	/* max-width: var( --text-content-width );  */ 

@@ -1,11 +1,15 @@
 body {
-	color: #555; 
+	color: var( --text-color );  
 	background-color: #EEE; 
 } 
 
 figure.image, 
 footer {
 	background-color: #999; 
+} 
+
+.heading { 
+	color: var( --heading-color ); 
 }
 
 /**

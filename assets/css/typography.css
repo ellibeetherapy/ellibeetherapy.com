@@ -18,36 +18,45 @@
 @font-face {
 	font-family: Ionicons;
 	src: url( "/assets/fonts/ionicons.ttf" ); 
-}
+} 
 
 
 /* Sets font size to use as a base for all font sizes */
 html, 
-body {
+body { 
 	font-family: var( --text-font-family ); 
 	font-size: var( --base-font-size ); 
-}
+} 
+
+@font-face {
+	font-family: HeadingFont; 
+	src: url( "/assets/fonts/Montserrat/Montserrat-SemiBold.ttf" ); 
+} 
 
 /* Heading style */
 .heading {
-	font-family: var( --heading-font-family ); 
+	font-family: var( --heading-font-family ); font-family: HeadingFont; 
+	font-size: 1.4rem; 
 	line-height: 1.2; 
 	text-transform: uppercase; 
 } 
 
-.head .heading, 
-.article > .heading { 
-	font-size: 1.8rem;  
-} 
+/* .head .heading { 
+	font-size: 2.4rem;  
+}  */
+
+/* .article > .heading { 
+	font-size: 1.8rem; 
+
+} */
 
 .entry .heading, 
 .article-section .heading { 
-	font-size: 1.5rem; 
+	font-size: 1.2rem; 
 } 
 
 /* Paragraph style */
 .text-entry {
-	font-family: Arial;
 	font-size: 1.2rem; 
 	line-height: 1.2; 
 } 
