@@ -6,7 +6,7 @@
 	{% include article-block.html data = head %} 
 
 	{% for entry in entries %} 
-		<section class= "article-section"> 
+		<section id= "{{ entry.id }}" class= "article-section"> 
 			{% include article-block.html data = entry %} 
 		</section>
 	{% endfor %}

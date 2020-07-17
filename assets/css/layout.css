@@ -36,10 +36,10 @@ leaving some distance from window edges, achieving that by using transparent bor
 	padding-left: var( --content-padding-left ); padding-right: var( --content-padding-right ); 
 } 
 
-.article { 
+/* .article { 
 	max-width: var( --text-content-width ); 
 
-}
+} */
 
 .header, 
 .sell-points .entry, 
@@ -71,8 +71,27 @@ leaving some distance from window edges, achieving that by using transparent bor
 	margin-top: 4rem; 
 } 
 
+.article > * { 
+	max-width: var( --text-content-width ); 
+	margin-left: auto; margin-right: auto; 
+
+}
+
+.article { 
+	max-width: auto; 
+	position: relative; 
+
+}
+
 .article-section { 
+	/* max-width: var( --text-content-width );  */ 
 	margin-top: 2rem; 
+
+} 
+
+.article-section:target { 
+	padding: 2.5rem; 
+	border: 1px solid; 
 
 }
 

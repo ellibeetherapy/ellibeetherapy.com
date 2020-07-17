@@ -22,7 +22,7 @@
 			 }, 
 			  "subheading": "Feature 01 Subheading", 
 			  "link": {
-				  "target": "./index.html", 
+				  "target": "/therapy-benefits.html#immune-system", 
 				  "text": "Прочетете повече" 
 			  }
 		   }, 
@@ -34,7 +34,7 @@
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "link": {
-				  "target": "./index.html", 
+				  "target": "/therapy-benefits.html#respiratory-system", 
 				  "text": "Прочетете повече" 
 			  }
 		   }, 
@@ -46,7 +46,7 @@
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "link": {
-				  "target": "./index.html", 
+				  "target": "/therapy-benefits.html#cardio-system", 
 				  "text": "Прочетете повече" 
 			  }
 		   }, 
@@ -58,7 +58,7 @@
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "link": {
-				  "target": "./index.html", 
+				  "target": "/therapy-benefits.html#skeletal-system", 
 				  "text": "Прочетете повече" 
 			  }
 		   }, 
@@ -70,7 +70,7 @@
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "link": {
-				  "target": "./index.html", 
+				  "target": "/therapy-benefits.html#neural-system", 
 				  "text": "Прочетете повече" 
 			  }
 		   }, 
@@ -82,7 +82,7 @@
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "link": {
-				  "target": "./index.html", 
+				  "target": "./therapy-benefits.html#digestive-system", 
 				  "text": "Прочетете повече" 
 			  }
 		   }
