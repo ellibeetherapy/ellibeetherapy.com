@@ -3,7 +3,6 @@ body {
 	background-color: #EEE; 
 } 
 
-figure.image, 
 footer {
 	background-color: #999; 
 } 
@@ -21,15 +20,15 @@ footer {
 }
 
 .button {
-	color: var( --text-background-color );
-	background-color: var( --text-color );
-	border-color: transparent; 
+	color: var( --heading-color );
+	/* background-color: var( --text-color ); */
+	/* border-color: transparent;  */
 }
 
 /* On mouse over changes background and text colors */
 .button:hover {
-	color: var( --text-color );
-	background-color: transparent; 
+	color: var( --text-background-color );
+	background-color: var( --heading-color ); 
 	border-color: var( --text-color );
 }
 

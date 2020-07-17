@@ -21,8 +21,8 @@
 
 </section>
 
-{% if image %}
-	<figure class= "image">
+{% if image.src %}
+	<figure class= "image" style= "background-image: url( '{{ /assets/images/ | append: image.src }}' )">
 		<img src= {{ image.src }} alt= {{ image.alt }} /> 
 	</figure>
 {% endif %}

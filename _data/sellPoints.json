@@ -14,7 +14,7 @@
 				 "Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
 			  ], 
 			  "image": { 
-				 "source": "", 
+				 "src": "/assets/images/person-731141_1920.jpg", 
 				 "alt": "" 
 			  }, 
 			  "link": {
@@ -33,26 +33,7 @@
 			    "Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
 			], 
 			"image": { 
-			    "source": "", 
-			    "alt": "" 
-			}, 
-			"link": {
-				"target": "/", 
-				"text": "Прочетете повече" 
-			}
-		 }, 
-
-		 { 
-			"heading": { 
-			   "level": 2, 
-			   "text": "Допуснете природата в себе си" 
-		    }, 
-			"subheading": "Slide Subheading", 
-			"textEntries": [
-			    "Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
-			], 
-			"image": { 
-			    "source": "", 
+			    "src": "/assets/images/sun-5294496_1920.jpg", 
 			    "alt": "" 
 			}, 
 			"link": {

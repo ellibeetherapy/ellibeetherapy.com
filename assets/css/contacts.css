@@ -6,7 +6,7 @@
 .contacts { 
 	--visible-column-count: 1; 
 	--visisble-column-gutter-count: calc( var( --visible-column-count ) - 1 );
-	--column-gutter-x: 1.5rem; 
+	--column-gutter-x: 0.25rem; 
 	--column-gutter-y: var( --column-gutter-x ); 
 	--contact-entry-width: calc( ( 100% - var( --visisble-column-gutter-count ) * var( --column-gutter-x ) ) / var( --visible-column-count ) ); 
 } 
@@ -146,69 +146,10 @@
 	Meadia Queries
 ----------------------------------------------------------------- */
 
-@media ( max-width: 1180px ) {
-	/* .feature-list {
-		--product-presentation-column-count: 3;
-	} */
-
-	/* .main-features .body {
-		width: 50%; 
-	} */
-
-}
-
-@media ( max-width: 1000px ) {
-	/* .main-features .head {
-		margin-left: 0; 
-	} */
-	
-}
-
-@media ( max-width: 980px ) {
-	/* .feature-list {
-		--product-presentation-column-count: 2;
-	}
-
-	.main-features .head {
-		width: 60%;  
-	}
-
-	.main-features .body {
-		width: 40%; 
-	} */
-
-}
-
-@media ( max-width: 820px ) {
-	/* .main-features {
-		flex-direction: column; 
-	}
-
-	.main-features .head {
-		width: auto; 
-		padding-right: var( --content-padding-right ); 
-	}
-
-	.main-features .body {
-		width: auto; 
-		padding-top: 2.5rem; padding-bottom: 2.5rem; 
+@media ( max-width: 670px ) {
+	.contact-entry .key-value-pair { 
+		margin-bottom: var( --column-gutter-y ); 
 
 	}
-
-	.feature-list {
-		--product-presentation-column-count: 3;
-	}
-
-	.main-features .bx-controls-direction {
-		left: auto; right: 0; 
-
-	} */
-	
-}
-
-@media ( max-width: 600px ) {
-	/* .feature-list {
-		--product-presentation-column-count: 2;
-	} */
 
 }

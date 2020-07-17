@@ -70,7 +70,7 @@
 	--id-margin-top: 2rem; 
 	--header-height: calc( var( --id-height ) + var( --main-nav-height ) + var( --id-margin-top ) ); 
 
-	--small-screen-header-margin-top: 1rem; 
+	--small-screen-header-margin-top: 2.85rem; 
 	--small-screen-header-height: calc( var( --id-height ) + var( --small-screen-header-margin-top ) ); 
 
 	--main-nav-link-width: 7rem; 
@@ -80,7 +80,7 @@
 	--text-box-border-right: calc( var( --max-content-width ) - var( --text-box-width ) ); 
 	--text-box-color: darkgoldenrod; 
 
-	--button-height: 2.75rem; 
+	--button-height: 3.25rem; 
 
 
 	

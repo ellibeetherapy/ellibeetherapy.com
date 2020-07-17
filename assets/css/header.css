@@ -207,11 +207,17 @@
 	
 } */
 
-@media ( max-width: 620px ) { 
+@media ( max-width: 650px ) { 
 	.header { 
+		--id-margin-top: 0; 
 		flex-direction: row; justify-content: center; align-items: center; 
-		margin-top: 1rem; 
+		padding-top: var( --small-screen-header-margin-top ); 
 		/* margin-bottom: 0;  */
+	} 
+
+	.header:after { 
+		display: none; 
+
 	}
 
 	.header .id { 
