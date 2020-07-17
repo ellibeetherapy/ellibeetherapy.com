@@ -14,6 +14,11 @@
 	src: url( "/assets/fonts/ariblk.ttf" ); 
 } 
 
+@font-face {
+	font-family: Montserrat; 
+	src: url( "/assets/fonts/Montserrat/Montserrat-SemiBold.ttf" ); 
+} 
+
 /* Impact font declaration */
 @font-face {
 	font-family: Ionicons;
@@ -28,14 +33,9 @@ body {
 	font-size: var( --base-font-size ); 
 } 
 
-@font-face {
-	font-family: HeadingFont; 
-	src: url( "/assets/fonts/Montserrat/Montserrat-SemiBold.ttf" ); 
-} 
-
 /* Heading style */
 .heading {
-	font-family: var( --heading-font-family ); font-family: HeadingFont; 
+	font-family: var( --heading-font-family ); 
 	font-size: 1.4rem; 
 	line-height: 1.2; 
 	text-transform: uppercase; 

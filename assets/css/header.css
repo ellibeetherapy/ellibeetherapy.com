@@ -141,14 +141,20 @@
 	font-size: 1.2rem; 
 }
 
-.main-nav .nav-link {
+.main-nav .nav-link { 
+	font-family: var( --heading-font-family ); 
 	font-size: 0.85rem; 
 }
 
 
 /* -----------------------------------------------------------------
 	Color
------------------------------------------------------------------ */
+----------------------------------------------------------------- */ 
+
+.main-nav .nav-link { 
+	color: var( --heading-color );  
+
+}
 
 /* .nav-link:hover {
 	color: #EEE; 
