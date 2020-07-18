@@ -4,12 +4,11 @@
 	"head": {
 	    "heading": { 
 		    "level": 2, 
-		    "text": "Ползи за здравето" 
+		    "text": "Ако имате проблеми, свързани с" 
 		}, 
-	    "subheading": "Main Features Subheading", 
-	    "textEntries": [ 
-		   "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis." 
-	    ]
+		"textEntries": [ 
+			""
+		]
 	}, 
  
 	"body": { 

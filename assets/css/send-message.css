@@ -118,9 +118,17 @@
 	/* bottom: calc( -4rem / 2 ); // margin-bottom: 0.75rem;  */
 	/* border: 1px solid #DDD;  */
 	margin-bottom: 0; 
-	background-color: rgba( 0, 0, 0, 0.7 ); 
+	background-color: rgba( 0, 0, 0, 0.05 ); 
+	color: rgba( 255, 255, 255, 0.7 ); 
+	border: none; 
+	cursor: pointer; 
 
 } 
+
+.send-message .submit-button:hover { 
+	background-color: rgba( 0, 0, 0, 0.5 ); 
+
+}
 
 
 @media ( max-width: 650px ) { 
