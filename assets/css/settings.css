@@ -51,7 +51,7 @@
 	/* Color behind text */
 	--text-background-color: rgba( 255, 255, 255, 0.7 );
 	/* Color of text section, overlapping another section or an image */
-	--overlay-color: rgba( 255, 255, 255, 1 ); 
+	--overlay-color: rgba( 255, 255, 255, 0.85 ); 
 	--highlight-color: #56663b; 
 
 	/**

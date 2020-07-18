@@ -1,11 +1,11 @@
 /* -----------------------------------------------------------------
 	Layout
------------------------------------------------------------------ */
+----------------------------------------------------------------- */ 
 
 .pointer { 
 	max-width: var( --max-content-width ); 
 	/* Giving space around the text content */
-	padding-top: 4rem; padding-bottom: 4rem; 
+	padding-top: 10rem; padding-bottom: 10rem; 
 }
 
 /* Text content is pulled to the right */
@@ -68,23 +68,25 @@ but for border around the box, an :after pseudo-element has to be created */
 }
 
 /* Images are absolutely positioned for easier change of position */
-.pointer .image, .pointer .image-set {
+.pointer .image { 
+	box-sizing: border-box; 
 	width: 50%; height: 100%; 
 	position: absolute; left: 50%; transform: translateX( -50% ); top: 0; 
-	background-size: cover; 
+	background-size: cover; background-clip: padding-box; 
+	border: 1.25rem solid rgba( 255, 255, 255, 0.4 ); 
 }
 
-/* Lays out images in image sets */
-.pointer > .image-set {
-	display: flex; flex-direction: row; 
-}
+/* .pointer.therapy-details-pointer .image { 
+	left: 0; right: 50%; 
 
-/* Gives size to images in image sets */
-.pointer > .image-set .image {
-	width: calc( ( 100% - 0.4rem ) / 2 ); height: 100%; 
-	margin-right: 0.75rem; 
-	position: relative;
-}
+} 
+
+.pointer.about-us-pointer .image { 
+	left: 50%; right: 0; 
+
+} */
+
+
 
 
 /* -----------------------------------------------------------------

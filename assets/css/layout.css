@@ -1,4 +1,4 @@
-.body { 
+	.body { 
 	position: relative; 
 
 } 
@@ -68,7 +68,7 @@ leaving some distance from window edges, achieving that by using transparent bor
 /* Defines distance between sections */
 .section, 
 .article {
-	margin-top: 4rem; 
+	margin-top: 2rem; 
 } 
 
 .article > * { 
