@@ -9,22 +9,20 @@
 
 .footer {
 	flex-direction: column; 
-	margin-top: 4rem; margin-top: 14rem; 
+	margin-top: 7rem; 
+	/* margin-top: 14rem;  */
 	/* margin-bottom: 4rem;  */ 
+	padding-top: 4rem; 
+	position: relative; 
 } 
 
 .footer > * { 
 	margin-bottom: 5rem; 
 }
 
-.send-message { 
-	margin-top: -8rem; 
-}
-
-.footer-nav {
-	flex-direction: row; 
-	margin-top: 2.75rem; margin-bottom: 2.75rem;
-}
+.write-us { 
+	/* margin-top: -14rem;  */ 
+} 
 
 .footer-nav .entry:last-child {
 	margin-right: 0; 
@@ -37,12 +35,22 @@
 
 .copyright { 
 	display: flex; flex-direction: row; justify-content: center; 	
-	width: 100%; 
-	margin-bottom: 0rem; 
-	padding-top: 1.4rem; padding-bottom: 1.4rem; padding-left: var( --content-padding-left ); padding-right: var( --content-padding-right ); 
-	background-color: #DDD; 
-	color: var( --text-color ); 
+	/* width: 100%;  */ width: 45rem; 
+	margin-bottom: 4rem; 
+	padding-top: 1.4rem; padding-bottom: 1.4rem; 
+	/* padding-left: var( --content-padding-left ); padding-right: var( --content-padding-right );  */
+	position: relative; 
+	border-style: solid; border-width: 0px; border-top-width: 1px; 
 } 
+
+/* .copyright:after { 
+	display: block; 
+	width: 100%; height: 1px; 
+	position: absolute; left: 50%; top: 0; 
+	background-color: var( --text-color ); 
+	content: "";
+
+} */
 
 .copyright > *, 
 .copy-symbol { 
@@ -79,6 +87,13 @@
 .scroll-to-top:before {
 	display: block; 
 
+} 
+
+.footer .image {  
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0; z-index: -1; 
+	opacity: 0.125; 
+
 }
 
 
@@ -113,10 +128,15 @@ footer {
 
 .footer-nav .nav-link:before {
 	background-color: #CCC; 
-}
+} 
+
+.copyright { 
+	/* background-color: #DDD;  */ 
+	color: var( --text-color ); 
+} 
 
 .scroll-to-top {
-	background-color: #FFF; 
+	background-color: transparent; 
 }
 
 .scroll-to-top:before {

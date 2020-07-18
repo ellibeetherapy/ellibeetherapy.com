@@ -21,6 +21,10 @@
 				"text": "Имунна система" 
 			 }, 
 			  "subheading": "Feature 01 Subheading", 
+			  "image": { 
+				 "src": "/assets/images/abstract-1846979_1920.jpg", 
+				 "alt": "" 
+			  }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#immune-system", 
 				  "text": "Прочетете повече" 
@@ -33,6 +37,10 @@
 				"text": "Дихателна система" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#respiratory-system", 
 				  "text": "Прочетете повече" 
@@ -45,6 +53,10 @@
 				"text": "Сърдечно съдова система" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#cardio-system", 
 				  "text": "Прочетете повече" 
@@ -57,6 +69,10 @@
 				"text": "Опорно двигателен апарат" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#skeletal-system", 
 				  "text": "Прочетете повече" 
@@ -69,6 +85,10 @@
 				"text": "Нервна система" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#neural-system", 
 				  "text": "Прочетете повече" 
@@ -81,6 +101,10 @@
 				"text": "Метаболизъм" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
 			  "link": {
 				  "target": "./therapy-benefits.html#digestive-system", 
 				  "text": "Прочетете повече" 

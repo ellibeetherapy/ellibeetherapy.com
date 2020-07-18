@@ -9,12 +9,19 @@
         {% for textEntry in value.text %}
             <p class= "text-entry">{{ textEntry }}</p> 
         {% endfor %}
+        
+        <article>
         {% for entry in value.entries %}
             <dl class= "{{ entry.text | downcase }} key-value-pair">
                 <dt class= "key">{{ entry.text }}</dt>
                 <dd class= "value">{{ entry.value }}</dd>
             </dl>
         {% endfor %}
+        </article> 
+
+        <figure class= "image" style= "background-image: url( '{{ value.image.src }}' )">
+            <img src= "{{ value.image.src }}" alt="" />
+        </figure>
     </article>
 {% endfor %}
 </section>

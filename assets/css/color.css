@@ -3,9 +3,9 @@ body {
 	background-color: #EEE; 
 } 
 
-footer {
-	background-color: #999; 
-} 
+/* footer {
+	background-color: #CCC; 
+}  */
 
 .heading { 
 	color: var( --heading-color ); 

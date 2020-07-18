@@ -1,7 +1,7 @@
 .body { 
 	position: relative; 
 
-}
+} 
 
 .tagline { 
 	display: none; 
@@ -103,9 +103,9 @@ leaving some distance from window edges, achieving that by using transparent bor
 }
 
 /* Taking into account styling, semantics and SEO, an image is represented as a figure element with an image element as its descendant */
-.image {
+/* .image {
 	height: 150px; 
-}
+} */
 
 figure.image {
 	background-size: cover; background-position: center center; background-repeat: no-repeat; 

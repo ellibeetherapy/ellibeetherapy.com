@@ -1,5 +1,5 @@
 .send-message { 
-	--column-count: 2; 
+	--column-count: 3; 
 	--column-gutter-x: 0.75rem; 
 	--column-gutter-y: var( --column-gutter-x ); 
 	--field-width: calc( ( 100% - ( var( --column-count ) - 1 ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
@@ -7,23 +7,31 @@
 
 } 
 
-.send-message, 
-.message-holder { 
-	padding: 1.25rem; 
+
+.write-us { 
+	box-sizing: border-box; 
+	/* padding: 3.25rem;  */
+	/* background-color: #DDD;  */
+} 
+
+.write-us .heading { 
+	text-align: center; 
 }
 
+/* .send-message { 
+	padding: 1.25rem; 
+} */
+
 .send-message { 
-	box-sizing: border-box; 
-	display: flex; flex-direction: column; align-items: flex-end; flex-wrap: wrap; 
-	max-width: var( --max-content-width ); width: 100%; 
+	display: flex; flex-direction: row; flex-wrap: wrap; 
+	max-width: var( --max-content-width ); margin-left: auto; margin-right: auto; 
 	position: relative; 
-	background-color: #DDD;  
+	/* background-color: #DDD;   */
 
 } 
 
-.send-message .field, 
-.send-message .button { 
-	color: #DDD; 
+.send-message .field { 
+	color: rgba( 0, 0, 0, 0.2 ); 
 
 }
 
@@ -36,9 +44,9 @@
 	margin-top: var( --column-gutter-y );
 } */
 
-.send-message > * { 
+/* .send-message > * { 
 	width: var( --field-width ); 		
-} 
+}  */
 
 /* .send-message .message-holder { 
 	width: 100%; 
@@ -46,10 +54,22 @@
 
 .send-message .field-holder, 
 .send-message .submit-button { 
-	height: 3.25rem; 
-	margin-bottom: var( --column-gutter-y ); 
-
+	width: var( --field-width ); height: 3.25rem; 
+	/* margin-bottom: var( --column-gutter-y );  */
 } 
+
+.send-message .field-holder { 
+	margin-right: var( --column-gutter-x ); 
+
+}
+
+.field-holder.name-holder { 
+	order: 2; 
+} 
+
+.field-holder.email-holder { 
+	order: 3; 
+}
 
 /* .send-message .label { 
 	display: block; 
@@ -61,7 +81,8 @@
 	display: block; 
 	width: 100%; height: 100%;  
 	padding: 0.8rem; 
-	border: none; outline: none; 
+	background-color: transparent; 
+	border: 1px solid rgba( 0, 0, 0, 0.2 ); outline: none; 
 	font-family: Arial; font-size: 1rem; 
 } 
 
@@ -76,15 +97,17 @@
 }  */
 
 .send-message .message-holder { 
+	order: 1; 
 	box-sizing: border-box; 
-	height: 100%; 
-	margin-right: 0; 
+	width: 100%; height: calc( 3.5 * var( --field-height ) ); 
+	margin-right: 0; margin-bottom: var( --column-gutter-y ); 
 	padding-right: 0; 
-	position: absolute; left: 0; top: 0; 
+	/* position: absolute; left: 0; top: 0;  */
 
 }
 
 .send-message .submit-button { 
+	order: 4; 
 	display: block; 
 	/* height: 4rem; line-height: 4rem;  */ 
 	/* margin-left: auto; margin-right: auto; 
@@ -95,7 +118,7 @@
 	/* bottom: calc( -4rem / 2 ); // margin-bottom: 0.75rem;  */
 	/* border: 1px solid #DDD;  */
 	margin-bottom: 0; 
-	background-color: #FFF; 
+	background-color: rgba( 0, 0, 0, 0.7 ); 
 
 } 
 
