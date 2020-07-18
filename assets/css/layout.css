@@ -95,6 +95,18 @@ leaving some distance from window edges, achieving that by using transparent bor
 
 }
 
+.article .image { 
+	height: 20rem; 
+	background-size: cover; background-position: center; 
+	opacity: 0.8; 
+
+} 
+
+.article.therapy-details .image { 
+	height: 35rem; 
+
+}
+
 /* Usability headings are not a visual part of the page */
 .usability-heading, 
 .offer-list .head {

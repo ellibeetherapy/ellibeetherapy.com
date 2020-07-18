@@ -14,7 +14,7 @@
 {% endfor %}
 
 {% if image %}
-	<figure class= "image">
+	<figure class= "image" style= "background-image: url( '{{ image.src }}' )"> 
 		<img src= {{ image.src }} alt= {{ image.alt }} /> 
 	</figure>
 {% endif %}
