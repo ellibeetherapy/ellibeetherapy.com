@@ -68,8 +68,9 @@
 	content: ","; 
 } 
 
+.write-us, 
 .company { 
-	max-width: 45rem; 	
+	max-width: var( --max-content-width ); width: 100%; 
 }
 
 .company .id { 

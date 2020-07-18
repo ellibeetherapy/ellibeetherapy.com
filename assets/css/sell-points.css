@@ -62,11 +62,6 @@ but for border around the box, an :after pseudo-element has to be created */
 	opacity: 0.7; 
 }
 
-.sell-points .bx-controls-direction {
-	bottom: 0; right: 0; 
-
-} 
-
 .sell-points .lSSlideOuter .lSPager.lSpg > li a { 
 	z-index: 1; 
 	background-color: var( --text-color ); 
@@ -75,6 +70,18 @@ but for border around the box, an :after pseudo-element has to be created */
 .sell-points .lSSlideOuter .lSPager.lSpg > li.active a, 
 .sell-points .lSSlideOuter .lSPager.lSpg > li:hover a { 
 	background-color: var( --highlight-color ); 
+}
+
+.sell-points .lSAction { 
+	display: flex; justify-content: center;  
+	position: absolute; left: 0; right: 0; bottom: 0; margin-bottom: 1.25rem; 
+	/* background-color: var( --text-color );  */ 
+
+}
+
+.sell-points .lSAction > a {  
+	position: initial; 
+
 }
 
 
