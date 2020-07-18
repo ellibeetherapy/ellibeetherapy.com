@@ -3,7 +3,7 @@
 ----------------------------------------------------------------- */ 
 
 .sell-points {  
-	margin-top: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); margin-top: 0; 
+	margin-top: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); margin-top: 0;  
 
 }
 
@@ -42,6 +42,8 @@
 	
 	/* In centered layout, headings and text are centered */
 	text-align: center; 
+
+	text-shadow: 0 0 2px rgba( 255, 255, 255, 0.7 ); 
 }	
 
 /* A background is possible to be set on the text content box itself, 
@@ -59,7 +61,7 @@ but for border around the box, an :after pseudo-element has to be created */
 .sell-points .image {
 	width: 100%; height: calc( 100% - var( --padding-top ) ); 
 	position: absolute; left: 0; top: 0; 
-	opacity: 0.7; 
+	opacity: 0.5; 
 }
 
 .sell-points .lSSlideOuter .lSPager.lSpg > li a { 
