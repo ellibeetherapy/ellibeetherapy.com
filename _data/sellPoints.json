@@ -18,7 +18,7 @@
 				 "alt": "" 
 			  }, 
 			  "link": {
-				  "target": "/", 
+				  "target": "/therapy-benefits.html", 
 				  "text": "Прочетете повече" 
 			  }
 		   }, 
@@ -26,7 +26,7 @@
 		   { 
 			"heading": { 
 			   "level": 2, 
-			   "text": "Допуснете природата в себе си" 
+			   "text": "Уникалната терапия, която Ви представяме" 
 		    }, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
@@ -37,10 +37,29 @@
 			    "alt": "" 
 			}, 
 			"link": {
-				"target": "/", 
+				"target": "/therapy-details.html", 
 				"text": "Прочетете повече" 
 			}
-		 }
+		 }, 
+
+		 { 
+		   "heading": { 
+			 "level": 2, 
+			 "text": "Кои сме ние, и как се стигна до тук" 
+		  }, 
+		   "subheading": "Slide Subheading", 
+		   "textEntries": [
+			  "Vestibulum ac velit lorem. Donec faucibus sollicitudin diam non aliquam. Praesent sit amet elit eu nisi laoreet faucibus. Nullam mattis fermentum commodo."
+		   ], 
+		   "image": { 
+			  "src": "/assets/images/sun-5294496_1920.jpg", 
+			  "alt": "" 
+		   }, 
+		   "link": {
+			   "target": "/about-us.html", 
+			   "text": "Прочетете повече" 
+		   }
+	    }
 	    ]   
 	}
  }
