@@ -1,7 +1,7 @@
 ( function() {
 	// Initializes main slider
 	$( '.sell-points .entry-list' ).lightSlider( { 
-		// auto: true, 
+		auto: true, 
 		item: 1, 
 		pager: true, 
 		controls: false 
