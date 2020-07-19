@@ -2,25 +2,22 @@
 	<h2 class= "heading">Пишете ни</h2> 
 
 	<form class= "gform send-message" action= "https://script.google.com/macros/s/AKfycbzt9eNw-D0Ki7CByVWbnQLzgYqJt1v7KnMDgLIG6Q/exec"> 
-		<fieldset class= "field-holder name-holder">
-			<label class= "label" for= "name">Вашето име</label>
+		<label class= "label name" for= "name">
 			<input class= "field name" name= "name" type="text" placeholder= "Вашето име" />
-		</fieldset>
+		</label>
+	
+		<label class= "label email" for= "email">
+			<input class= "field email" name= "email" type="email" placeholder= "Вашият имейл" required />
+		</label>
 
-		<fieldset class= "field-holder email-holder">
-			<label class= "label" for= "email">Вашият имейл</label>
-			<input class= "field email" name= "email" type="email" placeholder= "Вашият имейл" />
-		</fieldset>
-
-		<fieldset class= "field-holder message-holder">
-			<label class= "label" for= "message">Вашето съобщение</label>
-			<textarea class= "field message" name= "message" placeholder= "Вашето съобщение"></textarea> 
-		</fieldset>
+		<label class= "label message" for= "message"> 
+			<textarea class= "field message" name= "message" placeholder= "Вашето съобщение" required></textarea>
+		</label> 
 
 		<button class= "button submit-button" type= "submit">Изпратете</button> 
 		
 		<div class="thankyou_message"> 
-			<h2><em>Благодарим Ви,</em> че ни писахте! Очаквайте отговор от нас скоро.</h2> 
+			<p><em>Благодарим Ви,</em> че ни писахте! Очаквайте отговор от нас скоро.</p> 
 		</div> 
 	</form> 
 </section>

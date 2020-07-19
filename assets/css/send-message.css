@@ -28,23 +28,23 @@
 } 
 
 .send-message .label { 
-	display: none; 
+	display: block; 
 } 
 
-.send-message .field-holder, 
+.send-message .label, 
 .send-message .submit-button { 
 	width: var( --field-width ); height: 3.25rem; 
 } 
 
-.send-message .field-holder { 
+.send-message .label { 
 	margin-right: var( --column-gutter-x ); 
 }
 
-.field-holder.name-holder { 
+.label.name { 
 	order: 2; 
 } 
 
-.field-holder.email-holder { 
+.label.email { 
 	order: 3; 
 }
 
@@ -60,8 +60,8 @@
 	margin-top: 0; 
 }
 
-.send-message .message-holder { 
-	order: 1; 
+.send-message .label.message { 
+	order: 1; 	
 	box-sizing: border-box; 
 	width: 100%; height: calc( 3.5 * var( --field-height ) ); 
 	margin-right: 0; margin-bottom: var( --column-gutter-y ); 
