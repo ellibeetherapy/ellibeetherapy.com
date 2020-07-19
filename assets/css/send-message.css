@@ -1,66 +1,43 @@
+/* -----------------------------------------------------------------
+	Settings
+----------------------------------------------------------------- */
+
 .send-message { 
 	--column-count: 3; 
 	--column-gutter-x: 0.75rem; 
 	--column-gutter-y: var( --column-gutter-x ); 
 	--field-width: calc( ( 100% - ( var( --column-count ) - 1 ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
 	--field-height: 3.25rem; 
-
+	--message-sent-notification-duration: 4s; 
 } 
 
+
+/* -----------------------------------------------------------------
+	Layout
+----------------------------------------------------------------- */
 
 .write-us { 
 	box-sizing: border-box; 
-	/* padding: 3.25rem;  */
-	/* background-color: #DDD;  */ 
 } 
 
-.write-us .heading { 
-	text-align: center; 
-}
-
-/* .send-message { 
-	padding: 1.25rem; 
-} */
 
 .send-message { 
 	display: flex; flex-direction: row; flex-wrap: wrap; 
 	max-width: var( --max-content-width ); margin-left: auto; margin-right: auto; 
 	position: relative; 
-	/* background-color: #DDD;   */
-
 } 
-
-.send-message .field { 
-	color: rgba( 0, 0, 0, 0.2 ); 
-
-}
 
 .send-message .label { 
 	display: none; 
 } 
 
-/* .send-message > * { 
-	margin-right: var( --column-gutter-x ); 
-	margin-top: var( --column-gutter-y );
-} */
-
-/* .send-message > * { 
-	width: var( --field-width ); 		
-}  */
-
-/* .send-message .message-holder { 
-	width: 100%; 
-}  */
-
 .send-message .field-holder, 
 .send-message .submit-button { 
 	width: var( --field-width ); height: 3.25rem; 
-	/* margin-bottom: var( --column-gutter-y );  */
 } 
 
 .send-message .field-holder { 
 	margin-right: var( --column-gutter-x ); 
-
 }
 
 .field-holder.name-holder { 
@@ -71,30 +48,17 @@
 	order: 3; 
 }
 
-/* .send-message .label { 
-	display: block; 
-	text-indent: -10000px; 
-} */
-
 .send-message .field { 
 	box-sizing: border-box; 
 	display: block; 
 	width: 100%; height: 100%;  
 	padding: 0.8rem; 
-	background-color: transparent; 
 	border: 1px solid rgba( 0, 0, 0, 0.2 ); outline: none; 
-	font-family: Arial; font-size: 1rem; 
 } 
 
 .send-message :nth-child( -n + 2 ) { 
 	margin-top: 0; 
 }
-
-/* .send-message .field.name, 
-.send-message .field.email { 
-	height: 2.5rem; line-height: 2.5rem; 
-
-}  */
 
 .send-message .message-holder { 
 	order: 1; 
@@ -102,34 +66,111 @@
 	width: 100%; height: calc( 3.5 * var( --field-height ) ); 
 	margin-right: 0; margin-bottom: var( --column-gutter-y ); 
 	padding-right: 0; 
-	/* position: absolute; left: 0; top: 0;  */
 
 }
 
 .send-message .submit-button { 
 	order: 4; 
 	display: block; 
-	/* height: 4rem; line-height: 4rem;  */ 
-	/* margin-left: auto; margin-right: auto; 
-	margin-top: calc( -2.75rem / 2 );  */
-	/* position: absolute;  */
-	/* left: 50%; transform: translateX( -50% );   */
-	/* right: 0; margin-right: 0.75rem;  */
-	/* bottom: calc( -4rem / 2 ); // margin-bottom: 0.75rem;  */
-	/* border: 1px solid #DDD;  */
 	margin-bottom: 0; 
+	border: none; 
+} 
+
+.send-message .thankyou_message { 
+	box-sizing: border-box; 
+	display: none; align-items: center; justify-content: center; 
+	width: auto; 
+	left: 10%; right: 10%; top: -25%; bottom: -25%; 
+	padding: 4rem; 
+	position: absolute; z-index: 2; 
+	border: 1.2rem solid; 
+} 
+
+.send-message .thankyou_message.display { 
+	display: flex; 
+}
+
+
+/* -----------------------------------------------------------------
+	Typography
+----------------------------------------------------------------- */ 
+
+.write-us .heading { 
+	text-align: center; 
+}
+
+.send-message .field { 
+	font-family: Arial; font-size: 1rem; 
+} 
+
+.send-message .thankyou_message { 
+	font-family: var( --heading-font-family ); font-size: 1.4rem; line-height: 1.5; 
+	text-transform: uppercase; 
+	text-align: center; 
+	box-shadow: 0 0 20px 1px rgba( 0, 0, 0, 0.25 ); 
+} 
+
+
+/* -----------------------------------------------------------------
+	Color
+----------------------------------------------------------------- */
+
+.send-message .field { 
+	color: rgba( 0, 0, 0, 0.2 ); 
+}
+
+.send-message .field { 
+	background-color: transparent; 
+} 
+
+.send-message .submit-button { 
 	background-color: rgba( 0, 0, 0, 0.05 ); 
 	color: rgba( 255, 255, 255, 0.7 ); 
-	border: none; 
-	cursor: pointer; 
-
 } 
 
 .send-message .submit-button:hover { 
 	background-color: rgba( 0, 0, 0, 0.5 ); 
+} 
+
+.send-message .thankyou_message { 
+	background-color: rgba( 255, 255, 255, 0.85 ); 
+} 
+
+
+/* -----------------------------------------------------------------
+	Keyframes
+----------------------------------------------------------------- */ 
+
+@keyframes remove { 
+	0% { 
+		visibility: visible; 
+	}
+
+	100% { 
+		visibility: hidden; 
+		width: 0; height: 0; padding: 0; border: none; overflow: hidden; 
+	} 
 
 }
 
+
+/* -----------------------------------------------------------------
+	User interaction
+----------------------------------------------------------------- */ 
+
+.send-message .submit-button { 
+	cursor: pointer;  
+} 
+
+.send-message .thankyou_message.display.remove { 
+	animation-name: remove; animation-duration: 0.005s; animation-delay: 4s; animation-fill-mode: forwards; 	
+
+}
+
+
+/* -----------------------------------------------------------------
+	Media queries
+----------------------------------------------------------------- */
 
 @media ( max-width: 650px ) { 
 
