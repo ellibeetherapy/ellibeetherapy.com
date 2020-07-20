@@ -15,7 +15,7 @@
 
 /* Paragraphs distance */
 .text-entry {
-	margin-bottom: 1.2em;
+	margin-bottom: 1.2rem; 
 }
 
 /* Removes bottom margin from paragraphs, that have no adjacent elements */
@@ -117,9 +117,31 @@ leaving some distance from window edges, achieving that by using transparent bor
 	height: 150px; 
 } */
 
-figure.image {
+figure.image { 
 	background-size: cover; background-position: center center; background-repeat: no-repeat; 
 	/* background-image: none !important;  */
+} 
+
+.article.therapy-details { 
+	--image-count: 2; 
+	--image-gutter: 0.7rem; 
+}
+
+.article.about-us { 
+	--image-count: 1; 
+	--image-gutter: 0; 
+}
+
+.article figure { 
+	box-sizing: border-box; 
+	display: flex; flex-direction: row; 
+	margin-bottom: 1.75rem; margin-top: 1.2rem; 
+}
+
+.article.therapy-details figure img, 
+.article.about-us figure img { 
+	max-width: calc( ( 100% - calc( var( --image-count ) - 1 ) * var( --image-gutter ) ) / var( --image-count ) ); 
+	margin-right: var( --image-gutter ); 
 }
 
 .image img {
