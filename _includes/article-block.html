@@ -10,7 +10,14 @@
 {% endif %}
 
 {% for entry in textEntries %}
-	<p class= "text-entry">{{ entry }}</p>
+	<p class= "text-entry">{{ entry.text }}</p> 
+	{% if entry.images %}
+		<figure>
+			{% for entryImage in entry.images %}
+				<img src= {{ entryImage.src }} alt= {{ entryImage.alt }} /> 
+			{% endfor %}
+		</figure>
+	{% endif %} 
 {% endfor %}
 
 {% if image %}

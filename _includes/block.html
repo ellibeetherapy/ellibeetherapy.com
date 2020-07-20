@@ -12,7 +12,12 @@
 {% endif %}
 
 {% for entry in textEntries %}
-	<p class= "text-entry">{{ entry }}</p>
+	<p class= "text-entry">
+		{{ entry }}
+		{% if entry.image %}
+			<img src= {{ entry.image.src }} alt= {{ entry.image.alt }} /> 
+		{% endif %} 
+	</p>
 {% endfor %}
 
 {% if link %}
