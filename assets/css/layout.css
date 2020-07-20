@@ -71,40 +71,6 @@ leaving some distance from window edges, achieving that by using transparent bor
 	margin-top: 2rem; 
 } 
 
-.article > * { 
-	max-width: var( --text-content-width ); 
-	margin-left: auto; margin-right: auto; 
-
-}
-
-.article { 
-	max-width: auto; 
-	position: relative; 
-
-} 
-
-.article-section { 
-	/* max-width: var( --text-content-width );  */ 
-	margin-top: 2rem; 
-
-} 
-
-.article-section:target { 
-	padding: 2.5rem; 
-	border: 1px solid; 
-
-}
-
-.article .image { 
-	height: 20rem; 
-	background-size: cover; background-position: center; 
-	opacity: 0.8; 
-} 
-
-.article.therapy-details .image { 
-	height: 32rem; 
-}
-
 /* Usability headings are not a visual part of the page */
 .usability-heading, 
 .offer-list .head {
@@ -116,37 +82,6 @@ leaving some distance from window edges, achieving that by using transparent bor
 /* .image {
 	height: 150px; 
 } */
-
-figure.image { 
-	background-size: cover; background-position: center center; background-repeat: no-repeat; 
-	/* background-image: none !important;  */
-} 
-
-.article.therapy-details { 
-	--image-count: 2; 
-	--image-gutter: 0.7rem; 
-}
-
-.article.about-us { 
-	--image-count: 1; 
-	--image-gutter: 0; 
-}
-
-.article figure { 
-	box-sizing: border-box; 
-	display: flex; flex-direction: row; 
-	margin-bottom: 1.75rem; margin-top: 1.2rem; 
-}
-
-.article.therapy-details figure img, 
-.article.about-us figure img { 
-	max-width: calc( ( 100% - calc( var( --image-count ) - 1 ) * var( --image-gutter ) ) / var( --image-count ) ); 
-	margin-right: var( --image-gutter ); 
-}
-
-.image img {
-	display: none !important; 
-}
 
 /* Buttons are displayed as inline-block to adapt to their label */
 .button {
