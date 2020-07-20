@@ -38,7 +38,7 @@ figure.image {
 
 .article.therapy-details { 
 	--image-count: 2; 
-	--image-gutter: 0.7rem; 
+	--image-gutter: 1rem; 
 }
 
 .article.about-us { 
@@ -50,14 +50,28 @@ figure.image {
 	box-sizing: border-box; 
 	display: flex; flex-direction: row; 
 	margin-bottom: 1.75rem; margin-top: 1.2rem; 
+//	box-shadow: 0 0 20px 1px rgba( 0, 0, 0, 0.08 ); 
 }
 
 .article.therapy-details figure img, 
 .article.about-us figure img { 
 	max-width: calc( ( 100% - calc( var( --image-count ) - 1 ) * var( --image-gutter ) ) / var( --image-count ) ); 
 	margin-right: var( --image-gutter ); 
+	opacity: 0.8; 
+} 
+
+.article figure img:last-child { 
+	margin-right: 0; 
+
 }
 
 .image img {
 	display: none !important; 
+} 
+
+.article figure { 
+	box-sizing: border-box; 
+	padding: 1.2rem; 
+	background-color: rgba( 255, 255, 255, 0.4 ); 
+
 }
