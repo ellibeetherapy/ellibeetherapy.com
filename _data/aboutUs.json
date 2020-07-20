@@ -51,5 +51,28 @@
 				}
 			]
 		} 
-	]   
+	], 
+
+	"pointer": { 
+		"className": "pointer about-us-pointer", 
+	 
+		"head": {
+		    "heading": { 
+			    "level": 2, 
+			    "text": "За нас" 
+			}, 
+		    "subheading": "Slider Subheading", 
+		    "textEntries": [ 
+			   "Повече за нас, опита който сме натрупали и причините да сме тук." 
+		    ], 
+		    "image": { 
+			   "src": "/assets/images/business-card-2818689_1920.jpg", 
+			   "alt": "" 
+		    }, 
+		    "link": { 
+			    "target": "/about-us.html", 
+			    "text": "Повече" 
+		    } 
+		}
+	}
  }

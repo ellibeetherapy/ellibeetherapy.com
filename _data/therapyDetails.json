@@ -90,5 +90,28 @@
 				}
 			]
 		} 
-	]   
+	], 
+
+	"pointer": { 
+		"className": "pointer therapy-details-pointer", 
+	 
+		"head": {
+		    "heading": { 
+			    "level": 2, 
+			    "text": "За терапията" 
+			}, 
+		    "subheading": "Slider Subheading", 
+		    "textEntries": [ 
+			   "Какво е вибрационно респираторната пчелна терапия, къде по света и защо й се доверяват." 
+		    ], 
+		    "image": { 
+			   "src": "/assets/images/fried-egg-flower-2340406.jpg", 
+			   "alt": "" 
+		    }, 
+		    "link": { 
+			    "target": "/therapy-details.html", 
+			    "text": "Повече" 
+		    }
+		}
+	} 
  }
