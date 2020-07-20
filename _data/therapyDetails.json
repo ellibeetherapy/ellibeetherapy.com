@@ -1,5 +1,17 @@
 { 
 	"className": "therapy-details", 
+
+	"pageHead": {
+		"heading": { 
+			"level": 5, 
+			"text": "За терапията" 
+		}, 
+		"subheading": "Main Features Subheading", 
+		"image": { 
+		    "src": "/assets/images/sun-5294496_1920.jpg", 
+		    "alt": "" 
+		}
+	}, 
 	
 	"head": {
 		"heading": { 
