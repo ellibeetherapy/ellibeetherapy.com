@@ -20,13 +20,7 @@
 	padding: 2.5rem; 
 	border: 1px solid; 
 
-}
-
-/* .article .image { 
-	height: 20rem; 
-	background-size: cover; background-position: center; 
-	opacity: 0.8; 
-}  */	
+} 
 
 figure.image { 
 	background-size: cover; background-position: center center; background-repeat: no-repeat; 
