@@ -1,0 +1,62 @@
+{ 
+	"className": "sell-points", 
+ 
+	"body": { 
+	    "template": "sell-points.html", 
+	    "context": [
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Допуснете природата в себе си" 
+			 }, 
+			  "textEntries": [
+				 "и се радвайте на многобройните изумителни ефекти, които нашата вибрационно-респираторна терапия ще окаже върху Вашето здраве." 
+			  ], 
+			  "image": { 
+				 "src": "/assets/images/person-731141_1920.jpg", 
+				 "alt": "" 
+			  }, 
+			  "link": {
+				  "target": "/therapy-benefits.html", 
+				  "text": "Прочетете повече" 
+			  }
+		   }, 
+
+		   { 
+			"heading": { 
+			   "level": 2, 
+			   "text": "Защо уникалната терапия, която" 
+		    }, 
+			"textEntries": [
+			    "нямаме търпение да Ви представим се използва на много и различни места по света и се радва на еднакъв успех навсякъде." 
+			], 
+			"image": { 
+			    "src": "/assets/images/bee-blooming-blossom-blur-551619.jpg", 
+			    "alt": "" 
+			}, 
+			"link": {
+				"target": "/therapy-details.html", 
+				"text": "Прочетете повече" 
+			}
+		 }, 
+
+		 { 
+		   "heading": { 
+			 "level": 2, 
+			 "text": "Кои сме ние" 
+		  }, 
+		   "textEntries": [
+			  "от Ellibeetherapy, и как от отглеждане на пчели и добиване на пчелни продукти, водени от удивлението си стигнахме до тук." 
+		   ], 
+		   "image": { 
+			  "src": "/assets/images/question-2736480_1920.jpg", 
+			  "alt": "" 
+		   }, 
+		   "link": {
+			   "target": "/about-us.html", 
+			   "text": "Прочетете повече" 
+		   }
+	    }
+	    ]   
+	}
+ }

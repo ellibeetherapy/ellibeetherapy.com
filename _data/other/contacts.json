@@ -1,0 +1,90 @@
+{
+	"pageHead": {
+		"heading": { 
+			"level": 5, 
+			"text": "Контакти" 
+		 }, 
+		"subheading": "Main Features Subheading", 
+		"image": { 
+		    "src": "/assets/images/sun-5294496_1920.jpg", 
+		    "alt": "" 
+		}
+	}, 
+
+	"body": {
+		"address": {
+			"heading": {
+				"level": 2,
+				"text": "Адрес"
+			}, 
+			"text": [ 
+				""
+			], 
+			"entries": [ 
+				{
+					"text": "Ще ни намерите в", 
+					"value": "с.Вакарел" 
+				}, 
+
+				{
+					"text": "Ще ни намерите в", 
+					"value": "пътя за вила 'Екатерина'" 
+				}, 
+
+				{
+					"text": "Ще ни намерите в", 
+					"value": "20м от табелата" 
+				} 
+			], 
+			"image": { 
+			"src": "/assets/images/big-wooden-number-sign-hanging-on-brick-wall-of-modern-3964415.jpg", 
+			"alt": "" 
+			} 
+		}, 
+ 
+		"phone": {
+			"heading": {
+				"level": 2,
+				"text": "Телефони"
+			}, 
+			"text": [ 
+				""
+			], 
+			"entries": [ 
+				{
+					"text": "Phone", 
+					"value": "+359 894 05 36 20" 
+				}, 
+
+				{
+					"text": "Phone", 
+					"value": "+359 896 37 66 16" 
+				}
+			], 
+			"image": { 
+			"src": "/assets/images/business-composition-connection-desk-209663.jpg", 
+			"alt": "" 
+			} 
+		}, 
+	 
+		"email": {
+			"heading": {
+				"level": 2,
+				"text": "Имейл" 
+			}, 
+			"text": [ 
+				""
+			], 
+			"entries": [ 
+				{
+					"text": "Email", 
+					"value": "ellibee@ellibeetherapy.com" 
+				} 
+			], 
+			"image": { 
+			"src": "/assets/images/adult-business-businessman-composition-261599.jpg", 
+			"alt": "" 
+			} 
+		}
+	}
+}

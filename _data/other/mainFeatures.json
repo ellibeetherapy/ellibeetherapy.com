@@ -1,0 +1,114 @@
+{ 
+	"className": "main-features", 
+ 
+	"head": {
+	    "heading": { 
+		    "level": 2, 
+		    "text": "Ако имате проблеми, свързани с Вашата" 
+		}, 
+		"textEntries": [ 
+			""
+		]
+	}, 
+ 
+	"body": { 
+	    "template": "main-features.html", 
+	    "context": [
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Имунна система" 
+			 }, 
+			  "subheading": "Feature 01 Subheading", 
+			  "image": { 
+				 "src": "/assets/images/abstract-1846979_1920.jpg", 
+				 "alt": "" 
+			  }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#immune-system", 
+				  "text": "Прочетете повече" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Дихателна система" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#respiratory-system", 
+				  "text": "Прочетете повече" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Сърдечно съдова система" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#cardio-system", 
+				  "text": "Прочетете повече" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Опорно двигателен апарат" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#skeletal-system", 
+				  "text": "Прочетете повече" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Нервна система" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#neural-system", 
+				  "text": "Прочетете повече" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Метаболизъм" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "./therapy-benefits.html#digestive-system", 
+				  "text": "Прочетете повече" 
+			  }
+		   }
+	    ]   
+	}
+ }
