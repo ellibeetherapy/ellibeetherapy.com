@@ -38,7 +38,7 @@ figure.image {
 }
 
 .article.about-us { 
-	--image-count: 2; 
+	--image-count: 1; 
 	--image-gutter: 1rem; 
 }
 
