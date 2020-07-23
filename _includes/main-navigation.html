@@ -1,17 +1,18 @@
-{% assign entries = site.data.mainNavigation %} 
+{% assign entries = site.data[ page.lang ].mainNavigation %} 
 
 <nav class= "main-nav">
 	<h6 class= "usability-heading">Site navigation</h6> 
 	
-	<ul class= "entry-list nav-entry-list">
+	<ul class= "entry-list nav-entry-list"> 
 	{% for entry in entries %} 
-		{% if entry.target == page.url %} 
+		{% assign url = "/" | append: page.lang | append: entry.target %} 
+		{% if url == page.url %} 
 			{% assign currentClassName = " current" %}
 		{% else %}
 			{% assign currentClassName = "" %}
 		{% endif %}
-		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ entry.target }}">{{ entry.text }}</a></li> 
-	{% endfor %}
+		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ url }}">{{ entry.text }}</a></li> 
+	{% endfor %} 
 	</ul>
 
 	<section class="nav-control-buttons">
