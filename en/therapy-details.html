@@ -4,7 +4,7 @@ layout: page
 lang: en 
 --- 
 
-{% assign dataSource = site.data.en %} 
+{% assign dataSource = site.data[ page.lang ] %} 
 
 
 {% include head.html data = dataSource.therapyDetails.pageHead %} 
