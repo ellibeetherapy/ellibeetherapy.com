@@ -5,13 +5,14 @@
 	
 	<ul class= "entry-list nav-entry-list">
 	{% for entry in entries %} 
+		{% assign url = site.data.settings.locale | prepend: "/" | append: entry.target %} 
 		{% if entry.target == page.url %} 
 			{% assign currentClassName = " current" %}
 		{% else %}
 			{% assign currentClassName = "" %}
 		{% endif %}
-		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ entry.target }}">{{ entry.text }}</a></li> 
-	{% endfor %}
+		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ url }}">{{ entry.text }}</a></li> 
+	{% endfor %} 
 	</ul>
 
 	<section class="nav-control-buttons">
