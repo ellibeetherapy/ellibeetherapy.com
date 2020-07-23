@@ -1,4 +1,12 @@
 {
-	"locale": "bg" 
+	"readMoreButton": { 
+		"text": "Прочетете повече"
+
+	}, 
+
+	"openSwitchLangPanelButton": { 
+		"text": "Изберете език" 
+
+	}
 
 }

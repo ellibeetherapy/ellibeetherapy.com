@@ -72,18 +72,13 @@ body {
 }
 
 /* Creates the vertical separating line between the two control buttons */
-.nav-control-buttons :before, 
-.bx-controls-direction :before, 
-.contact-entry:before,  
-.scroll-to-top:before { 
+:before { 
 	/* width: 3.5rem; height: 3.5rem;  */
-	font-family: var( --icon-font-family ); 
-	font-size: 3.2rem; 
+	font-family: var( --icon-font-family );  
 } 
 
 /* Control button text is moved out of the screen to be replaced with an icon */
 .nav-control-buttons button, 
-.bx-controls-direction a, 
 .scroll-to-top {
 	text-indent: -10000px; overflow: hidden; 
 	cursor: pointer; 
@@ -93,15 +88,6 @@ body {
  * Sets control button icons 
  */
 
-/* Assigns prev control button icon */
-.bx-controls-direction .bx-prev:before {
-	content: var( --prev-button-icon ); 
-}
-
-/* Assigns next control button icon */
-.bx-controls-direction .bx-next:before {
-	content: var( --next-button-icon ); 
-}
 
 /**
  * Sets navigation control button icons 
@@ -117,31 +103,14 @@ body {
 	content: var( --close-nav-button-icon ); 
 } 
 
-.scroll-to-top:before { 
-	content: var( --scroll-to-top-button-icon ); 
-
-} 
-
-.contact-entry:before {
-	font-size: 2.2rem; 
-} 
-
-.contact-entry.address:before {
-	content: var( --address-icon ); 
-}
-
-.contact-entry.phone:before {
-	content: var( --phone-icon ); 
-}
-
-.contact-entry.email:before {
-	content: var( --email-icon ); 
-}
-
 
 .button {
 	font-size: 1rem; 
 	text-transform: uppercase; 
+} 
+
+:before { 
+	font-family: Ionicons; 
 }
 
 

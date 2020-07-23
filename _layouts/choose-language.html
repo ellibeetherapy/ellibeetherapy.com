@@ -9,70 +9,17 @@
 <body>
 
 	<script src= "/assets/js/jquery.min.js"></script>
+	<script src= "/assets/js/core.js"></script> 
 
 	<script> 
 		loadCustomIndex(); 
-
-		function getValueOf( cookieName ) {  
-			const cookies = document.cookie
-				.split( ";" )
-				.map( function( cookieString ) {
-					const cookiePair = cookieString.trim().split( "=" ); 
-					return { 
-						"name": cookiePair[ 0 ].trim(), 
-						"value": cookiePair[ 1 ].trim() 
-					}; 
-				} ); 
-
-			for ( const cookie of cookies ) { 
-				if ( cookie[ "name" ] === cookieName ) { 
-					return cookie[ "value" ]; 
-				}
-			}
-
-			return undefined; 
-		} 
-
-		function redirectBasedOn( language ) {  
-			const customIndex = `/${language}/index.html`;  
-			window.location.replace( customIndex ); 
-		} 
-
-		function loadCustomIndex() {    
-			const language = getValueOf( "language" );  
-			if ( language ) { 
-				redirectBasedOn( language ); 
-			}
-		}
-
 	</script>
 
 	<main>
-		<section id= "choose-language">
-			<h2>Изберете език:</h2>
-			<button class= "bg">Български</button>
-			<button class= "en">Английски</button>
-		</section>
-
+		{{ content }} 
 	</main> 
 
-	<script> 
-		$( "#choose-language" )
-			.on( "click", function( e ) { 
-				const language = $( e.target )
-					.attr( "class" ); 
-				setCookie( "language", language ); 
-
-				loadCustomIndex(); 
-
-			} ); 
-
-		function setCookie( key, value ) { 
-			document.cookie = `${key}=${value};secure`; 
-		}
-
-
-	</script>
+	<script src= "/assets/js/switch-lang.js"></script> 
 	
 </body>
 </html>

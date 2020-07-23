@@ -1,5 +1,12 @@
+{% assign dataSource = site.data[ page.lang ] %}
+
 <header class= "header"> 
 	{% include id.html data = site.data.id %}
 
 	{% include main-navigation.html %} 
+
+	<section class= "switch-lang">
+		<button class= "button open-switch-lang-panel-button">{{ dataSource.settings.openSwitchLangPanelButton.text }}</button> 
+		{% include switch-lang.html %} 
+	</section>
 </header>

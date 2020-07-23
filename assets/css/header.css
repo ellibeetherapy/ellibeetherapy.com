@@ -11,7 +11,7 @@
 /* ID and main navigation horizontal centers are aligned */
 .header {  
 	
-	flex-direction: column; 
+	flex-direction: row; flex-wrap: wrap; justify-content: center; 
 	/* justify-content: space-between;  */
 
 	/* Gives header content the width of the content, when header has full width */ 
@@ -55,7 +55,8 @@
 
 /* Gives distance between ID and main navigation */
 .header .id { 
-	order: 2; 
+	order: 3; 
+	width: 100%; 
 	/* margin-right: 5rem;  */
 	margin-top: var( --id-margin-top ); 
 }
@@ -105,7 +106,8 @@
 }
 
 /* Navigation link clickable sizing */
-.main-nav .nav-link {
+.main-nav .nav-link, 
+.open-switch-lang-panel-button {
 	display: inline-block; 
 	/* width: var( --main-nav-link-width );  */ 
 	height: var( --main-nav-height ); line-height: var( --main-nav-height ); 
@@ -126,7 +128,81 @@
 
 .main-nav .nav-entry.current:after { 
 	opacity: 1; 
+} 
+
+.switch-lang { 
+	order: 2; 
+	margin-left: 5rem; 	
+	position: relative; 
+	overflow: hidden; 
+
+} 
+
+.switch-lang-panel { 
+	position: absolute; 
+	left: 0; top: 100%; 
+	width: 100%; 
+	padding-top: 4rem; 
+	opacity: 0; 
 }
+
+.open-switch-lang-panel-button { 
+	display: flex; align-items: center; 
+	padding-left: 0.85rem; padding-right: 0.85rem; 
+	border: none;
+
+}
+
+.open-switch-lang-panel-button:before { 
+	width: auto; 
+	position: relative; 
+	margin-right: 0.5rem; 
+} 
+
+/* .open-switch-lang-panel-button:after { 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0;  
+	z-index: -1; 
+	content: ""; 
+
+} */
+
+.switch-lang-button { 
+	width: 100%; 
+	background-color: transparent; 
+	border: none; border-bottom: 1px solid; 
+
+} 
+
+.switch-lang-button:last-of-type { 
+	border: none; 
+
+} 
+
+.switch-lang:hover { 
+	overflow: visible; 
+
+}
+
+.switch-lang:hover .switch-lang-panel { 
+	transition-property: opacity, padding-top; transition-duration: 0.2s; 
+	padding-top: 2rem;  
+	opacity: 1; 
+} 
+
+/* .switch-lang:hover :after { 
+	background-color: var( --heading-color ); 
+
+} */ 
+
+.open-switch-lang-panel-button:hover { 
+	background-color: transparent; 
+	color: var( --heading-color ); 
+
+}
+
+
 
 
 /* -----------------------------------------------------------------
@@ -141,9 +217,16 @@
 	font-size: 1.2rem; 
 }
 
-.main-nav .nav-link { 
+.main-nav .nav-link, 
+.open-switch-lang-panel-button { 
 	font-family: var( --heading-font-family ); 
 	font-size: 0.85rem; 
+} 
+
+.open-switch-lang-panel-button:before { 
+	font-size: 1.7rem; 
+	content: "\f385"; 
+
 }
 
 
@@ -185,6 +268,10 @@
 .close-nav-button:before {
 	color: #EEE;
 } */ 
+
+.open-switch-lang-panel-button { 
+	background-color: transparent; 
+}
 
 
 /* -----------------------------------------------------------------

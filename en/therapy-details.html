@@ -1,9 +1,13 @@
 ---
 title: За терапията 
-layout: page
----
+layout: page 
+lang: en 
+--- 
 
-{% include head.html data = site.data.therapyDetails.pageHead %} 
+{% assign dataSource = site.data.en %} 
 
-{% include article.html data = site.data.therapyDetails %} 
+
+{% include head.html data = dataSource.therapyDetails.pageHead %} 
+
+{% include article.html data = dataSource.therapyDetails %} 
 

@@ -1,8 +1,12 @@
 ---
 title: Ползи от терапията 
-layout: page
----
+layout: page 
+lang: en 
+--- 
 
-{% include head.html data = site.data.therapyBenefits.pageHead %} 
+{% assign dataSource = site.data.en %} 
 
-{% include article.html data = site.data.therapyBenefits %} 
+
+{% include head.html data = dataSource.therapyBenefits.pageHead %} 
+
+{% include article.html data = dataSource.therapyBenefits %} 
