@@ -5,18 +5,17 @@
 	
 	<ul class= "entry-list nav-entry-list">
 	{% for entry in entries %} 
-		{% assign url = entry.target %} 
 		{% if entry.target == page.url %} 
 			{% assign currentClassName = " current" %}
 		{% else %}
-			{% assign currentClassName = "" %}
+			{% assign currentClassName = "" %} 
 		{% endif %}
-		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ url }}">{{ entry.text }}</a></li> 
+		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ entry.target }}">{{ entry.text }}</a></li> 
 	{% endfor %} 
 	</ul>
 
 	<section class="nav-control-buttons">
-		<button class="open-nav-button">Open Navigation</button>
-		<button class="close-nav-button">Close Navigation</button>
+		<button class="button open-nav-button">Open Navigation</button>
+		<button class="button close-nav-button">Close Navigation</button>
 	</section> 
 </nav>

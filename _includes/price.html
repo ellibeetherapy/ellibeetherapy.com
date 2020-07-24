@@ -1,9 +1,6 @@
 {% assign price = include.data %} 
 
 <section class= "price">
-    {% if price.isMin %}
-        <p>From</p>
-    {% endif %}
     <dl class= "integral-part key-value-pair">
         <dt class= "key">Integral part</dt>
         <dd class= "value">{{ price.integralPart }}</dd> 
