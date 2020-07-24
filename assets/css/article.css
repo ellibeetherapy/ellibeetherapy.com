@@ -47,6 +47,7 @@ figure.image {
 .article.therapy-details figure img, 
 .article.about-us figure img { 
 	max-width: calc( ( 100% - calc( var( --image-count ) - 1 ) * var( --image-gutter ) ) / var( --image-count ) ); 
+	height: auto; 
 	margin-right: var( --image-gutter ); 
 	opacity: 0.8; 
 } 

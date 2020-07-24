@@ -21,7 +21,7 @@
 {% endfor %}
 
 {% if link %}
-	<a class= "button details-link" href= {{ "/" | append: site.data.settings.locale | append: link.target }}>{{ link.text }}</a> 
+	<a class= "button details-link" href= {{ link.target }}>{{ link.text }}</a> 
 {% endif %} 
 
 </section>
