@@ -1,9 +1,9 @@
-$( ".switch-lang" ) 
+$( ".switch-lang-panel" ) 
 	.on( "click", function( e ) { 
-		const language = $( e.target )
+		const lang = $( e.target )
 			.attr( "data-lang" ); 
-		setCookie( "language", language ); 
+		Cookies.set( "lang", lang, { expires: 30 } ); 
 
-		loadCustomIndex(); 
+		redirectTo( lang );  
 
 	} ); 

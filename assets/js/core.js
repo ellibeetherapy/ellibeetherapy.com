@@ -1,32 +1,37 @@
-function getValueOf( cookieName ) {  
-	const cookies = document.cookie
-		.split( ";" )
-		.map( function( cookieString ) {
-			const cookiePair = cookieString.trim().split( "=" ); 
-			return { 
-				"name": cookiePair[ 0 ].trim(), 
-				"value": cookiePair[ 1 ].trim() 
-			}; 
-		} ); 
+// function getCookieValue( name ) {   
+// 	const cookies = parseCookies(); 
+// 	return Object.keys( cookies ).includes( name ) 
+// 		? cookies[ name ] 
+// 		: undefined; 
+// } 
 
-	for ( const cookie of cookies ) { 
-		if ( cookie[ "name" ] === cookieName ) { 
-			return cookie[ "value" ]; 
-		}
-	}
+// function parseCookies() { 
+// 	const cookies = {}; 
+// 	document.cookie
+// 		.split( ";" ) 
+// 		.forEach( function( pairString ) { 
+// 			const pair = pairString
+// 				.split( "=" )
+// 				.map( function( m ) { 
+// 					return m.trim(); 
+// 				} ); 
+// 			cookies[ pair[ 0 ] ] = cookies[ pair[ 1 ] ]; 
+// 		} ); 
+// 	return cookies; 
+// }
 
-	return undefined; 
+function redirectTo( lang ) {  
+	const page = `/${lang}/` + getPageName( window.location.href );  
+	window.location.replace( page ); 
 } 
 
-function redirectBasedOn( language ) {  
-	const customIndex = `/${language}/` + getPageName( window.location.href );  
-	window.location.replace( customIndex ); 
-} 
+function loadPage() {    
+	const lang = Cookies.get( "lang" );   
 
-function loadCustomIndex() {    
-	const language = getValueOf( "language" );  
-	if ( language ) { 
-		redirectBasedOn( language ); 
+	if ( lang !== undefined && lang !== "bg" ) { 
+		redirectTo( lang ); 
+	} else { 
+		redirectTo( "bg" ); 
 	}
 } 
 
@@ -34,6 +39,10 @@ function getPageName( url ) {
 	return url.split( "/" ).pop(); 
 } 
 
-function setCookie( key, value ) { 
-	document.cookie = `${key}=${value};secure`; 
-}
+// function setCookie( name, value ) { 
+// 	document.cookie = `${name}=${value};path=/ ;secure`; 
+// } 
+
+// function deleteCookie( name ) { 
+// 	document.cookie = name + "=; max-age=0; expires=Thu, 01 Jan 1970 00:00:01 GMT;"; 
+// }
