@@ -36,22 +36,31 @@ figure.image {
 	--image-gutter: 1rem; 
 }
 
-.article figure { 
+.text-entry-images { 
 	box-sizing: border-box; 
-	display: flex; flex-direction: row; align-items: center; 
-	height: auto; 
+	/* display: flex; flex-direction: row; align-items: center;  */ 
 	margin-bottom: 1.75rem; margin-top: 1.2rem; 
-	padding: 1.2rem; 
-	background-color: rgba( 255, 255, 255, 0.4 );
+	padding: 1.2rem;  
+	position: relative; 
+	background-color: rgba( 255, 255, 255, 0.4 ); 
+} 
+
+/* .image-entry { 
+	width: 100%; 
+} */
+
+.image-entry img { 
+	/* height: 450px;  */ 
+	width: 100%; 
 }
 
-.article.therapy-details figure img, 
+/* .article.therapy-details figure img, 
 .article.about-us figure img { 
 	max-width: calc( ( 100% - calc( var( --image-count ) - 1 ) * var( --image-gutter ) ) / var( --image-count ) ); 
 	height: auto; 
 	margin-right: var( --image-gutter ); 
 	opacity: 0.8; 
-} 
+}  */
 
 .article figure img:last-child { 
 	margin-right: 0; 
@@ -61,4 +70,18 @@ figure.image {
 .image img {
 	display: none !important; 
 } 
+
+.image-list-caption { 
+	padding: 1.25rem; 
+	position: absolute; left: 50%; top: 50%; transform: translate( -50%, -50% ); 
+	/* border-width: 0.7rem; border-style: solid; border-color: rgba( 0, 0, 0, 0.2 );   */
+	border-radius: 0.8rem; 
+	background-color: var( --text-background-color ); 
+	font-family: ArialBlack; font-size: 0.75rem; 
+	text-transform: uppercase; 
+	color: var( --text-color ); 
+	line-height: 1.25; 
+	text-align: center; 
+
+}
 

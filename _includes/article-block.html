@@ -12,10 +12,14 @@
 {% for entry in textEntries %}
 	<p class= "text-entry">{{ entry.text }}</p> 
 	{% if entry.images %}
-		<figure>
-			{% for entryImage in entry.images %}
-				<img src= {{ entryImage.src }} alt= {{ entryImage.alt }} /> 
-			{% endfor %}
+		{% assign images = entry.images %}
+		<figure class= "text-entry-images"> 
+			<ul class= "image-entry-list"> 
+			{% for entryImage in images.entries %}
+				<li class= "image-entry"><img src= {{ entryImage.src }} alt= {{ entryImage.alt }} /></li> 
+			{% endfor %} 
+			</ul>
+			<figcaption class= "image-list-caption">{{ images.caption }}</figcaption> 
 		</figure>
 	{% endif %} 
 {% endfor %}

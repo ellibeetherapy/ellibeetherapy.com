@@ -4,9 +4,10 @@
 		auto: true, 
 		loop: true, 
 		pause: 7000, 
-		pauseOnHover: true, 
+		pauseOnHover: true,  
 		item: 1, 
 		pager: true, 
+		gallery: true, 
 		controls: false 
 
 	} ); 
