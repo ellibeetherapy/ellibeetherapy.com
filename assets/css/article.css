@@ -72,7 +72,6 @@ figure.image {
 } 
 
 .image-list-caption { 
-	/* box-sizing: border-box;  */ 
 	max-width: 14rem; 
 	padding-left: 0.85rem; padding-right: 0.85em; padding-top: 1rem; padding-bottom: 1rem; 
 	position: absolute; left: 50%; top: 50%; transform: translate( -50%, -50% ); 
