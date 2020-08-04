@@ -14,7 +14,12 @@
 	{% if entry.images %}
 		{% assign images = entry.images %}
 		<figure class= "text-entry-images"> 
-			<ul class= "image-entry-list"> 
+			{% if images.entries.size > 1 %} 
+				{% assign imagesClassName = " multiple-images" %} 
+			{% else %} 
+				{% assign imagesClassName = " single-image" %}
+			{% endif %}
+			<ul class= "{{ 'image-entry-list' | append: imagesClassName }}"> 
 			{% for entryImage in images.entries %}
 				<li class= "image-entry"><img src= {{ entryImage.src }} alt= {{ entryImage.alt }} /></li> 
 			{% endfor %} 
