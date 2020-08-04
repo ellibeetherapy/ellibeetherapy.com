@@ -19,7 +19,9 @@
 				<li class= "image-entry"><img src= {{ entryImage.src }} alt= {{ entryImage.alt }} /></li> 
 			{% endfor %} 
 			</ul>
-			<figcaption class= "image-list-caption">{{ images.caption }}</figcaption> 
+			{% if images.caption %}
+				<figcaption class= "image-list-caption">{{ images.caption }}</figcaption> 
+			{% endif %}
 		</figure>
 	{% endif %} 
 {% endfor %}

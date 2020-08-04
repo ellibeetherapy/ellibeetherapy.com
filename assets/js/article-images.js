@@ -1,12 +1,9 @@
 ( function() {
 	// Initializes main slider
-	$( '.image-entry-list' ).lightSlider( { 
-		// loop: true, 
-		pause: 7000, 
-		pauseOnHover: true,  
+	$( '.therapy-details .image-entry-list' ).lightSlider( { 
 		item: 2, 
 		pager: false, 
-		controls: true
+		controls: true 
 
 	} ); 
  
