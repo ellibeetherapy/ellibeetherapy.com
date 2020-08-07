@@ -21,18 +21,40 @@
 // }
 
 function redirectTo( lang ) {  
-	const page = `/${lang}/` + getPageName( window.location.href );  
+	let langDir = ""; 
+	if ( lang !== "bg" ) { 
+		langDir = "/" + lang; 
+	}
+	const page = langDir + "/" + getPageName( window.location.href );  
 	window.location.replace( page ); 
 } 
 
 function loadPage() {    
 	const lang = Cookies.get( "lang" );   
 
-	if ( lang !== undefined && lang !== "bg" ) { 
+	if ( lang === undefined ) { 
+		Cookies.set( "lang", "bg", { expires: 30 } ); 
+		return; 
+	} 
+
+	const currentLang = document
+		.querySelector( "html" )
+		.getAttribute( "lang" ); 
+	if ( currentLang !== lang ) { 
 		redirectTo( lang ); 
-	} else { 
-		redirectTo( "bg" ); 
 	}
+	
+
+	// if ( Cookies.get( "redirected" ) === undefined ) { 
+	// 	Cookies.set( "redirected", true ); 
+	// 	redirectTo( Cookies.get( "lang" ) ); 
+	// }  
+
+	// if ( lang !== undefined && lang !== "bg" ) { 
+	// 	redirectTo( lang ); 
+	// } else { 
+	// 	redirectTo( "bg" ); 
+	// }
 } 
 
 function getPageName( url ) { 

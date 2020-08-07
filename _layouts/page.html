@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang= "{{ page.lang }}"> 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="/assets/plugins/lightslider/dist/css/lightslider.min.css"> 
 </head>
 <body>  
+
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> 
+	<script src= "/assets/js/core.js"></script> 
+	<script>
+		loadPage(); 
+	</script>
 
 	{% include header.html %} 
 
@@ -20,14 +26,13 @@
 	<script src= "/assets/js/jquery.min.js"></script> 
 	<script src= "/assets/plugins/lightslider/dist/js/lightslider.min.js"></script> 
 	<script src= "/assets/plugins/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script> 
+	<script src= "/assets/js/form-submission.js"></script> 
 
 	<script src= "/assets/js/sell-points.js"></script> 
 
 	<script src= "/assets/js/main-navigation.js"></script> 
+
 	<script src= "/assets/js/scroll-to-top.js"></script> 
-	<script src= "/assets/js/form-submission.js"></script> 
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> 
-	<script src= "/assets/js/core.js"></script> 
 	<script src= "/assets/js/switch-lang.js"></script> 
 	
 </body>

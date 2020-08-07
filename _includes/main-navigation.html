@@ -5,13 +5,19 @@
 	
 	<ul class= "entry-list nav-entry-list"> 
 	{% for entry in entries %} 
-		{% assign url = "/" | append: page.lang | append: entry.target %} 
+		{% assign url = entry.target %} 
+		{% if page.lang != "bg" %}
+			{% assign url = "/" | append: page.lang | append: url %} 
+		{% endif %} 
+		
+		{% assign currentClassName = "" %}
 		{% if url == page.url %} 
-			{% assign currentClassName = " current" %}
-		{% else %}
-			{% assign currentClassName = "" %}
+			{% assign currentClassName = " current" %} 
 		{% endif %}
-		<li class= "entry nav-entry{{ currentClassName }}"><a class= "nav-link" href= "{{ url }}">{{ entry.text }}</a></li> 
+
+		<li class= "entry nav-entry{{ currentClassName }}">
+			<a class= "nav-link" href= "{{ url }}">{{ entry.text }}</a> 
+		</li> 
 	{% endfor %} 
 	</ul>
 

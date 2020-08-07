@@ -1,6 +1,17 @@
 ---
 title: Home
-layout: choose-language 
----
+layout: page 
+lang: bg 
+--- 
 
-{% include switch-lang.html %} 
+{% assign dataSource = site.data[ page.lang ] %} 
+
+
+{% include section.html data = dataSource.sellPoints %} 
+
+{% include section.html data = dataSource.mainFeatures %} 
+
+{% include section.html data = dataSource.therapyDetails.pointer %} 
+
+{% include section.html data = dataSource.aboutUs.pointer %} 
+
