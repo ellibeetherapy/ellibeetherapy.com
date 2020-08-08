@@ -130,124 +130,6 @@
 	opacity: 1; 
 } 
 
-.switch-lang { 
-	height: var( --main-nav-height ); 
-	overflow: hidden; 
-}
-
-.switch-lang { 
-	order: 2; 
-	margin-left: 5rem; 	
-	position: relative; 
-	overflow: hidden; 
-	color: var( --heading-color ); 
-
-} 
-
-.switch-lang-panel { 
-	position: absolute; 
-	left: 0; top: 100%; 
-	width: 100%;  
-} 
-
-.switch-lang:hover { 
-	height: auto; 
-	margin-bottom: -2rem; 
-	overflow: visible; 
-
-} 
-
-.switch-lang:hover .open-switch-lang-panel-button { 
-	margin-bottom: 2rem; 
-
-}
-
-/* .switch-lang:hover .switch-lang-panel { 
-	transition-property: opacity, padding-top; transition-duration: 0.2s; 
-	padding-top: 2rem;  
-	opacity: 1; 
-}  */
-
-/* .switch-lang:hover :after { 
-	background-color: var( --heading-color ); 
-
-} */ 
-
-.open-switch-lang-panel-button:hover, .switch-lang-button.button { 
-	background-color: transparent; 
-	color: var( --heading-color ); border-color: var( --heading-color ); 
-
-}
-
-.open-switch-lang-panel-button { 
-	display: flex; align-items: center; 
-	padding-left: 0.85rem; padding-right: 0.85rem; 
-	border: none;
-
-}
-
-.open-switch-lang-panel-button:before { 
-	width: auto; 
-	position: relative; 
-	margin-right: 0.5rem; 
-} 
-
-/* .open-switch-lang-panel-button:after { 
-	display: block; 
-	width: 100%; height: 100%; 
-	position: absolute; left: 0; top: 0;  
-	z-index: -1; 
-	content: ""; 
-
-} */ 
-
-/* .switch-lang-panel:before { 
-	display: block; 
-	width: 100%; height: 4rem; 
-	position: initial; 
-	content: ""; 
-
-} */
-
-.switch-lang .button { 
-	cursor: pointer; 
-}
-
-.switch-lang-button { 
-	width: 100%; 
-	background-color: transparent; 
-	border: none; 
-
-} 
-
-.switch-lang-panel-entry { 
-	border-bottom: 1px solid; 
-}
-
-.switch-lang-panel-entry:last-of-type { 
-	border: none; 
-} 
-
-.switch-lang-button:before, .switch-lang-panel:hover .switch-lang-button:before { 
-	display: inline-block; 
-	width: auto; height: auto; 
-	margin-right: 0.75rem; 
-	position: initial; 
-	content: "\f488"; 
-	transform: translateX( -0.75rem ); 
-	opacity: 0; 
-} 
-
-.switch-lang-button.current-lang-button:before, .switch-lang-panel:hover .switch-lang-button:hover:before { 
-	transform: translateX( 0 ); 
-	opacity: 1; 
-
-}
-
-
-
-
-
 
 /* -----------------------------------------------------------------
 	Typography
@@ -267,12 +149,6 @@
 	font-size: 0.85rem; 
 } 
 
-.open-switch-lang-panel-button:before { 
-	font-size: 1.7rem; 
-	content: "\f385"; 
-
-}
-
 
 /* -----------------------------------------------------------------
 	Color
@@ -282,11 +158,6 @@
 	color: var( --heading-color );  
 
 }
-
-/* .nav-link:hover {
-	color: #EEE; 
-	background-color: #555; 
-} */ 
 
 .nav-entry-list:hover .nav-entry:after { 
 	opacity: 0; 
@@ -312,10 +183,6 @@
 .close-nav-button:before {
 	color: #EEE;
 } */ 
-
-.open-switch-lang-panel-button { 
-	background-color: transparent; 
-}
 
 
 /* -----------------------------------------------------------------
