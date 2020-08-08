@@ -5,8 +5,5 @@
 
 	{% include main-navigation.html %} 
 
-	<section class= "switch-lang">
-		<button class= "button open-switch-lang-panel-button">{{ dataSource.settings.openSwitchLangPanelButton.text }}</button> 
-		{% include switch-lang.html %} 
-	</section>
+	{% include switch-lang.html data = dataSource.switchLangButtons %} 
 </header>

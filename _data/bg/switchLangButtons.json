@@ -1,0 +1,18 @@
+{ 
+	"currentLangButtonClassName": "current-lang-button", 
+
+	"heading": "", 
+	"text": "", 
+
+	"entries": [ 
+		{
+			"text": "Български", 
+			"lang": "bg"
+		}, 
+
+		{ 
+			"text": "Английски", 
+			"lang": "en"
+		}
+	]
+}

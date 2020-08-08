@@ -1,9 +1,16 @@
-$( ".switch-lang-panel" ) 
-	.on( "click", function( e ) { 
-		const lang = $( e.target )
-			.attr( "data-lang" ); 
-		Cookies.set( "lang", lang, { expires: 30 } ); 
+( function() { 
+	$( ".switch-lang-panel" ) 
+		.on( "click", function( e ) { 
+			const lang = $( e.target )
+				.attr( "data-lang" ); 
 
-		redirectTo( lang );  
+			if ( lang === getPageLang() ) { 
+				return; 
+			}
 
-	} ); 
+			Cookies.set( "lang", lang, { expires: 30 } ); 
+
+			redirectTo( lang );  
+
+		} ); 
+}() );
