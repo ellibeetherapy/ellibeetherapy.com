@@ -16,7 +16,7 @@
 	"head": {
 		"heading": { 
 			"level": 1, 
-			"text": "Кои сме ние от Ellibeetherapy" 
+			"text": "About us, of Ellibeetherapy" 
 		}, 
 		"subheading": "", 
 		"textEntries": [
@@ -33,7 +33,7 @@
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				{
-					"text": "Казвам се Георги Стойнов и живея със семейството си в село Вакарел, Софийско. От няколко години се занимавам любителски с отглеждане на пчели и добив на пчелни продукти: висококачествен пчелен мед, пчелен прашец, восък и прополис. Почти всичко свързано с дейността на пчелите намира полезно приложение в човешкия бит и поминък.", 
+					"text": "My name is Georgi Stoynov, I live with my family in Vakarel, about 20 km. east of Sofia. I have been doing some beekeeping for the last few years, harvesting high quality honey, pollen, bee wax and propolis. Almost anything involved with bees’ activity finds some sort of useful application in human everyday life.", 
 					"images": [
 						{ 
 							"src": "/assets/images/14FAEED66-F0EA-43AD-92DD-5FD6833AA8DD.jpeg", 
@@ -43,11 +43,11 @@
 				}, 
 
 				{
-					"text": "За няколко пчеларски сезона в мен се култивира голяма любов и уважение към пчелите, удивен съм от тяхната безупречна организация и устройство на пчелното семейство. Прекланям се пред пословичното пчелно трудолюбие и черпя сили и вдъхновение от него. Как дори бихме могли да изразим с думи огромното и неоценимо значение на пчелното опрашване за развитието на всяка една екосистема и критичната му важност за земеделските култури и селското стопанство. Старая се всячески да подпомагам и улеснявам дейността на тези свещени животинки и да ги предпазвам от болести и вредители като благодарност за благата, с които безкористно ни даряват. Бих желал да вярвам, че нашата връзка е симбиотична тоест основана на взаимна изгода, а не само експлоатация на пчелното трудолюбие и последователност."
+					"text": "I cultivated a lot of love and respect for my bees in a few beekeeping seasons. I am in awe of bees’ proverbial diligence and the immaculate structure and organization of the bee colony. This gives me strength and inspiration. How could we possibly express in words the tremendous and invaluable significance of bee’s blossom pollination for the sustainability of any given ecosystem and its crucial importance for agriculture. I try by all means to help and facilitate the activities of these sacred insects, to protect them from illnesses and pests as a gratitude for the gifts they bestow so selflessly upon us. I would like to believe our relationship is symbiotic, i.e. based on mutual benefits, rather than just the exploitation of the bee’s hard labor and steadfast consistency."
 				}, 
 
 				{
-					"text": "Чрез комуникация с по-опитни пчелари-ветерани, форуми и пчеларски обединения в социалните мрежи откривам по нещо ново, непознато и интересно с всеки изминал ден. Преди известно време се натъкнах на едно недотам популярно и уставено като практика в България пчелно приложение известно като апитерапия (от лат. Apis-пчела). Интуицията ми подсказа, че потенциалът на тази дейност си струва да се провери и аз отделих солидна порция от времето си в проучване, резултатът от което е представен тук в дистилиран и компресиран вариант." 
+					"text": "Via communication with more experienced veteran beekeepers on social platforms or in person, I find every day something new and interesting. Not long ago I came across a very interesting application of bee colonies harnessed for the purpose of various human health benefits, which I named vibration-respiratory apitherapy (from Latin “Apis”-bee). Intuitively, I figured there is a lot of potential in this activity worth exploring, so consequently I devoted a solid portion of my time and efforts to make this project come to life." 
 				}
 			]
 		} 
@@ -59,11 +59,11 @@
 		"head": {
 		    "heading": { 
 			    "level": 2, 
-			    "text": "За нас" 
+			    "text": "About us" 
 			}, 
 		    "subheading": "Slider Subheading", 
 		    "textEntries": [ 
-			   "Повече за нас, опита който сме натрупали и причините да сме тук." 
+			   "The experience we have gained and the reasons we are offering you to try our therapy." 
 		    ], 
 		    "image": { 
 			   "src": "/assets/images/business-card-2818689_1920.jpg", 
@@ -71,7 +71,7 @@
 		    }, 
 		    "link": { 
 			    "target": "/about-us.html", 
-			    "text": "Повече" 
+			    "text": "Read more" 
 		    } 
 		}
 	}

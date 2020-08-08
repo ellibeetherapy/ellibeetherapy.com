@@ -15,25 +15,25 @@
 		"address": {
 			"heading": {
 				"level": 2,
-				"text": "Адрес"
+				"text": "Address"
 			}, 
 			"text": [ 
 				""
 			], 
 			"entries": [ 
 				{
-					"text": "Ще ни намерите в", 
-					"value": "с.Вакарел" 
+					"text": "", 
+					"value": "Vakarel" 
 				}, 
 
 				{
-					"text": "Ще ни намерите в", 
-					"value": "пътя за вила 'Екатерина'" 
+					"text": "", 
+					"value": "Villa 'Ekaterina' road" 
 				}, 
 
 				{
-					"text": "Ще ни намерите в", 
-					"value": "20м от табелата" 
+					"text": "", 
+					"value": "20m rightside of our signboard" 
 				} 
 			], 
 			"image": { 
@@ -45,7 +45,7 @@
 		"phone": {
 			"heading": {
 				"level": 2,
-				"text": "Телефони"
+				"text": "Phones"
 			}, 
 			"text": [ 
 				""
@@ -70,7 +70,7 @@
 		"email": {
 			"heading": {
 				"level": 2,
-				"text": "Имейл" 
+				"text": "Email" 
 			}, 
 			"text": [ 
 				""

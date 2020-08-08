@@ -1,23 +1,25 @@
+{% assign data = include.data %} 
+
 <section class= "write-us"> 
-	<h2 class= "heading">Пишете ни</h2> 
+	<h2 class= "heading">{{ data.heading.text }}</h2> 
 
 	<form class= "gform send-message" action= "https://script.google.com/macros/s/AKfycbzt9eNw-D0Ki7CByVWbnQLzgYqJt1v7KnMDgLIG6Q/exec"> 
 		<label class= "label name" for= "name">
-			<input class= "field name" name= "name" type="text" placeholder= "Вашето име" />
+			<input class= "field name" name= "name" type="text" placeholder= "{{  }}" />
 		</label>
 	
 		<label class= "label email" for= "email">
-			<input class= "field email" name= "email" type="email" placeholder= "Вашият имейл" required />
+			<input class= "field email" name= "email" type="email" placeholder= "{{  }}" required />
 		</label>
 
 		<label class= "label message" for= "message"> 
-			<textarea class= "field message" name= "message" placeholder= "Вашето съобщение" required></textarea>
+			<textarea class= "field message" name= "message" placeholder= "{{  }}" required></textarea>
 		</label> 
 
-		<button class= "button submit-button" type= "submit">Изпратете</button> 
+		<button class= "button submit-button" type= "submit">{{  }}</button> 
 		
 		<div class="thankyou_message"> 
-			<p><em>Благодарим Ви,</em> че ни писахте! Очаквайте отговор от нас скоро.</p> 
+			<p>{{  }}</p> 
 		</div> 
 	</form> 
 </section>

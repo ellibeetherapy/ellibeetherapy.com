@@ -16,16 +16,16 @@
 	"head": {
 		"heading": { 
 			"level": 2, 
-			"text": "Какви са ползите от приложението на вибрационно-респираторната пчелна терапия и имунопрофилактика за човешкото здраве?" 
+			"text": "What are the benefits of vibration-respiratory therapy and immune prophylactics for the human health?" 
 		}, 
 		"subheading": "", 
 		"textEntries": [
 			{
-				"text": "Терапевтите са единодушни, че при апитерапията са налице комбинация от фактори, които благоприятстват за зараждане на състояние в човешкия организъм, от което произтичат процеси на самовъзстановяване и самолечение. Микро-вибрацията създадена от трептенето и жуженето на пчелните крилца, които пърхайки изпаряват влагата от пчелния нектар и го превръщат в мед, за човешкото тяло лежащо непосредствено над кошерите е като своеобразен лек вибро-масаж, който е изключително полезен за нервната и мускулно-опорната система."
+				"text": "Therapists unequivocally agree about the combination of factors created in apitherapy, which facilitate the process of self healing and replenishment of the body’s vital capacities. The micro vibration of the bees’ bodies and wings acts as a subtle vibration massage for the human body lying directly above the hives, which is excellent for the nervous system and musculoskeletal apparatus."
 			}, 
 
 			{
-				"text": "Най-съществени са облагите от терапията при заболявания и затруднения в дейността сърдечно-съдовата и дихателната система, което в светлината на днешната коронавирус реалност ще бъде изключително полезно за всички, които естествено попадат в групата на застрашените от заразяване с вируса, и неутрализират пагубните му последствия при наличието на компрометирана сърдечно-съдова и дихателна системи у приемниците."
+				"text": "Apitherapy’s most essential benefits are the ones related to remedying problems and dysfunctions of the respiratory and cardiovascular systems as well as the immune system. In today’s corona virus gruesome reality people with compromised immune and respiratory systems are most susceptible to COVID-19 and its future mutations." 
 			}
 		] 
 	}, 
@@ -35,12 +35,16 @@
 			"id": "immune-system", 
 			"heading": { 
 				"level": 3, 
-				"text": "Имунна система" 
+				"text": "Immune system" 
 			}, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				{
-					"text": "Всеки що-годе читав и грамотен лекар би следвало винаги да изхожда от позицията и да се ръководи от принципа известен още от времената на Хипократ, че профилактиката и превенцията са най-доброто лечение. В съвременната медицинска практика широко е застъпено и прекалено се разчита на лечението с фармацевтични продукти, с които обикновено се третират симптомите, но не и корена на заболяването. Силната имунна система е главната предпоставка за доброто човешко здраве, тя не позволява на заболяванията да пускат корени, а ги ликвидира в инкубационен период. Апитерапията, както и различните приложения на всички пчелни продукти (мед, полен, прополис) определено са изключително силно средство за подсилване на човешката имунна система. Апитерапията стимулира по естествен път производството на нови имунни клетки: лимфоцити, макрофаги и неутрофили." 
+					"text": "Every competent and caring medical doctor should be guided and directed in his practice by the principle known since the times of Hippocrates, that prophylactics and prevention are the best medical treatment. Modern medicine heavily relies on treatment with pharmaceutical products, which most commonly addresses the symptoms, rather than the underlying cause of any given health problem. Strong and non-compromised immune system is the main requirement for good human health. Good immune system doesn’t let any illness to grow in the organism, but extinguishes it either in incubation period or fights it successfully if the illness is manifested." 
+				}, 
+
+				{
+					"text": "The vibration-respiratory apitherapy, as well as the medical applications of all bee products (honey, pollen, propolis, bee poison), are definitely an exquisite resource for boosting your immune system. Apitherapy naturally stimulates the production of new immune cells known as macrophages, lymphocytes and neutrophiles. Another crucial effect from the treatment is the natural stress relief, as we all know accumulation of stress is the most common cause of weakened immune system." 
 				}
 			]
 		}, 
@@ -49,12 +53,16 @@
 			"id": "respiratory-system",
 			"heading": { 
 				"level": 3, 
-				"text": "Дихателна система" 
+				"text": "Respiratory system" 
 			}, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				{
-					"text": "Въздухът в пчелина е наситен с аромата на мед, прополис, восък, той е чист, свеж и богат на отрицателни йони. Преди да попадне в белите ни дробове, този въздух е бил подложен на щателно пречистване в сложната, жива лаборатория на кошера, където е преминал през естествен филтър. Благодарение на обработката на пчелното гнездо с прополис и отделящите се етерични съединения, въздухът в кошера е стерилен и лечебен. Наситеният с микрочастици прополис(високопотентен естествен антибиотик), многократно филтриран и йонизиран въздух проникващ от пчелните кошери в терапевтичното помещение през вентилационните отвори спомага за прочистване на бронхите, улеснява храчкоотделянето и елиминира бактерии и вируси по горните дихателни пътища."
+					"text": "The air in the therapeutic room is saturated with aromas of honey, wax and propolis. It is clean and fresh, rich in negatively charged ions. Before you breath it in your lungs, you should know this air has been subjected to a thorough cleansing in the elaborate live laboratory inside the hive, where it undergoes natural filtration."
+				}, 
+
+				{
+					"text": "Bees use a resinous substance called propolis to fill up cracks and seal the hive. Propolis is highly potent natural antibiotic, which makes the air in the hive sterile and healing. Breathing this air ventilated into the therapeutic room facilitates cleansing of the bronchi, easier release of phlegm and eliminates bacteria and viruses in the upper respiratory tract."
 				}
 			]
 		}, 
@@ -63,12 +71,12 @@
 			"id": "cardio-system",
 			"heading": { 
 				"level": 3, 
-				"text": "Сърдечно-съдова система" 
+				"text": "Cardiovascular system" 
 			}, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				{
-					"text": "Апитерапията способства за оптимизиране на работата на сърцето и общото състоянието на сърдечно-съдовата система, перфектно нормализира кръвното налягане и елиминира всички нарушения в нормалното движение на кръвния поток." 
+					"text": "Apitherapy optimizes the functions of the heart and the general condition of the cardiovascular system. Balances blood pressure in normal parameters and mitigates dysfunctional activities in the circulation of the blood flow." 
 				}
 			]
 		}, 
@@ -77,12 +85,16 @@
 			"id": "neural-system",
 			"heading": { 
 				"level": 3, 
-				"text": "Нервна система" 
+				"text": "Nervous system" 
 			}, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				{
-					"text": "За успокояване на нервната система способстват ароматите, които се отделят от кошерите както и биополето на пчелите, което чрез присъствието си и ритмичното бръмчене предизвиква усещане за мир и помага на организма да се настрои на медитационна вълна и бързо потъване в сън. Сънят в кошерите премахва признаци на умора и възстановява енергийните загуби на тялото, възстановява нормалното функциониране на нервната система и премахва негативните ефекти от стреса и напрежението." 
+					"text": "The fragrant aromas saturated in air of the therapeutic room as well as the bio magnetic field created by the vibrations of bees’ bodies and wings soothe the human nervous system. The human body receives the signals from the rhythmic humming in the hives and this sets it in a meditative state and quickly falling into sleep." 
+				}, 
+
+				{
+					"text": "Sleeping on top of the beehives wipes out fatigue, replenishes body’s energy levels and reduces the negative effects of stress, neurotic tension and anxiety." 
 				}
 			]
 		}, 
@@ -91,12 +103,12 @@
 			"id": "skeletal-system",
 			"heading": { 
 				"level": 3, 
-				"text": "Опорно-двигателен апарат" 
+				"text": "Musculoskeletal apparatus" 
 			}, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				{ 
-					"text": "Наблюденията на заетите с апитерапия лица свидетелстват за благоприятни резултати след поредица от процедури при случаи на ревматизъм, възпаления и други негативни фактори при функционирането на опорно-двигателния апарат." 
+					"text": "The observations of people involved in apitherapy confirm the tangible benefits of the treatment after a few sessions in cases of rheumatism, inflammations and other factors influencing negatively the normal functioning of the musculoskeletal apparatus." 
 				}
 			]
 		}, 
@@ -105,12 +117,12 @@
 			"id": "digestive-system",
 			"heading": { 
 				"level": 3, 
-				"text": "Храносмилателна система и метаболизъм" 
+				"text": "Metabolism, digestive system and gastrointestinal tract" 
 			}, 
 			"subheading": "Slide Subheading", 
 			"textEntries": [
 				{
-					"text": "Нормализира и балансира процесите на разграждане на веществата, почиства човешкото тяло от токсини и позволява контролиране на теглото (особено важи за хора, склонни към преяждане)." 
+					"text": "Apitherapy balances and optimizes the process of breakdown of food into smaller components until they can be absorbed and assimilated into the body. The treatment is a great catalyst for toxic cleansing and allows better control over body weight and could be beneficial in the long run for solving obesity problems." 
 				}
 			]
 		}

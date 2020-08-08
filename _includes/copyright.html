@@ -1,5 +1,7 @@
+{% assign data = include.data %} 
+
 <section class= "copyright">
-	<h5 class= "company-name">Ellibeetherapy</h5> 
-	<p class= "year">2020</p> 
-	<p class= "notice"><span class= "copy-symbol">&copy;</span>Всички права запазени.</p> 
+	<h5 class= "company-name">{{ data.companyName }}</h5> 
+	<p class= "year">{{ data.year }}</p> 
+	<p class= "notice"><span class= "copy-symbol">&copy;</span>{{ data.notice }}</p> 
 </section>

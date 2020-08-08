@@ -1,0 +1,44 @@
+{ 
+	"head": {
+		"heading": { 
+			"level": "", 
+			"text": ""
+
+		}, 
+
+		"text": [
+
+		]
+	}, 
+
+	"body": { 
+
+		"fields": [ 
+			{ 
+				"type": "text", 
+				"name": "name", 
+				"value": ""
+			}, 
+
+			{
+				"type": "email", 
+				"name": "email", 
+				"value": ""
+			}, 
+
+			{
+				"type": "textarea", 
+				"name": "message", 
+				"value": ""
+			} 
+		], 
+
+		"submit": { 
+			"text": ""
+		},
+
+		"submitMessage": "Благодаря, че ни писахте! Очаквайте отговор от нас скоро." 
+
+	}
+
+}

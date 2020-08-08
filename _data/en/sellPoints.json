@@ -6,57 +6,60 @@
 	    "context": [
 			{ 
 				"heading": { 
-				"level": 2, 
-				"text": "Phasellus non nisl at lorem" 
+					"level": 2, 
+					"text": "Let nature inside your being" 
 				}, 
 				"textEntries": [
-					"Suspendisse feugiat sagittis tempus. Phasellus non nisl at lorem luctus laoreet. Sed consectetur consectetur finibus." 
+					"and enjoy the numerous amazing effects of our vibration-respiratory beehive therapy." 
 				], 
 				"image": { 
 					"src": "/assets/images/person-731141_1920.jpg", 
 					"alt": "" 
 				}, 
 				"link": {
-					"target": "/therapy-benefits.html", 
-					"text": "Suspendisse feugiat" 
+					"target": "/therapy-details.html", 
+					"text": "Read more" 
 				}
 			}, 
 
 			{ 
 				"heading": { 
 					"level": 2, 
-					"text": "Phasellus non nisl at lorem" 
+					"text": "Why the unique therapy we are proudly presenting to you" 
 				}, 
 				"textEntries": [
-					"Suspendisse feugiat sagittis tempus. Phasellus non nisl at lorem luctus laoreet. Sed consectetur consectetur finibus." 
+					"is used all over the world and more people are finding the health benefits of the direct exposure to the beehive internal environment." 
 				], 
 				"image": { 
-					"src": "/assets/images/person-731141_1920.jpg", 
+					"src": "/assets/images/bee-blooming-blossom-blur-551619.jpg", 
 					"alt": "" 
 				}, 
 				"link": {
 					"target": "/therapy-benefits.html", 
-					"text": "Suspendisse feugiat" 
+					"text": "Read more" 
 				}
 			}, 
 
 			{ 
 				"heading": { 
 					"level": 2, 
-					"text": "Phasellus non nisl at lorem" 
+					"text": "About us" 
 				}, 
 				"textEntries": [
-					"Suspendisse feugiat sagittis tempus. Phasellus non nisl at lorem luctus laoreet. Sed consectetur consectetur finibus." 
+					"and how we decided to introduce vibration-respiratory beehive therapy to the public." 
 				], 
 				"image": { 
-					"src": "/assets/images/person-731141_1920.jpg", 
+					"src": "/assets/images/question-2736480_1920.jpg", 
 					"alt": "" 
 				}, 
 				"link": {
-					"target": "/therapy-benefits.html", 
-					"text": "Suspendisse feugiat" 
+					"target": "/about-us.html", 
+					"text": "Read more" 
 				}
-			}
+			} 
+
+			
+
 	    ]   
 	}
  }

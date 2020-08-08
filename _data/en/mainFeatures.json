@@ -4,7 +4,7 @@
 	"head": {
 	    "heading": { 
 		    "level": 2, 
-		    "text": "Ако имате проблеми, свързани с Вашата" 
+		    "text": "If you are experiencing problems with the normal functioning of your" 
 		}, 
 		"textEntries": [ 
 			""
@@ -17,7 +17,7 @@
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Имунна система" 
+				"text": "Immune system" 
 			 }, 
 			  "subheading": "Feature 01 Subheading", 
 			  "image": { 
@@ -26,14 +26,14 @@
 			  }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#immune-system", 
-				  "text": "Прочетете повече" 
+				  "text": "Read more" 
 			  }
 		   }, 
  
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Дихателна система" 
+				"text": "Respiratory system" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "image": { 
@@ -42,14 +42,14 @@
 			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#respiratory-system", 
-				  "text": "Прочетете повече" 
+				  "text": "Read more" 
 			  }
 		   }, 
  
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Сърдечно съдова система" 
+				"text": "Cardiovascular system" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "image": { 
@@ -58,14 +58,14 @@
 			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#cardio-system", 
-				  "text": "Прочетете повече" 
+				  "text": "Read more" 
 			  }
 		   }, 
  
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Опорно двигателен апарат" 
+				"text": "Musculoskeletal apparatus" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "image": { 
@@ -74,14 +74,14 @@
 			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#skeletal-system", 
-				  "text": "Прочетете повече" 
+				  "text": "Read more" 
 			  }
 		   }, 
  
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Нервна система" 
+				"text": "Nervous system" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "image": { 
@@ -90,14 +90,14 @@
 			 }, 
 			  "link": {
 				  "target": "/therapy-benefits.html#neural-system", 
-				  "text": "Прочетете повече" 
+				  "text": "Read more" 
 			  }
 		   }, 
  
 		   { 
 			  "heading": { 
 				"level": 2, 
-				"text": "Метаболизъм" 
+				"text": "Metabolism" 
 			 }, 
 			  "subheading": "Feature 02 Subheading", 
 			  "image": { 
@@ -106,7 +106,7 @@
 			 }, 
 			  "link": {
 				  "target": "./therapy-benefits.html#digestive-system", 
-				  "text": "Прочетете повече" 
+				  "text": "Read more" 
 			  }
 		   }
 	    ]   
