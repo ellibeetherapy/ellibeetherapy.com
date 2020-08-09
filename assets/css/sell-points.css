@@ -153,15 +153,15 @@ but for border around the box, an :after pseudo-element has to be created */
 }
 
 @media ( max-width: 650px ) {
-	.sell-points .entry { 
+	/* .sell-points .entry { 
 		padding-top: var( --small-screen-header-height ); 
 
-	}
+	} */ 
 
-	.sell-points .text-content {
+	/* .sell-points .text-content {
 		padding-top: 2.5rem; padding-bottom: 4rem; 
 		 
-	}
+	} */ 
 
 }
 

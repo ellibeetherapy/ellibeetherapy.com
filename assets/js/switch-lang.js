@@ -19,7 +19,10 @@
 				}
 				Cookies.set( "lang", lang, { expires: 30 } ); 
 				redirectTo( lang );  
-			} 
+			} else {
+				switchLangPanel.removeClass( "panel-open" ); 
+				panelOpen = false; 
+			}
 
 		} ); 
 }() );

@@ -3,9 +3,7 @@
 ----------------------------------------------------------------- */ 
 
 .switch-lang-panel { 
-	order: 2; 
-	height: var( --main-nav-height ); 
-	margin-left: 5rem; 	
+	height: var( --main-nav-height ); 	
 	position: relative; 
 } 
 
@@ -121,18 +119,38 @@
 } 
 
 .switch-lang-buttons { 
-	transform: translateY( 2rem ); 
+	height: 0; overflow: hidden;  
 	opacity: 0; 
-	transition-property: opacity, transform; transition-duration: 0.2s; 
-}
+} 
 
-.switch-lang-panel.panel-open .switch-lang-buttons {  
-	transform: translateY( 0 );  
+.panel-open .switch-lang-buttons {  
+	height: auto; 
 	opacity: 1; 
 } 
+
+/* .switch-lang-buttons { 
+	height: 0; overflow: hidden;  
+}  */
+
+/* .panel-open .switch-lang-buttons {  
+	height: auto;  
+}  */
+
 
 
 /* -----------------------------------------------------------------
 	Media Queries
------------------------------------------------------------------ */
+----------------------------------------------------------------- */ 
+
+@media ( min-width: 1121px ) { 
+	.switch-lang-buttons { 
+		transform: translateY( 2rem ); 
+		transition-property: opacity, transform; transition-duration: 0.2s; 
+	} 
+
+	.panel-open .switch-lang-buttons {  
+		transform: translateY( 0 );  	 
+	} 
+	
+}
 
