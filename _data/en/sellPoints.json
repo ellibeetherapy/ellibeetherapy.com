@@ -17,7 +17,7 @@
 					"alt": "" 
 				}, 
 				"link": {
-					"target": "/therapy-details.html", 
+					"target": "/en/therapy-benefits.html", 
 					"text": "Read more" 
 				}
 			}, 
@@ -35,7 +35,7 @@
 					"alt": "" 
 				}, 
 				"link": {
-					"target": "/therapy-benefits.html", 
+					"target": "/en/therapy-details.html", 
 					"text": "Read more" 
 				}
 			}, 
@@ -53,7 +53,7 @@
 					"alt": "" 
 				}, 
 				"link": {
-					"target": "/about-us.html", 
+					"target": "/en/about-us.html", 
 					"text": "Read more" 
 				}
 			} 

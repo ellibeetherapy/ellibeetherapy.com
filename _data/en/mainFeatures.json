@@ -25,7 +25,7 @@
 				 "alt": "" 
 			  }, 
 			  "link": {
-				  "target": "/therapy-benefits.html#immune-system", 
+				  "target": "/en/therapy-benefits.html#immune-system", 
 				  "text": "Read more" 
 			  }
 		   }, 
@@ -41,7 +41,7 @@
 				"alt": "" 
 			 }, 
 			  "link": {
-				  "target": "/therapy-benefits.html#respiratory-system", 
+				  "target": "/en/therapy-benefits.html#respiratory-system", 
 				  "text": "Read more" 
 			  }
 		   }, 
@@ -57,7 +57,7 @@
 				"alt": "" 
 			 }, 
 			  "link": {
-				  "target": "/therapy-benefits.html#cardio-system", 
+				  "target": "/en/therapy-benefits.html#cardio-system", 
 				  "text": "Read more" 
 			  }
 		   }, 
@@ -73,7 +73,7 @@
 				"alt": "" 
 			 }, 
 			  "link": {
-				  "target": "/therapy-benefits.html#skeletal-system", 
+				  "target": "/en/therapy-benefits.html#skeletal-system", 
 				  "text": "Read more" 
 			  }
 		   }, 
@@ -89,7 +89,7 @@
 				"alt": "" 
 			 }, 
 			  "link": {
-				  "target": "/therapy-benefits.html#neural-system", 
+				  "target": "/en/therapy-benefits.html#neural-system", 
 				  "text": "Read more" 
 			  }
 		   }, 
@@ -105,7 +105,7 @@
 				"alt": "" 
 			 }, 
 			  "link": {
-				  "target": "./therapy-benefits.html#digestive-system", 
+				  "target": "/en/therapy-benefits.html#digestive-system", 
 				  "text": "Read more" 
 			  }
 		   }
