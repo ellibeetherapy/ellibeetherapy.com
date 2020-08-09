@@ -23,4 +23,4 @@
 		section.addClass( next );
 	}
 
-}( $( '.main-nav' ), [ 'open', 'close' ] ) );
+}( $( '.main-nav' ), [ 'main-nav-open', 'main-nav-close' ] ) ); 
