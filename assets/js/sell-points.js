@@ -9,7 +9,6 @@
 		item: 1, 
 		pager: true, 
 		controls: false 
-
 	} ); 
  
 }() ); 
