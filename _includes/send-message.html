@@ -6,18 +6,6 @@
 	{% include block.html data = head %} 
 
 	<form class= "gform send-message" action= "https://script.google.com/macros/s/AKfycbzt9eNw-D0Ki7CByVWbnQLzgYqJt1v7KnMDgLIG6Q/exec"> 
-		<!-- <label class= "label name" for= "name">
-			<input class= "field name" name= "name" type="text" placeholder= "{{  }}" />
-		</label>
-	
-		<label class= "label email" for= "email">
-			<input class= "field email" name= "email" type="email" placeholder= "{{  }}" required />
-		</label>
-
-		<label class= "label message" for= "message"> 
-			<textarea class= "field message" name= "message" placeholder= "{{  }}" required></textarea>
-		</label>  --> 
-
 		{% for field in body.fields %} 
 			{% if field.type == "textarea" %} 
 				<label class= "label {{ field.name }}" for= "{{ field.name }}"> 
@@ -33,7 +21,7 @@
 		<button class= "button submit-button" type= "submit">{{ body.submit.text }}</button> 
 		
 		<div class="thankyou_message"> 
-			<p>{{  }}</p> 
+			<p>{{ body.submitMessage }}</p> 
 		</div> 
 	</form> 
 </section>

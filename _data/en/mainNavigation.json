@@ -6,12 +6,12 @@
 
 	{
 		"target": "/therapy-details.html", 
-		"text": "The therapy" 
+		"text": "Therapy details" 
 	}, 
 
 	{
 		"target": "/therapy-benefits.html", 
-		"text": "Therapy benefits"
+		"text": "Health benefits" 
 	}, 
 
 	{
