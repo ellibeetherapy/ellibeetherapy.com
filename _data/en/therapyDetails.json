@@ -61,33 +61,44 @@
 			"textEntries": [ 
 				{
 					"text": "Let us begin by introducing the structure, where the treatment takes place. Usually, this is a wooden shed, which is built as a single room with a door and windows.", 
-					"images": [ 
-						{
-							"src": "/assets/images/6269352_107908223_big.jpg", 
-							"alt": "" 
-						}, 
+					"images": {
+						"entries": [ 
+							{
+								"src": "/assets/images/2518FAD3B-E79D-48A6-9A6C-140EB80AADC8.jpg", 
+								"alt": "" 
+							}, 
 
-						{
-							"src": "/assets/images/31B1C69E5-2DFD-4B0D-B79A-211B5D2FC80B.jpeg", 
-							"alt": "" 
-						}
-					]
+							{
+								"src": "/assets/images/26681E66C-5DFC-49C4-ABAA-787E51E083C8.jpg", 
+								"alt": "" 
+							}
+						], 
+						"caption": "Къщичката за пчелна терапия отвън" 
+					}
 				},
 				
 				{
 					"text": "Inside this room there are two wooden plank-beds, which contain internally 4 built-in beehives. The patient simply lies peacefully on top of the bed and the body absorbs the live electromagnetic field created by the millions of vibrations per second the bees’ bodies and wings are performing inside the beehives. Protected air ventilation slots are carved alongside the structure of the plank beds, allowing the air flow from the beehives to be transferred into the therapeutic room. The patient’s intake of the air coming out of the beehives and the absorption of the bees’ live electromagnetic field are the two essential benefits for the human health.", 
-					"images": [
-						{ 
-							"src": "/assets/images/6269352_107908226_big.jpg", 
-							"alt": "" 
-						}, 
-						
-						{ 
-							"src": "/assets/images/6269352_109027030_big.jpg", 
-							"alt": "" 
-						}
-					]
-				}
+					"images": {
+						"entries": [
+							{ 
+								"src": "/assets/images/36656628E-FE1A-4534-B3A3-60FC64973B69.jpg", 
+								"alt": "" 
+							}, 
+							
+							{ 
+								"src": "/assets/images/1BE6CD9E4-2703-49AE-9A1E-C9DD2F1D1420.jpg", 
+								"alt": "" 
+							}, 
+
+							{ 
+								"src": "/assets/images/209701354-7C2E-4289-BD20-9E6A1CCBC455.jpg", 
+								"alt": "" 
+							}
+						], 
+						"caption": "Къщичката за пчелна терапия отвътре" 
+					}
+				} 
 			]
 		} 
 	], 

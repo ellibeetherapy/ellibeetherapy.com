@@ -82,6 +82,21 @@
 		}, 
 
 		{ 
+			"id": "skeletal-system",
+			"heading": { 
+				"level": 3, 
+				"text": "Musculoskeletal apparatus" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{ 
+					"text": "The observations of people involved in apitherapy confirm the tangible benefits of the treatment after a few sessions in cases of rheumatism, inflammations and other factors influencing negatively the normal functioning of the musculoskeletal apparatus." 
+				}
+			]
+		}, 
+
+		
+		{ 
 			"id": "neural-system",
 			"heading": { 
 				"level": 3, 
@@ -95,20 +110,6 @@
 
 				{
 					"text": "Sleeping on top of the beehives wipes out fatigue, replenishes body’s energy levels and reduces the negative effects of stress, neurotic tension and anxiety." 
-				}
-			]
-		}, 
-
-		{ 
-			"id": "skeletal-system",
-			"heading": { 
-				"level": 3, 
-				"text": "Musculoskeletal apparatus" 
-			}, 
-			"subheading": "Slide Subheading", 
-			"textEntries": [
-				{ 
-					"text": "The observations of people involved in apitherapy confirm the tangible benefits of the treatment after a few sessions in cases of rheumatism, inflammations and other factors influencing negatively the normal functioning of the musculoskeletal apparatus." 
 				}
 			]
 		}, 
