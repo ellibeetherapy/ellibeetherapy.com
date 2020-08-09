@@ -2,7 +2,7 @@
 	"head": {
 		"heading": { 
 			"level": "2", 
-			"text": "Пишете ни" 
+			"text": "Write us" 
 
 		}, 
 
@@ -17,27 +17,27 @@
 			{ 
 				"type": "text", 
 				"name": "name", 
-				"value": "Вашето име"
+				"value": "Your name"
 			}, 
 
 			{
 				"type": "email", 
 				"name": "email", 
-				"value": "Вашият имейл"
+				"value": "Your email"
 			}, 
 
 			{
 				"type": "textarea", 
 				"name": "message", 
-				"value": "Вашето съобщение" 
+				"value": "Your message" 
 			} 
 		], 
 
 		"submit": { 
-			"text": "Изпратете" 
+			"text": "Send" 
 		},
 
-		"submitMessage": "Благодаря, че ни писахте! Очаквайте отговор от нас скоро." 
+		"submitMessage": "Thanks for writing us! We will reach you soon." 
 
 	}
 

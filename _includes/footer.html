@@ -1,7 +1,7 @@
 {% assign dataSource = site.data[ page.lang ] %}
 
 <footer class= "footer">  
-	{% include send-message.html %} 
+	{% include send-message.html data = dataSource.sendMessage %} 
 
 	{% include company.html %} 
 
