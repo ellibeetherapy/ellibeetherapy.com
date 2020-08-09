@@ -37,8 +37,8 @@
 } 
 
 .send-message .label { 
-	margin-right: var( --column-gutter-x ); 
-}
+	margin-right: var( --column-gutter-x ); margin-bottom: var( --column-gutter-y ); 
+} 
 
 .label.name { 
 	order: 2; 
@@ -174,14 +174,14 @@
 
 @media ( max-width: 650px ) { 
 
-	.send-message { 
+	/* .send-message { 
 		align-items: center; 
 	
-	} 
+	}  */
 
-	.send-message > * { 
+	/* .send-message > * { 
 		width: 100%; 
-	} 
+	}  */
 
 	.send-message .message-holder { 
 		height: calc( 3.5 * var( --field-height ) ); 
@@ -190,6 +190,16 @@
 	
 	} 
 	
+
+} 
+
+@media ( max-width: 580px ) { 
+
+	.send-message { 
+		--column-count: 1; 
+		--column-gutter-x: 0rem; 
+		--column-gutter-y: 0.4rem; 
+	} 
 
 }
 
