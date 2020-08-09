@@ -1,0 +1,13 @@
+---
+title: About the therapy 
+layout: page 
+lang: en 
+--- 
+
+{% assign dataSource = site.data[ page.lang ] %} 
+
+
+{% include head.html data = dataSource.therapyDetails.pageHead %} 
+
+{% include article.html data = dataSource.therapyDetails %} 
+

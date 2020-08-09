@@ -25,10 +25,10 @@
 } 
 
 
-@media ( max-width: 650px ) {
+/* @media ( max-width: 650px ) {
 	.page-head { 
 		padding-top: var( --small-screen-header-height ); 
 
 	} 
 
-}
+} */ 

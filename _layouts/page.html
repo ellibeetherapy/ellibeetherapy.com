@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang= "{{ page.lang }}"> 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131257323-9"></script>
@@ -17,9 +17,15 @@
 	<link rel="stylesheet" href="/assets/css/style.css" /> 
 	<link rel="stylesheet" href="/assets/plugins/lightslider/dist/css/lightslider.min.css" /> 
 </head>
-<body>
+<body>  
 
-	{% include header.html %}
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> 
+	<script src= "/assets/js/core.js"></script> 
+	<script>
+		loadPage(); 
+	</script>
+
+	{% include header.html %} 
 
 	<main>
 		{{ content }}
@@ -30,13 +36,15 @@
 	<script src= "/assets/js/jquery.min.js"></script> 
 	<script src= "/assets/plugins/lightslider/dist/js/lightslider.min.js"></script> 
 	<script src= "/assets/plugins/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script> 
+	<script src= "/assets/js/form-submission.js"></script> 
 
 	<script src= "/assets/js/sell-points.js"></script> 
+
 	<script src= "/assets/js/main-navigation.js"></script> 
+
 	<script src= "/assets/js/scroll-to-top.js"></script> 
 	<script src= "/assets/js/article-images.js"></script> 
+	<script src= "/assets/js/switch-lang.js"></script> 
 
-	<script src= "/assets/js/form-submission.js"></script> 
-	
 </body>
 </html>

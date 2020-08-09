@@ -1,23 +1,27 @@
+{% assign data = include.data %} 
+{% assign head = data.head %} 
+{% assign body = data.body %}
+
 <section class= "write-us"> 
-	<h2 class= "heading">Пишете ни</h2> 
+	{% include block.html data = head %} 
 
 	<form class= "gform send-message" action= "https://script.google.com/macros/s/AKfycbzt9eNw-D0Ki7CByVWbnQLzgYqJt1v7KnMDgLIG6Q/exec"> 
-		<label class= "label name" for= "name">
-			<input class= "field name" name= "name" type="text" placeholder= "Вашето име" />
-		</label>
-	
-		<label class= "label email" for= "email">
-			<input class= "field email" name= "email" type="email" placeholder= "Вашият имейл" required />
-		</label>
+		{% for field in body.fields %} 
+			{% if field.type == "textarea" %} 
+				<label class= "label {{ field.name }}" for= "{{ field.name }}"> 
+					<textarea class= "field {{ field.name }}" name= "{{ field.name }}" placeholder= "{{ field.value }}"></textarea>
+				</label> 
+			{% else %}
+				<label class= "label {{ field.name }}" for= "name">
+					<input class= "field {{ field.name }}" name= "{{ field.name }}" type="{{ field.type }}" placeholder= "{{ field.value }}" />
+				</label> 
+			{% endif %}
+		{% endfor %}
 
-		<label class= "label message" for= "message"> 
-			<textarea class= "field message" name= "message" placeholder= "Вашето съобщение" required></textarea>
-		</label> 
-
-		<button class= "button submit-button" type= "submit">Изпратете</button> 
+		<button class= "button submit-button" type= "submit">{{ body.submit.text }}</button> 
 		
 		<div class="thankyou_message"> 
-			<p><em>Благодарим Ви,</em> че ни писахте! Очаквайте отговор от нас скоро.</p> 
+			<p>{{ body.submitMessage }}</p> 
 		</div> 
 	</form> 
 </section>

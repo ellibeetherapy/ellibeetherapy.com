@@ -1,0 +1,13 @@
+---
+title: About us 
+layout: page  
+lang: en 
+--- 
+
+{% assign dataSource = site.data[ page.lang ] %} 
+
+
+{% include head.html data = dataSource.aboutUs.pageHead %} 
+
+{% include article.html data = dataSource.aboutUs %} 
+

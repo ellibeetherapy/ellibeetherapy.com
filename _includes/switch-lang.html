@@ -1,0 +1,19 @@
+{% assign data = include.data %} 
+{% assign buttons = data.entries %} 
+
+<section class= "switch-lang-panel">
+	<button class= "button open-switch-lang-panel-button">{{ dataSource.settings.openSwitchLangPanelButton.text }}</button> 
+
+	<ul class= "switch-lang-buttons">
+	{% for button in buttons %} 
+		{% assign currentLangButtonClass = "" %} 
+		{% if button.lang == page.lang %} 
+			{% assign currentLangButtonClass = " " | append: data.currentLangButtonClassName %} 
+		{% endif %}
+
+		<li class= "entry switch-lang-buttons-entry"> 
+			<button class= "button switch-lang-button to-{{ button.lang }}-button{{ currentLangButtonClass }}" data-lang= "{{ button.lang }}">{{ button.text }}</button>
+		</li>
+	{% endfor %} 
+	</ul> 
+</section>

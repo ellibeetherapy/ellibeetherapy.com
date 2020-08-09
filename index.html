@@ -1,13 +1,17 @@
 ---
 title: Начало 
-layout: page
----
+layout: page 
+lang: bg 
+--- 
 
-{% include section.html data = site.data.sellPoints %} 
+{% assign dataSource = site.data[ page.lang ] %} 
 
-{% include section.html data = site.data.mainFeatures %} 
 
-{% include section.html data = site.data.therapyDetails.pointer %} 
+{% include section.html data = dataSource.sellPoints %} 
 
-{% include section.html data = site.data.aboutUs.pointer %} 
+{% include section.html data = dataSource.mainFeatures %} 
+
+{% include section.html data = dataSource.therapyDetails.pointer %} 
+
+{% include section.html data = dataSource.aboutUs.pointer %} 
 

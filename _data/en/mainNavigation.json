@@ -1,26 +1,26 @@
 [
 	{
 		"target": "/", 
-		"text": "Начало"
+		"text": "Home"
 	}, 
 
 	{
 		"target": "/therapy-details.html", 
-		"text": "За терапията"
+		"text": "Therapy details" 
 	}, 
 
 	{
 		"target": "/therapy-benefits.html", 
-		"text": "Ползи"
+		"text": "Health benefits" 
 	}, 
 
 	{
 		"target": "/about-us.html", 
-		"text": "За нас"
+		"text": "About us"
 	},
 
 	{
 		"target": "/contact-us.html", 
-		"text": "Контакти" 
+		"text": "Contacts" 
 	}
  ]

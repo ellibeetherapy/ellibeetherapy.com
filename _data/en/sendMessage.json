@@ -1,0 +1,44 @@
+{ 
+	"head": {
+		"heading": { 
+			"level": "2", 
+			"text": "Write us" 
+
+		}, 
+
+		"text": [ 
+			"" 
+		]
+	}, 
+
+	"body": { 
+
+		"fields": [ 
+			{ 
+				"type": "text", 
+				"name": "name", 
+				"value": "Your name"
+			}, 
+
+			{
+				"type": "email", 
+				"name": "email", 
+				"value": "Your email"
+			}, 
+
+			{
+				"type": "textarea", 
+				"name": "message", 
+				"value": "Your message" 
+			} 
+		], 
+
+		"submit": { 
+			"text": "Send" 
+		},
+
+		"submitMessage": "Thanks for writing us! We will reach you soon." 
+
+	}
+
+}

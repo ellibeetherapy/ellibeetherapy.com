@@ -1,0 +1,35 @@
+{ 
+	"className": "usage-plans", 
+ 
+	"head": {
+	    "heading": { 
+			"level": 2, 
+			"text": "Our Plans" 
+		}, 
+	    "subheading": "Our Plans Subheading", 
+	    "textEntries": [ 
+		   "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis." 
+	    ]
+	}, 
+ 
+	"body": { 
+	    "template": "usage-plans.html", 
+	    "context": [
+		   { 
+			  "heading": "Buy", 
+			  "price": { 
+				"isMin": false, 
+				"integralPart": "14", 
+				"decimalPart": "99"
+			  }, 
+			  "details": [ "-", "-", "-", "-" ]
+		   }, 
+ 
+		   { 
+			  "heading": "Try", 
+			  "note": "Free", 
+			  "details": [ "-", "-", "-", "-" ]
+		   }
+	    ]   
+	}
+ }

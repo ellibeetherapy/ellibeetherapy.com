@@ -1,0 +1,44 @@
+{ 
+	"head": {
+		"heading": { 
+			"level": "2", 
+			"text": "Пишете ни" 
+
+		}, 
+
+		"text": [ 
+			"" 
+		]
+	}, 
+
+	"body": { 
+
+		"fields": [ 
+			{ 
+				"type": "text", 
+				"name": "name", 
+				"value": "Вашето име"
+			}, 
+
+			{
+				"type": "email", 
+				"name": "email", 
+				"value": "Вашият имейл"
+			}, 
+
+			{
+				"type": "textarea", 
+				"name": "message", 
+				"value": "Вашето съобщение" 
+			} 
+		], 
+
+		"submit": { 
+			"text": "Изпратете" 
+		},
+
+		"submitMessage": "Благодаря, че ни писахте! Очаквайте отговор от нас скоро." 
+
+	}
+
+}

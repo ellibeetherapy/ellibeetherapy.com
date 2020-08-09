@@ -1,9 +1,13 @@
 ---
 title: Контакти 
-layout: page
+layout: page 
+lang: bg 
 ---
 
-{% include head.html data = site.data.contacts.pageHead %} 
+{% assign dataSource = site.data[ page.lang ] %} 
 
-{% include contact.html data = site.data.contacts.body %} 
+
+{% include head.html data = dataSource.contacts.pageHead %} 
+
+{% include contact.html data = dataSource.contacts.body %} 
 

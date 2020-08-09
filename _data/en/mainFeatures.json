@@ -1,0 +1,114 @@
+{ 
+	"className": "main-features", 
+ 
+	"head": {
+	    "heading": { 
+		    "level": 2, 
+		    "text": "If you are experiencing problems with the normal functioning of your" 
+		}, 
+		"textEntries": [ 
+			""
+		]
+	}, 
+ 
+	"body": { 
+	    "template": "main-features.html", 
+	    "context": [
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Immune system" 
+			 }, 
+			  "subheading": "Feature 01 Subheading", 
+			  "image": { 
+				 "src": "/assets/images/abstract-1846979_1920.jpg", 
+				 "alt": "" 
+			  }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#immune-system", 
+				  "text": "Read more" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Respiratory system" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#respiratory-system", 
+				  "text": "Read more" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Cardiovascular system" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#cardio-system", 
+				  "text": "Read more" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Musculoskeletal apparatus" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#skeletal-system", 
+				  "text": "Read more" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Nervous system" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "/therapy-benefits.html#neural-system", 
+				  "text": "Read more" 
+			  }
+		   }, 
+ 
+		   { 
+			  "heading": { 
+				"level": 2, 
+				"text": "Metabolism" 
+			 }, 
+			  "subheading": "Feature 02 Subheading", 
+			  "image": { 
+				"src": "/assets/images/abstract-1846979_1920.jpg", 
+				"alt": "" 
+			 }, 
+			  "link": {
+				  "target": "./therapy-benefits.html#digestive-system", 
+				  "text": "Read more" 
+			  }
+		   }
+	    ]   
+	}
+ }

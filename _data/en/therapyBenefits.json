@@ -1,0 +1,130 @@
+{ 
+	"className": "therapy-benefits", 
+
+	"pageHead": {
+		"heading": { 
+			"level": 1, 
+			"text": "Therapy benefits" 
+		}, 
+		"subheading": "Main Features Subheading", 
+		"image": { 
+		    "src": "/assets/images/sun-5294496_1920.jpg", 
+		    "alt": "" 
+		}
+	}, 
+
+	"head": {
+		"heading": { 
+			"level": 2, 
+			"text": "What are the benefits of vibration-respiratory therapy and immune prophylactics for the human health?" 
+		}, 
+		"subheading": "", 
+		"textEntries": [
+			{
+				"text": "Therapists unequivocally agree about the combination of factors created in apitherapy, which facilitate the process of self healing and replenishment of the body’s vital capacities. The micro vibration of the bees’ bodies and wings acts as a subtle vibration massage for the human body lying directly above the hives, which is excellent for the nervous system and musculoskeletal apparatus."
+			}, 
+
+			{
+				"text": "Apitherapy’s most essential benefits are the ones related to remedying problems and dysfunctions of the respiratory and cardiovascular systems as well as the immune system. In today’s corona virus gruesome reality people with compromised immune and respiratory systems are most susceptible to COVID-19 and its future mutations." 
+			}
+		] 
+	}, 
+ 
+	"entries": [
+		{ 
+			"id": "immune-system", 
+			"heading": { 
+				"level": 3, 
+				"text": "Immune system" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "Every competent and caring medical doctor should be guided and directed in his practice by the principle known since the times of Hippocrates, that prophylactics and prevention are the best medical treatment. Modern medicine heavily relies on treatment with pharmaceutical products, which most commonly addresses the symptoms, rather than the underlying cause of any given health problem. Strong and non-compromised immune system is the main requirement for good human health. Good immune system doesn’t let any illness to grow in the organism, but extinguishes it either in incubation period or fights it successfully if the illness is manifested." 
+				}, 
+
+				{
+					"text": "The vibration-respiratory apitherapy, as well as the medical applications of all bee products (honey, pollen, propolis, bee poison), are definitely an exquisite resource for boosting your immune system. Apitherapy naturally stimulates the production of new immune cells known as macrophages, lymphocytes and neutrophiles. Another crucial effect from the treatment is the natural stress relief, as we all know accumulation of stress is the most common cause of weakened immune system." 
+				}
+			]
+		}, 
+
+		{ 
+			"id": "respiratory-system",
+			"heading": { 
+				"level": 3, 
+				"text": "Respiratory system" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "The air in the therapeutic room is saturated with aromas of honey, wax and propolis. It is clean and fresh, rich in negatively charged ions. Before you breath it in your lungs, you should know this air has been subjected to a thorough cleansing in the elaborate live laboratory inside the hive, where it undergoes natural filtration."
+				}, 
+
+				{
+					"text": "Bees use a resinous substance called propolis to fill up cracks and seal the hive. Propolis is highly potent natural antibiotic, which makes the air in the hive sterile and healing. Breathing this air ventilated into the therapeutic room facilitates cleansing of the bronchi, easier release of phlegm and eliminates bacteria and viruses in the upper respiratory tract."
+				}
+			]
+		}, 
+
+		{ 
+			"id": "cardio-system",
+			"heading": { 
+				"level": 3, 
+				"text": "Cardiovascular system" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "Apitherapy optimizes the functions of the heart and the general condition of the cardiovascular system. Balances blood pressure in normal parameters and mitigates dysfunctional activities in the circulation of the blood flow." 
+				}
+			]
+		}, 
+
+		{ 
+			"id": "neural-system",
+			"heading": { 
+				"level": 3, 
+				"text": "Nervous system" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "The fragrant aromas saturated in air of the therapeutic room as well as the bio magnetic field created by the vibrations of bees’ bodies and wings soothe the human nervous system. The human body receives the signals from the rhythmic humming in the hives and this sets it in a meditative state and quickly falling into sleep." 
+				}, 
+
+				{
+					"text": "Sleeping on top of the beehives wipes out fatigue, replenishes body’s energy levels and reduces the negative effects of stress, neurotic tension and anxiety." 
+				}
+			]
+		}, 
+
+		{ 
+			"id": "skeletal-system",
+			"heading": { 
+				"level": 3, 
+				"text": "Musculoskeletal apparatus" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{ 
+					"text": "The observations of people involved in apitherapy confirm the tangible benefits of the treatment after a few sessions in cases of rheumatism, inflammations and other factors influencing negatively the normal functioning of the musculoskeletal apparatus." 
+				}
+			]
+		}, 
+
+		{ 
+			"id": "digestive-system",
+			"heading": { 
+				"level": 3, 
+				"text": "Metabolism, digestive system and gastrointestinal tract" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "Apitherapy balances and optimizes the process of breakdown of food into smaller components until they can be absorbed and assimilated into the body. The treatment is a great catalyst for toxic cleansing and allows better control over body weight and could be beneficial in the long run for solving obesity problems." 
+				}
+			]
+		}
+	]   
+ }

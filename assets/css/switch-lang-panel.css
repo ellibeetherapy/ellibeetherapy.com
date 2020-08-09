@@ -1,0 +1,147 @@
+/* -----------------------------------------------------------------
+	Layout
+----------------------------------------------------------------- */ 
+
+.switch-lang-panel { 
+	height: var( --main-nav-height ); 	
+	position: relative; 
+} 
+
+.open-switch-lang-panel-button { 
+	display: flex; align-items: center; 
+	padding-left: 0.85rem; padding-right: 0.85rem; 
+	border: none;
+}
+
+.open-switch-lang-panel-button:before { 
+	width: auto; 
+	position: relative; 
+	margin-right: 0.5rem; 
+} 
+
+.switch-lang-buttons { 
+	width: 100%; 
+	margin-top: 2rem; 
+	position: absolute; 
+	left: 0; top: 100%;  
+	border: 1px solid;  
+} 
+
+.switch-lang-button { 
+	width: 100%; 
+	border: none; 
+
+} 
+
+.switch-lang-buttons-entry:not( :last-of-type ) { 
+	border-bottom: 1px solid; 
+} 
+
+
+/* -----------------------------------------------------------------
+	Typography
+----------------------------------------------------------------- */
+
+.main-nav .nav-link, 
+.open-switch-lang-panel-button { 
+	font-family: var( --heading-font-family ); 
+	font-size: 0.85rem; 
+} 
+
+.open-switch-lang-panel-button:before { 
+	font-size: 1.7rem; 
+	content: "\f385"; 
+
+} 
+
+.switch-lang-button:before, 
+.switch-lang-buttons:hover .switch-lang-button:before { 
+	content: "\f383"; 
+} 
+
+
+/* -----------------------------------------------------------------
+	Color
+----------------------------------------------------------------- */ 
+
+.switch-lang-panel { 
+	color: var( --heading-color );
+} 
+
+.switch-lang-button { 
+	background-color: transparent; 
+} 
+
+.open-switch-lang-panel-button:hover, 
+.switch-lang-button.button { 
+	background-color: transparent; 
+	color: var( --heading-color ); border-color: var( --heading-color ); 
+
+}
+
+.open-switch-lang-panel-button { 
+	background-color: transparent; 
+}
+
+
+/* -----------------------------------------------------------------
+	User Interactions
+----------------------------------------------------------------- */ 
+
+.switch-lang-panel { 
+	overflow: hidden; 
+} 
+
+.switch-lang-panel.panel-open { 
+	overflow: visible; 
+} 
+
+.switch-lang-panel .button { 
+	cursor: pointer; 
+} 
+
+.switch-lang-button:before, 
+.switch-lang-buttons:hover .switch-lang-button:before { 
+	box-sizing: border-box; 
+	display: inline-block; 
+	width: 1.25rem; height: auto; 
+	margin-left: -1.25rem; 
+	position: initial; 
+	opacity: 0; 
+	transition-property: margin-left, opacity; transition-duration: 0.2s, 0.075s; 
+} 
+
+.switch-lang-button.current-lang-button:before, 
+.switch-lang-buttons:hover .switch-lang-button:hover:before { 
+	margin-left: 0; 
+	opacity: 1; 
+
+} 
+
+.switch-lang-buttons { 
+	height: 0; overflow: hidden;  
+	opacity: 0; 
+} 
+
+.panel-open .switch-lang-buttons {  
+	height: auto; 
+	opacity: 1; 
+} 
+
+
+/* -----------------------------------------------------------------
+	Media Queries
+----------------------------------------------------------------- */ 
+
+@media ( min-width: 1121px ) { 
+	.switch-lang-buttons { 
+		transform: translateY( 2rem ); 
+		transition-property: opacity, transform; transition-duration: 0.2s; 
+	} 
+
+	.panel-open .switch-lang-buttons {  
+		transform: translateY( 0 );  	 
+	} 
+	
+}
+

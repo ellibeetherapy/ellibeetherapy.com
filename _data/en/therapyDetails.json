@@ -1,0 +1,117 @@
+{ 
+	"className": "therapy-details", 
+
+	"pageHead": {
+		"heading": { 
+			"level": 5, 
+			"text": "Therapy details" 
+		}, 
+		"subheading": "Main Features Subheading", 
+		"image": { 
+		    "src": "/assets/images/sun-5294496_1920.jpg", 
+		    "alt": "" 
+		}
+	}, 
+	
+	"head": {
+		"heading": { 
+			"level": 1, 
+			"text": "We are proudly introducing our beehive vibration-respiratory therapy" 
+		}, 
+		"subheading": ""
+	}, 
+ 
+	"entries": [
+		{ 
+			"heading": { 
+				"level": 2, 
+				"text": "In few words what exactly is beehive vibration-respiratory therapy and immune prophylactics?" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "The use of built-in beehives into the structure of small wooden sheds for the purpose of vibration-respiratory bee therapy is a relatively new and avant-garde alternative health method, which aims at harnessing the electromagnetic field created from the vibrations of thousands of bee bodies and wings. The air which comes out of the beehive is ventilated inside the therapeutic room. This air is impregnated with the aromas of wax, propolis, pollen and honey and at the same time it is filtered and ionized by the millions beats of the bees’ wings. "
+				}
+			]
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 2, 
+				"text": "Where in the world this therapy is implemented?" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "The leading countries in introducing and developing the vibration-respiratory bee therapy are definitely Russia and Ukraine. More and more beekeepers there realize the precious benefits for the human health derived from this alternative and natural prophylactic treatment. Other countries to follow their example are China, Korea, Poland, Canada etc."
+				}, 
+
+				{
+					"text": "In Bulgaria, whenever apitherapy is mentioned, one presumes the treatment with bee products and bee’s poison. The format of apitherapy, which we are presenting is still not very wide spread and popular to the public. We are excited to be pioneers in this area and hope that we will be able to make more people share our enthusiasm and find out about the great health benefits for the human body and soul from the treatment." 
+				}
+			]
+		}, 
+
+		{ 
+			"heading": { 
+				"level": 2, 
+				"text": "Principle and method vibration-respiratory therapy is based upon" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [ 
+				{
+					"text": "Let us begin by introducing the structure, where the treatment takes place. Usually, this is a wooden shed, which is built as a single room with a door and windows.", 
+					"images": [ 
+						{
+							"src": "/assets/images/6269352_107908223_big.jpg", 
+							"alt": "" 
+						}, 
+
+						{
+							"src": "/assets/images/31B1C69E5-2DFD-4B0D-B79A-211B5D2FC80B.jpeg", 
+							"alt": "" 
+						}
+					]
+				},
+				
+				{
+					"text": "Inside this room there are two wooden plank-beds, which contain internally 4 built-in beehives. The patient simply lies peacefully on top of the bed and the body absorbs the live electromagnetic field created by the millions of vibrations per second the bees’ bodies and wings are performing inside the beehives. Protected air ventilation slots are carved alongside the structure of the plank beds, allowing the air flow from the beehives to be transferred into the therapeutic room. The patient’s intake of the air coming out of the beehives and the absorption of the bees’ live electromagnetic field are the two essential benefits for the human health.", 
+					"images": [
+						{ 
+							"src": "/assets/images/6269352_107908226_big.jpg", 
+							"alt": "" 
+						}, 
+						
+						{ 
+							"src": "/assets/images/6269352_109027030_big.jpg", 
+							"alt": "" 
+						}
+					]
+				}
+			]
+		} 
+	], 
+
+	"pointer": { 
+		"className": "pointer therapy-details-pointer", 
+	 
+		"head": {
+		    "heading": { 
+			    "level": 2, 
+			    "text": "About the therapy" 
+			}, 
+		    "subheading": "Slider Subheading", 
+		    "textEntries": [ 
+			   "What is vibration-respiratory bee therapy and where in the world it is implemented?" 
+		    ], 
+		    "image": { 
+			   "src": "/assets/images/fried-egg-flower-2340406.jpg", 
+			   "alt": "" 
+		    }, 
+		    "link": { 
+			    "target": "/therapy-details.html", 
+			    "text": "Read more" 
+		    }
+		}
+	} 
+ }

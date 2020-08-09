@@ -1,0 +1,12 @@
+---
+title: Health benefits 
+layout: page 
+lang: en 
+--- 
+
+{% assign dataSource = site.data[ page.lang ] %} 
+
+
+{% include head.html data = dataSource.therapyBenefits.pageHead %} 
+
+{% include article.html data = dataSource.therapyBenefits %} 

@@ -1,9 +1,11 @@
+{% assign dataSource = site.data[ page.lang ] %}
+
 <footer class= "footer">  
-	{% include send-message.html %} 
+	{% include send-message.html data = dataSource.sendMessage %} 
 
 	{% include company.html %} 
 
-	{% include copyright.html %} 
+	{% include copyright.html data = dataSource.copyright %} 
 
 	<button class= "scroll-to-top">Scroll to Top</button> 
 </footer>

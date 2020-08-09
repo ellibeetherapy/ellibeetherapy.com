@@ -67,11 +67,12 @@
 
 .feature-entry:before {
 	/* Icon is centered within its placeholder */
-	align-items: center; justify-content: center; 
+	/* align-items: center; justify-content: center;  */
 	/* Icon placeholder is centered within presentation */
 	margin-left: auto; margin-right: auto; 
 	margin-bottom: 0.8rem; 
-	width: 3.5rem; height: 3.5rem;
+	width: 3.5rem; height: 3.5rem; 
+	position: relative; 
 	/* Border radius of half the size of the icon placeholder makes a circle */
 	border: 1px solid; border-color: rgba( 0, 0, 0, 0.4 ); border-radius: 50%; 
 }

@@ -1,0 +1,17 @@
+---
+title: Home
+layout: page 
+lang: en 
+--- 
+
+{% assign dataSource = site.data[ page.lang ] %} 
+
+
+{% include section.html data = dataSource.sellPoints %} 
+
+{% include section.html data = dataSource.mainFeatures %} 
+
+{% include section.html data = dataSource.therapyDetails.pointer %} 
+
+{% include section.html data = dataSource.aboutUs.pointer %} 
+

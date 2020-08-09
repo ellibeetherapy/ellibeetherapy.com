@@ -1,0 +1,78 @@
+{ 
+	"className": "about-us", 
+
+	"pageHead": {
+		"heading": { 
+			"level": 5, 
+			"text": "About us" 
+		}, 
+		"subheading": "Main Features Subheading", 
+		"image": { 
+		    "src": "/assets/images/sun-5294496_1920.jpg", 
+		    "alt": "" 
+		}
+	}, 
+
+	"head": {
+		"heading": { 
+			"level": 1, 
+			"text": "About us, of Ellibeetherapy" 
+		}, 
+		"subheading": "", 
+		"textEntries": [
+			""
+		]
+	}, 
+ 
+	"entries": [
+		{ 
+			"heading": { 
+				"level": 2, 
+				"text": "" 
+			}, 
+			"subheading": "Slide Subheading", 
+			"textEntries": [
+				{
+					"text": "My name is Georgi Stoynov, I live with my family in Vakarel, about 20 km. east of Sofia. I have been doing some beekeeping for the last few years, harvesting high quality honey, pollen, bee wax and propolis. Almost anything involved with bees’ activity finds some sort of useful application in human everyday life.", 
+					"images": [
+						{ 
+							"src": "/assets/images/14FAEED66-F0EA-43AD-92DD-5FD6833AA8DD.jpeg", 
+							"alt": "" 
+						}
+					] 
+				}, 
+
+				{
+					"text": "I cultivated a lot of love and respect for my bees in a few beekeeping seasons. I am in awe of bees’ proverbial diligence and the immaculate structure and organization of the bee colony. This gives me strength and inspiration. How could we possibly express in words the tremendous and invaluable significance of bee’s blossom pollination for the sustainability of any given ecosystem and its crucial importance for agriculture. I try by all means to help and facilitate the activities of these sacred insects, to protect them from illnesses and pests as a gratitude for the gifts they bestow so selflessly upon us. I would like to believe our relationship is symbiotic, i.e. based on mutual benefits, rather than just the exploitation of the bee’s hard labor and steadfast consistency."
+				}, 
+
+				{
+					"text": "Via communication with more experienced veteran beekeepers on social platforms or in person, I find every day something new and interesting. Not long ago I came across a very interesting application of bee colonies harnessed for the purpose of various human health benefits, which I named vibration-respiratory apitherapy (from Latin “Apis”-bee). Intuitively, I figured there is a lot of potential in this activity worth exploring, so consequently I devoted a solid portion of my time and efforts to make this project come to life." 
+				}
+			]
+		} 
+	], 
+
+	"pointer": { 
+		"className": "pointer about-us-pointer", 
+	 
+		"head": {
+		    "heading": { 
+			    "level": 2, 
+			    "text": "About us" 
+			}, 
+		    "subheading": "Slider Subheading", 
+		    "textEntries": [ 
+			   "The experience we have gained and the reasons we are offering you to try our therapy." 
+		    ], 
+		    "image": { 
+			   "src": "/assets/images/business-card-2818689_1920.jpg", 
+			   "alt": "" 
+		    }, 
+		    "link": { 
+			    "target": "/about-us.html", 
+			    "text": "Read more" 
+		    } 
+		}
+	}
+ }
