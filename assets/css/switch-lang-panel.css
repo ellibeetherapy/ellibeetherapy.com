@@ -14,9 +14,11 @@
 }
 
 .open-switch-lang-panel-button:before { 
-	width: auto; 
-	position: relative; 
+	width: 2rem; height: 2rem;  
 	margin-right: 0.5rem; 
+	position: relative; left: 0; top: 0; 
+	border: 1px solid; border-radius: 20%; 
+	line-height: 1; 
 } 
 
 .switch-lang-buttons { 
@@ -48,11 +50,21 @@
 	font-size: 0.85rem; 
 } 
 
-.open-switch-lang-panel-button:before { 
+/* .open-switch-lang-panel-button:before { 
 	font-size: 1.7rem; 
 	content: "\f385"; 
 
+}  */
+
+.open-switch-lang-panel-button:before { 
+	font-family: inherit; 
+	content: attr( data-page-lang ); 
+	
 } 
+
+/* .open-switch-lang-panel-button.en:before { 
+	content: "en"; 
+}  */
 
 .switch-lang-button:before, 
 .switch-lang-buttons:hover .switch-lang-button:before { 

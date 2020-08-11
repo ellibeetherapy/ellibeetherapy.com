@@ -2,7 +2,7 @@
 {% assign buttons = data.entries %} 
 
 <section class= "switch-lang-panel">
-	<button class= "button open-switch-lang-panel-button">{{ dataSource.settings.openSwitchLangPanelButton.text }}</button> 
+	<button class= "button open-switch-lang-panel-button" data-page-lang= "{{ page.lang }}">{{ dataSource.settings.openSwitchLangPanelButton.text }}</button> 
 
 	<ul class= "switch-lang-buttons">
 	{% for button in buttons %} 
@@ -16,4 +16,4 @@
 		</li>
 	{% endfor %} 
 	</ul> 
-</section>
+</section> 
