@@ -9,7 +9,7 @@
 
 .open-switch-lang-panel-button { 
 	display: flex; align-items: center; 
-	padding-left: 0.85rem; padding-right: 0.85rem; 
+	padding-left: 1.2rem; padding-right: 1.2rem; 
 	border: none;
 }
 
@@ -22,11 +22,11 @@
 } 
 
 .switch-lang-buttons { 
-	width: 100%; 
+	width: 120%; 
 	margin-top: 2rem; 
 	position: absolute; 
-	left: 0; top: 100%;  
-	border: 1px solid;  
+	left: -10%; top: 100%;  
+	/* border: 1px solid;   */ 
 } 
 
 .switch-lang-button { 
@@ -45,7 +45,8 @@
 ----------------------------------------------------------------- */
 
 .main-nav .nav-link, 
-.open-switch-lang-panel-button { 
+.open-switch-lang-panel-button, 
+.switch-lang-button { 
 	font-family: var( --heading-font-family ); 
 	font-size: 0.85rem; 
 } 
@@ -61,10 +62,6 @@
 	content: attr( data-page-lang ); 
 	
 } 
-
-/* .open-switch-lang-panel-button.en:before { 
-	content: "en"; 
-}  */
 
 .switch-lang-button:before, 
 .switch-lang-buttons:hover .switch-lang-button:before { 
@@ -116,7 +113,7 @@
 .switch-lang-buttons:hover .switch-lang-button:before { 
 	box-sizing: border-box; 
 	display: inline-block; 
-	width: 1.25rem; height: auto; 
+	width: 1.4rem; height: auto; 
 	margin-left: -1.25rem; 
 	position: initial; 
 	opacity: 0; 
