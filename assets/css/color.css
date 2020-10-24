@@ -3,6 +3,11 @@ body {
 	background-color: #EEE; 
 } 
 
+.article { 
+	color: var( --article-text-color ); 
+
+}
+
 /* footer {
 	background-color: #CCC; 
 }  */
