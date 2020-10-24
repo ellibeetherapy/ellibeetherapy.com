@@ -63,8 +63,9 @@
 } */ 
 
 .sell-points .image { 
-	background-size: 100%; 
-	background-position: 50% 0%;  
+	height: 140%; 
+	top: 50%; transform: translateY( calc( -1 * 50 / 140 * 100% ) ); 
+	  
 }
 
 .sell-points .active .image { 
@@ -114,8 +115,9 @@
 
 @keyframes slide-background {
 	
-	100% {
-		background-position: 50% 50%; 
+	100% { 
+		transform: translateY( -50% ); 
+		 
 	}
 	
 }
