@@ -63,7 +63,7 @@
 } */ 
 
 .sell-points .image { 
-	background-size: cover; 
+	background-size: 100%; 
 	background-position: 50% 0%;  
 }
 
