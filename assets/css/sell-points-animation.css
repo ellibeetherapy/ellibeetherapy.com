@@ -1,9 +1,9 @@
 .sell-points { 
 	--animation-start-delay: 0.4s; 
 	--slide-text-delay: 0s; 
-	--text-relative-delay: -0.125s; 
+	--text-relative-delay: -0.175s; 
 
-	--slide-text-duration: 0.175s; 
+	--slide-text-duration: 0.25s; 
 
 	--slide-heading-delay: calc( var( --animation-start-delay ) + var( --slide-text-delay ) ); 
 	--slide-text-entry-delay: calc( var( --slide-heading-delay ) + var( --slide-text-duration ) + var( --text-relative-delay ) ); 
@@ -19,7 +19,7 @@
 .sell-points .heading, 
 .sell-points .text-entry, 
 .sell-points .details-link { 
-	transform: translateY( 25px ); 
+	transform: translateY( 75px ); 
 	opacity: 0; 
 } 
 
