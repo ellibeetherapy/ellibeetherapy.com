@@ -63,8 +63,8 @@
 } */ 
 
 .sell-points .image { 
-	background-size: 100%; 
-	background-position: 50% top;  
+	background-size: cover; 
+	background-position: 50% 0%;  
 }
 
 .sell-points .active .image { 
@@ -115,7 +115,7 @@
 @keyframes slide-background {
 	
 	100% {
-		background-position: 50% center; 
+		background-position: 50% 50%; 
 	}
 	
 }
