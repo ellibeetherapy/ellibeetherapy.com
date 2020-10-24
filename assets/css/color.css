@@ -22,13 +22,23 @@ body {
 .button {
 	color: var( --heading-color );
 	/* background-color: var( --text-color ); */
-	/* border-color: transparent;  */
+	/* border-color: transparent;  */ 
+	border-color: var( --heading-color ); 
 }
 
 /* On mouse over changes background and text colors */
 .button:hover {
 	color: var( --text-background-color );
 	background-color: var( --heading-color ); 
-	border-color: var( --text-color );
+} 
+
+/* .entry .details-link { 
+	color: var( --heading-color ); 
+	border-color: var( --heading-color ); 
 }
+
+.entry:hover .details-link:hover { 
+	color: #EEE; 
+	background-color: var( --heading-color );  
+}  */
 

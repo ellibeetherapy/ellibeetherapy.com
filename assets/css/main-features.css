@@ -109,9 +109,9 @@
 	background-image: url( "../images/selected-products/Vector-Smart-Object2.png" ); background-size: contain; 
 } */ 
 
-.feature-entry .details-link { 
+/* .details-link { 
 	border: 1px solid; 
-}
+} */
 
 
 /* -----------------------------------------------------------------
@@ -145,10 +145,10 @@
 	background-color: rgba( 255, 255, 255, 0.4 ); 
 } 
 
-.feature-entry .details-link { 
+/* .entry .details-link { 
 	color: var( --heading-color ); 
 	border-color: var( --heading-color ); 
-}
+} */
 
 /* .feature-entry:hover {
 	color: #EEE; 
@@ -160,10 +160,10 @@
 	background-color: #EEE; 
 }  */
 
-.feature-entry:hover .details-link:hover { 
+/* .entry:hover .details-link:hover { 
 	color: #EEE; 
 	background-color: var( --heading-color );  
-} 
+}  */
 
 
 /* -----------------------------------------------------------------

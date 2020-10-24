@@ -47,6 +47,11 @@
 	text-shadow: 0 0 2px rgba( 255, 255, 255, 0.7 ); 
 }	
 
+.sell-points .details-link { 
+	text-shadow: none; 
+
+}
+
 /* A background is possible to be set on the text content box itself, 
 but for border around the box, an :after pseudo-element has to be created */
 .sell-points .text-content:after {
