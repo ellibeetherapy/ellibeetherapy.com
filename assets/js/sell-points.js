@@ -6,7 +6,7 @@
 		adaptiveHeight: true,
 		pager: true, 
 		controls: false, 
-		pause: 7000,
+		pause: 8000,
 		auto: true, 
 		// loop: true, 
 		item: 1, 

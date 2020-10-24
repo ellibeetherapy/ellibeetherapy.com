@@ -1,5 +1,5 @@
 .sell-points { 
-	--animation-start-delay: 0.4s; 
+	--animation-start-delay: 0.5s; 
 	--slide-text-delay: 0s; 
 	--text-relative-delay: -0.175s; 
 
@@ -60,18 +60,23 @@
 
 .sell-points .active.slide-background-right .image { 
 	right: 0; 
-} */
+} */ 
 
-.sell-points .active.slide-background-left .image { 
-	animation-name: slide-background-left; 
-} 
-
-.sell-points .active.slide-background-right .image { 
-	animation-name: slide-background-right; 
+.sell-points .image { 
+	background-size: 100%; 
+	background-position: 50% top;  
 }
 
 .sell-points .active .image { 
-	animation-delay: 0.2s; animation-duration: 5s; 
+	animation-name: slide-background; 
+} 
+
+/* .sell-points .active.slide-background-right .image { 
+	animation-name: slide-background-right; 
+} */
+
+.sell-points .active .image { 
+	animation-delay: 0.2s; animation-duration: 8s; animation-timing-function: linear; 
 }
 
 
@@ -91,10 +96,10 @@
 	
 }
 
-/* @keyframes slide-background-left {
+@keyframes slide-background {
 	
 	100% {
-		transform: translateX( -8% );
+		transform: translateY( -8% );
 	}
 	
 }
@@ -105,4 +110,12 @@
 		transform: translateX( 8% );
 	}
 	
-} */
+} 
+
+@keyframes slide-background {
+	
+	100% {
+		background-position: 50% center; 
+	}
+	
+}
