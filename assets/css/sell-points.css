@@ -4,6 +4,7 @@
 
 .sell-points {  
 	margin-top: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); margin-top: 0;  
+	z-index: 1; 
 
 }
 

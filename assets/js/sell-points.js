@@ -1,14 +1,18 @@
 ( function() {
 	// Initializes main slider
-	$( '.sell-points .entry-list' ).lightSlider( { 
-		auto: true, 
-		loop: true, 
-		adaptiveHeight: true, 
-		pause: 7000, 
-		pauseOnHover: true,  
-		item: 1, 
+	$( '.sell-points .entry-list' ).lightSlider( {  
+		mode: 'slide', 
+		vertical: true, 
+		adaptiveHeight: true,
 		pager: true, 
-		controls: false 
+		controls: false, 
+		pause: 7000,
+		auto: true, 
+		// loop: true, 
+		item: 1, 
+		slideEndAnimation: false,  
+		// pauseOnHover: true,   
+		keyPress: true 
 	} ); 
  
 }() ); 

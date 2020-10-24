@@ -6,8 +6,8 @@
 @import "./header.css"; 
 @import "./switch-lang-panel.css"; 
 @import "./head.css"; 
-@import "./offer-list.css"; 
-@import "./plus-points.css"; 
+/* @import "./offer-list.css";  */
+/* @import "./plus-points.css";  */
 @import "./sell-points.css"; 
 @import "./main-features.css"; 
 @import "./pointer.css"; 
@@ -15,4 +15,6 @@
 @import "./footer.css"; 
 @import "./contacts.css"; 
 @import "./send-message.css"; 
-@import "./media-queries.css"; 
+/* @import "./media-queries.css";  */
+
+@import "./sell-points-animation.css"; 

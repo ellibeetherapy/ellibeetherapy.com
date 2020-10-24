@@ -1,0 +1,108 @@
+.sell-points { 
+	--animation-start-delay: 0.4s; 
+	--slide-text-delay: 0s; 
+	--text-relative-delay: -0.125s; 
+
+	--slide-text-duration: 0.175s; 
+
+	--slide-heading-delay: calc( var( --animation-start-delay ) + var( --slide-text-delay ) ); 
+	--slide-text-entry-delay: calc( var( --slide-heading-delay ) + var( --slide-text-duration ) + var( --text-relative-delay ) ); 
+	--slide-details-link-delay: calc( var( --slide-text-entry-delay ) + var( --slide-text-duration ) + var( --text-relative-delay ) );  
+
+}
+
+/** 
+ * On new slide loading the text lines and the button
+ * enter into view sequentially upwards
+ */
+
+.sell-points .heading, 
+.sell-points .text-entry, 
+.sell-points .details-link { 
+	transform: translateY( 25px ); 
+	opacity: 0; 
+} 
+
+.sell-points .active .heading, 
+.sell-points .active .text-entry, 
+.sell-points .active .details-link, 
+.sell-points .active .image { 
+	animation-fill-mode: forwards; 
+
+}
+
+.sell-points :not( .clone ).active .heading, 
+.sell-points :not( .clone ).active .text-entry, 
+.sell-points :not( .clone ).active .details-link { 
+	animation-name: fade-in, slide-text-top; animation-duration: 0.125s, 0.2s; 
+
+} 
+
+.sell-points .active .heading { 
+	animation-delay: var( --slide-heading-delay ); 
+} 
+
+.sell-points .active .text-entry { 
+	animation-delay: var( --slide-text-entry-delay ); 
+}
+
+.sell-points .active .details-link { 
+	animation-delay: var( --slide-details-link-delay ); 
+} 
+
+/* .sell-points .image { 
+	width: 120%; 
+} 
+
+.sell-points .active.slide-background-left .image { 
+	left: 0;  
+} 
+
+.sell-points .active.slide-background-right .image { 
+	right: 0; 
+} */
+
+.sell-points .active.slide-background-left .image { 
+	animation-name: slide-background-left; 
+} 
+
+.sell-points .active.slide-background-right .image { 
+	animation-name: slide-background-right; 
+}
+
+.sell-points .active .image { 
+	animation-delay: 0.2s; animation-duration: 5s; 
+}
+
+
+@keyframes slide-text-top {
+	
+	100% {
+		transform: translateY( 0 );
+	}
+	
+}
+
+@keyframes fade-in {
+	
+	100% {
+		opacity: 1; 
+	}
+	
+}
+
+/* @keyframes slide-background-left {
+	
+	100% {
+		transform: translateX( -8% );
+	}
+	
+}
+
+@keyframes slide-background-right {
+	
+	100% {
+		transform: translateX( 8% );
+	}
+	
+} */
