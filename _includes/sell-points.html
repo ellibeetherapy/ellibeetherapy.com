@@ -1,8 +1,11 @@
-<ul class= "entry-list sell-points-list">
+{% assign pos = 0 %}
+
+<ul class= "entry-list sell-points-list"> 
 {% for entry in include.data %} 
-	<li class= "entry sell-points-entry">
+	<li class= "entry sell-points-entry{% if pos == 0 %} current{% endif %}">
 		{% include block.html data = entry %} 
 	</li> 
+	{% assign pos = pos | plus: 1 %} 
 {% endfor %}
 </ul>
 	

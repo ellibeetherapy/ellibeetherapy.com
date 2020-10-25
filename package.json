@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ellibeetherapy/ellibeetherapy.com#readme",
   "dependencies": {
+    "bxslider": "^4.2.14",
+    "flexslider": "^2.7.2",
     "jquery": "^3.5.1",
     "jquery-smooth-scroll": "^2.2.0",
     "lightslider": "^1.1.6"

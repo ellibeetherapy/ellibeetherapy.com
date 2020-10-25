@@ -16,37 +16,37 @@
  * enter into view sequentially upwards
  */
 
-.sell-points .heading, 
-.sell-points .text-entry, 
-.sell-points .details-link { 
+.sell-points-entry .heading, 
+.sell-points-entry .text-entry, 
+.sell-points-entry .details-link { 
 	transform: translateY( 75px ); 
 	opacity: 0; 
 } 
 
-.sell-points .active .heading, 
-.sell-points .active .text-entry, 
-.sell-points .active .details-link, 
-.sell-points .active .image { 
+.sell-points-entry .heading, 
+.sell-points-entry .text-entry, 
+.sell-points-entry .details-link, 
+.sell-points-entry .image { 
 	animation-fill-mode: forwards; 
 
 }
 
-.sell-points :not( .clone ).active .heading, 
-.sell-points :not( .clone ).active .text-entry, 
-.sell-points :not( .clone ).active .details-link { 
+.sell-points-entry[ aria-hidden= "false" ] .heading, 
+.sell-points-entry[ aria-hidden= "false" ] .text-entry, 
+.sell-points-entry[ aria-hidden= "false" ] .details-link { 
 	animation-name: fade-in, slide-text-top; animation-duration: 0.125s, 0.2s; 
 
 } 
 
-.sell-points .active .heading { 
+.sell-points-entry .heading { 
 	animation-delay: var( --slide-heading-delay ); 
 } 
 
-.sell-points .active .text-entry { 
+.sell-points-entry .text-entry { 
 	animation-delay: var( --slide-text-entry-delay ); 
 }
 
-.sell-points .active .details-link { 
+.sell-points-entry .details-link { 
 	animation-delay: var( --slide-details-link-delay ); 
 } 
 
@@ -62,13 +62,14 @@
 	right: 0; 
 } */ 
 
-.sell-points .image { 
-	height: 125%; 
-	top: 50%; transform: translateY( calc( -1 * 50 / 125 * 100% ) ); 
+.sell-points-entry .image { 
+	height: 120%; 
+	top: 50%; transform: translateY( calc( -1 * 50 / 120 * 100% ) ); 
+	animation-duration: 7s; animation-timing-function: linear; 
 	  
 }
 
-.sell-points .active .image { 
+.sell-points-entry[ aria-hidden= "false" ] .image { 
 	animation-name: slide-background; 
 } 
 
@@ -76,9 +77,9 @@
 	animation-name: slide-background-right; 
 } */
 
-.sell-points .active .image { 
+/* .sell-points .active .image { 
 	animation-delay: 0.2s; animation-duration: 8s; animation-timing-function: linear; 
-}
+} */
 
 
 @keyframes slide-text-top {

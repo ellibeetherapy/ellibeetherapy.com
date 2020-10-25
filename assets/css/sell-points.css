@@ -3,8 +3,19 @@
 ----------------------------------------------------------------- */ 
 
 .sell-points {  
+	/* display: block;  */
 	margin-top: calc( -1 * ( var( --header-height ) + var( --header-margin-top ) ) ); margin-top: 0;  
 	z-index: 1; 
+
+} 
+
+/* .sell-points .entry-list { 
+	--column-gutter-x: 0rem; 
+
+} */
+
+.sell-points .entry-list { 
+	display: block; 
 
 }
 
@@ -69,9 +80,14 @@ but for border around the box, an :after pseudo-element has to be created */
 	width: 100%; height: calc( 100% - var( --padding-top ) ); 
 	position: absolute; left: 0; top: 0; 
 	opacity: 0.5; 
+} 
+
+.sell-points .bx-wrapper { 
+	border: none; 
+
 }
 
-.sell-points .lSSlideOuter .lSPager.lSpg > li a { 
+/* .sell-points .lSSlideOuter .lSPager.lSpg > li a { 
 	z-index: 1; 
 	background-color: var( --text-color ); 
 } 
@@ -84,14 +100,12 @@ but for border around the box, an :after pseudo-element has to be created */
 .sell-points .lSAction { 
 	display: flex; justify-content: center;  
 	position: absolute; left: 0; right: 0; bottom: 0; margin-bottom: 1.25rem; 
-	/* background-color: var( --text-color );  */ 
-
 }
 
 .sell-points .lSAction > a {  
 	position: initial; 
 
-}
+} */
 
 
 /* -----------------------------------------------------------------
