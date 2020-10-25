@@ -45,7 +45,7 @@ figure.image {
 	background-color: rgba( 255, 255, 255, 0.4 ); 
 } 
 
-.image-entry-list { 
+.image-entry-list.multiple-images { 
 	--column-count: 2; 
 	--column-gutter-count: calc( var( --column-count ) - 1 ); 
 	--column-gutter-x: 0.2rem; 

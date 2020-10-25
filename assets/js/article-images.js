@@ -14,7 +14,7 @@
 	// 	controls: true 
 	// } ); 
 
-	$( '.image-entry-list.multiple-images' ).magnificPopup( { 
+	$( '.image-entry-list' ).magnificPopup( { 
 		delegate: 'a', 
 		type: 'image' 
 

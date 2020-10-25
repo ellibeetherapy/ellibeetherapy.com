@@ -19,10 +19,13 @@
 			{% else %} 
 				{% assign imagesClassName = " single-image" %}
 			{% endif %}
+
 			<ul class= "{{ 'image-entry-list' | append: imagesClassName }}"> 
 			{% for entryImage in images.entries %}
 				<li class= "image-entry">
-					<a href= "{{ entryImage.src }}"><img src= {{ entryImage.src }} alt= {{ entryImage.alt }} /></a>
+					<a href= "{{ entryImage.src }}">
+						<img src= {{ entryImage.src }} alt= {{ entryImage.alt }} />
+					</a>
 				</li> 
 			{% endfor %} 
 			</ul>
