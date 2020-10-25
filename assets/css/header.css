@@ -223,6 +223,25 @@
 @media ( max-width: 1120px ) { 
 	.header .id { 
 		margin-right: 0; 
+	}
+
+	/* .main-nav { 
+		--main-nav-height: 2.5rem; 
+
+	}  */
+
+	/* .main-nav .nav-link { 
+		margin-bottom: 1.25rem; 
+
+	} */
+
+	/* .main-nav .nav-entry.current, 
+	.main-nav .nav-entry:hover { 
+		margin-bottom: 0.5rem; 
+	}  */
+
+	.main-nav .nav-entry:after {  
+		bottom: 0.5rem; 
 	} 
 
 	.switch-lang-panel { 
