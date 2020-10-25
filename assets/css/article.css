@@ -117,5 +117,16 @@ figure.image {
 	line-height: 1.485; 
 	text-align: center; 
 
+} 
+
+.mfp-bg.mfp-ready { 
+	background-color: var( --gallery-image-background-color ); 
+	opacity: 0.9; 
+
+} 
+
+.mfp-image-holder .mfp-close { 
+	color: var( --gallery-image-close-button-color ); 
+
 }
 

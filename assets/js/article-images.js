@@ -16,7 +16,11 @@
 
 	$( '.image-entry-list' ).magnificPopup( { 
 		delegate: 'a', 
-		type: 'image' 
+		type: 'image', 
+		zoom: { 
+			enabled: true 
+
+		}
 
 	} ); 
  
