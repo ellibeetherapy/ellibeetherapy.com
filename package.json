@@ -21,6 +21,7 @@
     "flexslider": "^2.7.2",
     "jquery": "^3.5.1",
     "jquery-smooth-scroll": "^2.2.0",
-    "lightslider": "^1.1.6"
+    "lightslider": "^1.1.6",
+    "magnific-popup": "^1.1.0"
   }
 }

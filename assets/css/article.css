@@ -26,15 +26,15 @@ figure.image {
 	background-size: cover; background-position: center center; background-repeat: no-repeat; 
 } 
 
-.article.therapy-details { 
+/* .article.therapy-details { 
 	--image-count: 2; 
 	--image-gutter: 1rem; 
-}
+} */
 
-.article.about-us { 
+/* .article.about-us { 
 	--image-count: 1; 
 	--image-gutter: 1rem; 
-}
+} */
 
 .text-entry-images { 
 	box-sizing: border-box; 
@@ -45,12 +45,44 @@ figure.image {
 	background-color: rgba( 255, 255, 255, 0.4 ); 
 } 
 
-/* .image-entry { 
-	width: 100%; 
+.image-entry-list { 
+	--column-count: 2; 
+	--column-gutter-count: calc( var( --column-count ) - 1 ); 
+	--column-gutter-x: 0.2rem; 
+	--column-gutter-y: var( --column-gutter-x ); 
+	--column-width: calc( ( 100% - var( --column-gutter-x ) * var( --column-gutter-count ) ) / var( --column-count ) ); 
+
+	display: flex; flex-direction: row; flex-wrap: wrap; 
+
+} 
+
+.image-entry { 
+	width: var( --column-width ); 
+	margin-right: var( --column-gutter-x ); 
+
+} 
+
+.image-entry:nth-child( 2n ) { 
+	margin-right: 0; 
+
+}
+
+/* .image-entry-list { 
+	--column-count: 2; 
+	--column-gutter-x: 0.5rem; 
+
+	display: flex; flex-direction: row; 
+
 } */
 
+.image-entry { 
+	/* width: 20rem;  */
+	/* height: 250px; */
+}
+
 .image-entry img { 
-	/* height: 450px;  */ 
+	/* width: auto; 
+	height: 250px;   */
 	width: 100%; 
 }
 
