@@ -1,9 +1,9 @@
 .sell-points { 
-	--animation-start-delay: 0.5s; 
+	--animation-start-delay: 0.45s; 
 	--slide-text-delay: 0s; 
-	--text-relative-delay: -0.175s; 
+	--text-relative-delay: -0.15s; 
 
-	--slide-text-duration: 0.25s; 
+	--slide-text-duration: 0.2s; 
 
 	--slide-heading-delay: calc( var( --animation-start-delay ) + var( --slide-text-delay ) ); 
 	--slide-text-entry-delay: calc( var( --slide-heading-delay ) + var( --slide-text-duration ) + var( --text-relative-delay ) ); 
@@ -34,7 +34,8 @@
 .sell-points-entry[ aria-hidden= "false" ] .heading, 
 .sell-points-entry[ aria-hidden= "false" ] .text-entry, 
 .sell-points-entry[ aria-hidden= "false" ] .details-link { 
-	animation-name: fade-in, slide-text-top; animation-duration: 0.125s, 0.2s; 
+	animation-name: fade-in, slide-text-top; animation-duration: 0.125s, 0.25s; 
+	animation-timing-function: linear, ease-out; 
 
 } 
 
@@ -64,8 +65,8 @@
 
 .sell-points-entry .image { 
 	height: 120%; 
-	top: 50%; transform: translateY( calc( -1 * 50 / 120 * 100% ) ); 
-	animation-duration: 7s; animation-timing-function: linear; 
+	top: -20%; transform: translateY( calc( 100 / 120 * 20% ) ); 
+	animation-duration: 8s; animation-timing-function: linear; 
 	  
 }
 
@@ -117,7 +118,7 @@
 @keyframes slide-background {
 	
 	100% { 
-		transform: translateY( -50% ); 
+		transform: translateY( 0 ); 
 		 
 	}
 	
