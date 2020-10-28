@@ -29,7 +29,8 @@
 		auto: true, 
 		autoStart: true, 	
 		autoHover: true, 
-		// infiniteLoop: false, 
+		stopAutoOnClick: true, 
+		infiniteLoop: false, 
 		pause: 7000, 
 		touchEnabled: false 
 	} ); 
