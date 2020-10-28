@@ -228,7 +228,7 @@
 	/* .main-nav { 
 		--main-nav-height: 2.5rem; 
 
-	}  */
+	}  */ 
 
 	/* .main-nav .nav-link { 
 		margin-bottom: 1.25rem; 
@@ -278,7 +278,8 @@
 	}
 
 	.main-nav .nav-entry-list {
-		flex-direction: column; align-items: center; justify-content: center; 
+		flex-direction: column; align-items: center; justify-content: center;  
+		width: max-content; 
 		height: 0; overflow: hidden; 
 		position: fixed; left: 50%; top: 50%; z-index: 3; 
 		transform: translate( -50%, -50% ); 
@@ -289,7 +290,7 @@
 	}
 
 	.main-nav.main-nav-open .nav-entry-list {
-		width: auto; height: auto; 
+		height: auto; 
 	}
 
 	.open-nav-button {
