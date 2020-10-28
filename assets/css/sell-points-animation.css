@@ -19,7 +19,7 @@
 .sell-points-entry .heading, 
 .sell-points-entry .text-entry, 
 .sell-points-entry .details-link { 
-	transform: translateY( 75px ); 
+	transform: translateY( 140px ); 
 	opacity: 0; 
 } 
 
