@@ -7,7 +7,7 @@
 	 */
 
 	/* Constrains the width of the page content on larger screens, applied on sections */
-	--max-page-width: 1420px; 
+	--max-page-width: 1920px; 
 	/* Constrains the width of the page text content */
 	--max-content-width: 960px;  
 
