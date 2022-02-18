@@ -49,6 +49,33 @@
 				}, 
 
 				{
+					"images": {
+						"entries": [ 
+							{ 
+								"src": "/assets/images/3.jpeg", 
+								"alt": "" 
+							}, 
+
+							{ 
+								"src": "/assets/images/4.jpeg", 
+								"alt": "" 
+							}, 
+
+							{ 
+								"src": "/assets/images/2EE8D2B7C-B7D4-4507-8B22-7A63A38C14FB.jpeg", 
+								"alt": "" 
+							}, 
+
+							{ 
+								"src": "/assets/images/1AAECC017-3A67-4479-BB03-D6F93610C7B3.jpeg", 
+								"alt": "" 
+							} 
+						], 
+						"caption": "My happy customers" 
+					}
+				},  
+
+				{
 					"text": "Via communication with more experienced veteran beekeepers on social platforms or in person, I find every day something new and interesting. Not long ago I came across a very interesting application of bee colonies harnessed for the purpose of various human health benefits, which I named vibration-respiratory apitherapy (from Latin “Apis”-bee). Intuitively, I figured there is a lot of potential in this activity worth exploring, so consequently I devoted a solid portion of my time and efforts to make this project come to life." 
 				}
 			]
