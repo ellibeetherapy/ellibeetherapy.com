@@ -3,26 +3,29 @@
 <nav class= "main-nav">
 	<h6 class= "usability-heading">Site navigation</h6> 
 	
-	<ul class= "entry-list nav-entry-list"> 
-	{% for entry in entries %} 
-		{% assign url = entry.target %} 
-		{% if page.lang != "bg" %}
-			{% assign url = "/" | append: page.lang | append: url %} 
-		{% endif %} 
-		
-		{% assign currentClassName = "" %}
-		{% if url == page.url %} 
-			{% assign currentClassName = " current" %} 
-		{% endif %}
+	<section class= "nav" style= "--nav-entry-count: {{ entries | size }}"> 
+		<button class="button main-nav-control-button close-nav-button">Close Navigation</button> 
 
-		<li class= "entry nav-entry{{ currentClassName }}">
-			<a class= "nav-link" href= "{{ url }}">{{ entry.text }}</a> 
-		</li> 
-	{% endfor %} 
-	</ul>
-
-	<section class="nav-control-buttons">
-		<button class="button open-nav-button">Open Navigation</button>
-		<button class="button close-nav-button">Close Navigation</button>
+		{% assign navEntryPos = 0 %} 
+		<ul class= "entry-list nav-entry-list"> 
+		{% for entry in entries %} 
+			{% assign url = entry.target %} 
+			{% if page.lang != "bg" %}
+				{% assign url = "/" | append: page.lang | append: url %} 
+			{% endif %} 
+			
+			{% assign currentClassName = "" %}
+			{% if url == page.url %} 
+				{% assign currentClassName = " current" %} 
+			{% endif %}
+ 
+			<li class= "entry nav-entry{{ currentClassName }}" style= "--nav-entry-pos: {{ navEntryPos }}"> 
+				<a class= "nav-link" href= "{{ url }}">{{ entry.text }}</a> 
+			</li> 
+			{% assign navEntryPos = navEntryPos | plus: 1 %} 
+		{% endfor %} 
+		</ul> 
 	</section> 
+
+	<button class="button main-nav-control-button open-nav-button">Open Navigation</button> 
 </nav>

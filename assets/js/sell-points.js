@@ -21,18 +21,18 @@
 
 	// } ); 
 
-	$('.sell-points .entry-list').bxSlider( { 
-		mode: 'vertical', 
-		adaptiveHeight: true, 
-		controls: false, 
-		preloadImages: 'all', 
-		auto: true, 
-		autoStart: true, 	
-		autoHover: true, 
-		stopAutoOnClick: true, 
-		infiniteLoop: false, 
-		pause: 7000, 
-		touchEnabled: false 
-	} ); 
+	//$('.sell-points .entry-list').bxSlider( { 
+	//	mode: 'vertical', 
+	//	adaptiveHeight: true, 
+	//	controls: false, 
+	//	preloadImages: 'all', 
+	//	auto: true, 
+	//	autoStart: true, 	
+	//	autoHover: true, 
+	//	stopAutoOnClick: true, 
+	//	infiniteLoop: false, 
+	//	pause: 7000, 
+	//	touchEnabled: false 
+	//} ); 
  
 }() ); 

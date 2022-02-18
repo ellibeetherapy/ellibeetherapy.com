@@ -78,7 +78,7 @@ body {
 } 
 
 /* Control button text is moved out of the screen to be replaced with an icon */
-.nav-control-buttons button, 
+.main-nav-control-button, 
 .scroll-to-top {
 	text-indent: -10000px; overflow: hidden; 
 	cursor: pointer; 
