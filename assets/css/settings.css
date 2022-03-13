@@ -11,7 +11,10 @@
 	/* Constrains the width of the page text content */
 	--max-content-width: 960px;  
 
-	--text-content-width: 680px; 
+	--pointer-image-width: 50%; 
+
+	--text-content-width: var( --max-content-width ); 
+	--contact-form-width: calc( var( --max-content-width ) / 2.5 ); 
 
 	/* Defines space around not full width sections on smaller screens */
 	--content-padding-left: 1.25rem; 
@@ -69,8 +72,11 @@
 	/* --header-height: 5rem;  */ 
 	--header-margin-top: 2.75rem; 
 
-	--id-height: 4rem; 
+	--id-width: 7rem; 
+	--id-height: var( --id-width ); 
 	--main-nav-height: 4rem; 
+	--main-nav-control-button-width: 4rem; 
+	--main-nav-control-button-height: var( --main-nav-control-button-width ); 
 	--id-margin-top: 2rem; 
 	--header-height: calc( var( --id-height ) + var( --main-nav-height ) + var( --id-margin-top ) ); 
 
