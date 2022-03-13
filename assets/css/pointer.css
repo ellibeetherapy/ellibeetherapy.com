@@ -70,8 +70,9 @@ but for border around the box, an :after pseudo-element has to be created */
 /* Images are absolutely positioned for easier change of position */
 .pointer .image { 
 	box-sizing: border-box; 
-	width: 50%; height: 100%; 
-	position: absolute; left: 50%; transform: translateX( -50% ); top: 0; 
+	width: var( --pointer-image-width ); height: 100%; 
+	position: absolute; left: 0; top: 0;
+	left: 50%; transform: translateX( -50% ); 
 	background-size: cover; background-clip: padding-box; 
 	border: 1.25rem solid rgba( 255, 255, 255, 0.4 ); 
 }
