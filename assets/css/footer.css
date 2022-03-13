@@ -47,6 +47,7 @@
 	padding-left: var( --content-padding-left ); padding-right: var( --content-padding-right ); 
 	position: relative; 
 	border-style: solid; border-width: 0px; border-top-width: 1px; 
+	/*border-color: rgba( 0, 0, 0, 0.25 ); */ 
 } 
 
 /* .copyright:after { 
@@ -71,6 +72,11 @@
 .write-us, 
 .company { 
 	max-width: var( --max-content-width ); width: 100%; 
+} 
+
+.write-us { 
+	max-width: var( --contact-form-width ); 
+
 }
 
 .company .id { 
@@ -127,7 +133,7 @@ footer {
 
 .copyright { 
 	/* background-color: #DDD;  */ 
-	color: var( --text-color ); 
+	color: var( --text-color ); color: rgba( 0, 0, 0, 0.4 ); 
 } 
 
 .scroll-to-top {
