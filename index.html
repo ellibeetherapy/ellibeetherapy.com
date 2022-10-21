@@ -1,5 +1,6 @@
 ---
 title: Начало 
+id: front_page 
 layout: page 
 lang: bg 
 --- 
@@ -15,3 +16,14 @@ lang: bg
 
 {% include section.html data = dataSource.aboutUs.pointer %} 
 
+<script>
+	if (window.netlifyIdentity) {
+	  window.netlifyIdentity.on("init", user => {
+		if (!user) {
+		  window.netlifyIdentity.on("login", () => {
+			document.location.href = "/admin/";
+		  });
+		}
+	  });
+	}
+</script> 

@@ -9,7 +9,11 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-131257323-9');
-	</script>
+	</script> 
+
+	{% if page.id == 'front_page' %} 
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	{% endif %} 
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +31,7 @@
 	<script src= "/assets/js/core.js"></script> 
 	<script>
 		loadPage(); 
-	</script>
+	</script> 
 
 	{% include header.html %} 
 
