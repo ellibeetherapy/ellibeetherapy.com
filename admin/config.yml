@@ -24,9 +24,9 @@ collections:
             label: "Image Set" 
             widget: "list" 
             field: 
-              - name: "image" 
-                label: "Image" 
-                widget: "image" 
+              name: "image" 
+              label: "Image" 
+              widget: "image" 
 
       - name: "image" 
         label: "Image" 
